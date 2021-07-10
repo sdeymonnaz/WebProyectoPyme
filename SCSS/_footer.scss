@@ -1,0 +1,33 @@
+
+.footer{
+    display: flex;
+    background: linear-gradient(to bottom, $colorFondoPpal, $gradientClaro);
+    justify-content: end;
+    align-items:center;
+    height: 5%;
+    
+    .footer__listado{
+        list-style: none;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        list-style: none;
+        height: 90%;
+
+        .listado__item{
+            font-size: 25px;
+            padding: 2px;
+
+            .fa{
+                color: $colorParrafo;
+                padding: 12px 20px;
+                text-decoration: none;
+            }
+
+            .fa:hover{
+                transform: scale(2, 2);
+                color: $colorTerciario;
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+/* TITULOS DE PAGINA ***********************************************/
+.tituloPag{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: $colorFondoPpal;
+    height: 5%;
+
+
+    .tituloPag__titular{
+        font-family: $familiaTitulo;
+        color: $colorSecundario;
+        padding: 20px;
+        word-spacing: 5px;
+    }
+
+    .tituloPag__titular--galeria{
+        @extend .tituloPag__titular;
+        padding: 10px;
+    }
+}
+
+/* VISTA PARA MOVIL 480px ********************************/
+@media only screen and (min-width:480px){
+    .tituloPag__titular{
+        font-size: $tamanioTituloMob;
+    }
+}
+
+
+/* VISTA PARA TABLET 768px ******************************/
+@media only screen and (min-width:768px){
+    .tituloPag__titular{
+        font-size: $tamanioTituloMob;
+    }
+}
+
+/* VISTA PARA DESKTOP 1024px **************************/
+@media only screen and (min-width:1024px){
+    .tituloPag__titular{
+        font-size: $tamanioTitulo;
+    }
+}

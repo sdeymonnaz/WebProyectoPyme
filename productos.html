@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilocss.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Cardo:ital,wght@0,400;0,700;1,400&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <meta name="description" content="Catálogo de productos a la venta y novedades semanales.Pastas frescas y secas y salsas y sus tiempos de preparación e ingredientes.">
+    <meta name="keywords" content="pastas, fideos, ravioles, ñoquis, spaguetti, canelones, lasaña, salsas, preparación, ingredientes">
+    <title>Apolloni Pastificio Productos a la Venta</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html"> <img class="header__logo" src="/images/Apolloni-logo.png" alt="logo Apolloni Pastificio"></a>
+        <nav class="header__nav">
+            <ul class="nav__lista">
+                <li><a class="lista__elem" href="index.html">Inicio</a></li>
+                <li><a class="lista__elem" href="productos.html">Productos</a></li>
+                <li><a class="lista__elem" href="galeria.html">Galería</a></li>
+                <li><a class="lista__elem" href="quienes.html">Quienes somos</a></li>
+                <li><a class="lista__elem" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="tituloPag">
+        <div>
+            <h1 class="tituloPag__titular">Nuestros Productos <span class="badge rounded-pill bg-danger">6 Novedades!</span></h1>
+        </div>
+    </section>
+
+    <main class="productos">
+        <div class="productos__grilla" class="table-responsive">
+            
+            <section class="grilla__intro">
+                <article class="intro__parrafo">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis facere quibusdam sunt consequatur accusamus quos at quo officia unde iusto ducimus laborum in reiciendis, commodi hic aperiam eos. Quas, veniam.</p>
+                </article>
+            </section>
+
+            <section class="grilla__fideos">
+                <table id="grilla__tabla" class="table table-striped table-hover table-bordered align-top">
+                    <thead class="tablaTitulos">
+                        <tr>
+                            <th class="tablaTitulos--superior" colspan="4">Fideos
+                        </tr>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Tipo de pasta</th>
+                            <th scope="col">Tiempo de preparación</th>
+                            <th scope="col">Variedad</th>
+                            </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Spaguetti</td>
+                            <td>8 minutos</td>
+                            <td>Huevo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Tagliatelle</td>
+                            <td>9 minutos</td>
+                            <td>Espinaca</td>
+                            </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Mostacholes</td>
+                            <td>9 minutos</td>
+                            <td>Sémola</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Pappardelle</td>
+                            <td>10 minutos</td>
+                            <td>Huevo</td>
+                        </tr>
+                </table>
+
+                <picture>
+                    <img class="grilla__foto" src="images/spaguetti_portrait.jpg" alt="Spaguetti">
+                </picture>
+            </section>
+
+            <div class="grilla__ravioles">
+                <table id="grilla__tabla" class="table table-striped table-hover table-bordered align-top">
+                    <thead class="tablaTitulos">
+                        <tr>
+                            <th class="tablaTitulos--superior" colspan="4">Ravioles
+                        </tr>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Relleno</th>
+                            <th scope="col">Tiempo de preparación</th>
+                            </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Espinaca y queso</td>
+                            <td>3 minutos</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Pollo, carne y verdura</td>
+                            <td>3 minutos</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Ricota, queso y jamón</td>
+                            <td>4 minutos</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Cuatro quesos</td>
+                            <td>4 minutos</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>Brócoli y zucchini</td>
+                            <td>4 minutos</td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+                <picture>
+                    <img class="grilla__foto" src="images/ravioli.jpg" alt="Ravioles">
+                </picture>
+            </div>
+
+            <div class="grilla__otrasPastas">
+                <table id="grilla__tabla" class="table table-striped table-hover table-bordered align-top">
+                    <thead class="tablaTitulos">
+                        <tr>
+                            <th class="tablaTitulos--superior" colspan="4">Otras Pastas
+                        </tr>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Tipo</th>
+                            <th scope="col">Variedad</th>
+                            <th scope="col">Tiempo de preparación</th>
+                            </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">13</th>
+                            <td>Canelones</td>                   
+                            <td>Ricota y queso</td>
+                            <td>20 minutos en horno</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">14</th>
+                            <td>Canelones</td>
+                            <td>Verdura y queso</td>
+                            <td>20 minutos en horno</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">15</th>
+                            <td>Canelones</td>
+                            <td>Ricota, mozzarella y jamón</td>
+                            <td>20 minutos en horno</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">17</th>
+                            <td>Sorrentinos</td>
+                            <td>mozzarella, queso fresco y jamón</td>
+                            <td>Hervir 4 minutos</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">18</th>
+                            <td>Creppes</td>
+                            <td>Lomo al verdeo</td>
+                            <td>20 minutos en horno</td>
+                        </tr>
+                            <th scope="row">19</th>
+                            <td>Creppes</td>
+                            <td>Pollo al champignon</td>
+                            <td>20 minutos en horno</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">20</th>
+                            <td>Lasagna</td>
+                            <td>Pollo, verdura y ricotta</td>
+                            <td>25 minutos en horno</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">21</th>
+                            <td>Gnocchi</td>
+                            <td>Papa</td>
+                            <td>Hervir 3 minutos</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <picture>
+                    <img class="grilla__foto" src="images/gnocchi.jpg" alt="Gnocchi">
+                </picture>
+            </div>
+
+            <div class="grilla__salsas">
+                <table id="grilla__tabla" class="table table-striped table-hover table-bordered align-top">
+                    <thead class="tablaTitulos">
+                        <tr>
+                            <th class="tablaTitulos--superior" colspan="4">Salsas
+                        </tr>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Variedad</th>
+                            <th scope="col">Ingredientes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">22</th>
+                            <td>Blanca</td>                   
+                            <td>Receta tradicional a base de leche y almidón de maíz</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">23</th>
+                            <td>Bolognesa</td>
+                            <td>Tomate, carne picada, salchicha y panceta</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">24</th>
+                            <td>Filetto</td>
+                            <td>Tomate, aceite de oliva y ajo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">25</th>
+                            <td>De pollo</td>                   
+                            <td>Tomate, pollo y zanahoria</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">26</th>
+                            <td>Scarparo</td>
+                            <td>Tomate, aceite de oliva, cebolla de verdeo y albahaca</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">27</th>
+                            <td>Caruso</td>
+                            <td>Crema, champignones, jamón y queso rallado</td>
+                        </tr>
+                            <th scope="row">28</th>
+                            <td>Cuatro quesos</td>
+                            <td>Crema, Holanda, Provolone, Roquefort y Fontina</td>
+                    </tr>
+                    <tr>
+                            <th scope="row">29</th>
+                            <td>Liviana</td>                   
+                            <td>Tomate y hortalizas sin sal ni aceite</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <picture>
+                    <img class="grilla__foto" src="images/salsa.jpg" alt="Salsas">
+                </picture>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <ul class="footer__listado">
+                <li class="listado__item"><a href="mailto:info@apollonipasticio.com" class="fa fa-envelope"></a></li>
+                <li class="listado__item"><a href="https://www.youtube.com" class="fa fa-youtube"></a></li>
+                <li class="listado__item"><a href="https://www.facebook.com" class="fa fa-facebook"></a></li>
+                <li class="listado__item"><a href="https://www.instagram.com" class="fa fa-instagram"></a></li>
+                <li class="listado__item"><a href="https://www.twitter.com" class="fa fa-twitter"></a></li>
+            </ul>
+        </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

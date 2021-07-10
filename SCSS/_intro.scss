@@ -1,0 +1,66 @@
+
+
+.intro{
+    background-image: url("/images/fondo3.jpg");
+    background-size:cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .intro__logo{
+        padding: 10px;
+        transition: 2s;
+    }
+
+    .intro__logo:hover{
+        transform: rotateY(180deg);
+    }
+
+    .intro__titulo{
+        color: $colorPrimario;
+        font-family: $familiaTitulo;
+        text-shadow: -1px 1px black;
+        padding-left: 10px;
+        word-spacing: 5px;
+    }
+}
+
+
+/* VISTA PARA MOVIL 480px ********************************/
+@media only screen and (min-width:480px){
+    /* INTRO ***************************/
+    .intro{
+        flex-direction: column;
+
+        .intro__titulo{
+            font-size: 3.3rem;
+        }
+    }
+}
+
+
+
+
+/* VISTA PARA TABLET 768px ******************************/
+@media only screen and (min-width:768px){
+    .intro{
+        flex-direction: column;
+
+        .intro__titulo{
+            font-size: 5rem;
+        }
+    }
+}
+
+
+
+/* VISTA PARA DESKTOP 1024px **************************/
+@media only screen and (min-width:1024px){
+    .intro{
+        .intro__titulo{
+            font-size: 6rem;
+        }
+    }
+}

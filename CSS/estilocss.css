@@ -1,0 +1,520 @@
+.intro {
+  background-image: url("/images/fondo3.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .intro .intro__logo {
+    padding: 10px;
+    transition: 2s; }
+  .intro .intro__logo:hover {
+    transform: rotateY(180deg); }
+  .intro .intro__titulo {
+    color: #BB4430;
+    font-family: "Abril Fatface";
+    text-shadow: -1px 1px black;
+    padding-left: 10px;
+    word-spacing: 5px; }
+
+/* VISTA PARA MOVIL 480px ********************************/
+@media only screen and (min-width: 480px) {
+  /* INTRO ***************************/
+  .intro {
+    flex-direction: column; }
+    .intro .intro__titulo {
+      font-size: 3.3rem; } }
+
+/* VISTA PARA TABLET 768px ******************************/
+@media only screen and (min-width: 768px) {
+  .intro {
+    flex-direction: column; }
+    .intro .intro__titulo {
+      font-size: 5rem; } }
+
+/* VISTA PARA DESKTOP 1024px **************************/
+@media only screen and (min-width: 1024px) {
+  .intro .intro__titulo {
+    font-size: 6rem; } }
+
+.header {
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(to bottom, #6d6c6c, #393940); }
+  .header .header__logo {
+    height: 100px;
+    padding: 10px; }
+  .header .header__nav {
+    width: 90%; }
+    .header .header__nav .nav__lista {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      list-style: none;
+      padding-left: 0px; }
+      .header .header__nav .nav__lista .lista__elem {
+        font-family: "Cardo", serif;
+        text-decoration: none;
+        padding: 2px;
+        color: whitesmoke; }
+      .header .header__nav .nav__lista .lista__elem:hover {
+        background-color: #f3dfa2;
+        color: black;
+        padding: 2px; }
+
+/* VISTA PARA MOVIL 480px ********************************/
+@media only screen and (min-width: 480px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px; }
+    .header .nav__lista {
+      flex-direction: column;
+      justify-content: center; }
+      .header .nav__lista .lista__elem {
+        font-size: 2rem; } }
+
+/* VISTA PARA TABLET 768px ******************************/
+@media only screen and (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    justify-content: center;
+    height: 100px; }
+    .header .header__logo {
+      height: 90px; }
+    .header .nav__lista {
+      flex-direction: row;
+      justify-content: space-evenly; }
+      .header .nav__lista .lista__elem {
+        font-size: 1.5rem; } }
+
+/* VISTA PARA DESKTOP 1024px **************************/
+@media only screen and (min-width: 1024px) {
+  .header {
+    height: 100px; }
+    .header .nav__lista {
+      flex-direction: row;
+      justify-content: space-evenly; }
+      .header .nav__lista .lista__elem {
+        font-size: 2rem; } }
+
+/* TITULOS DE PAGINA ***********************************************/
+.tituloPag {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: #393940;
+  height: 5%; }
+  .tituloPag .tituloPag__titular, .tituloPag .tituloPag__titular--galeria {
+    font-family: "Abril Fatface";
+    color: #7EBDC2;
+    padding: 20px;
+    word-spacing: 5px; }
+  .tituloPag .tituloPag__titular--galeria {
+    padding: 10px; }
+
+/* VISTA PARA MOVIL 480px ********************************/
+@media only screen and (min-width: 480px) {
+  .tituloPag__titular, .tituloPag .tituloPag__titular--galeria {
+    font-size: 3rem; } }
+
+/* VISTA PARA TABLET 768px ******************************/
+@media only screen and (min-width: 768px) {
+  .tituloPag__titular, .tituloPag .tituloPag__titular--galeria {
+    font-size: 3rem; } }
+
+/* VISTA PARA DESKTOP 1024px **************************/
+@media only screen and (min-width: 1024px) {
+  .tituloPag__titular, .tituloPag .tituloPag__titular--galeria {
+    font-size: 4rem; } }
+
+.footer {
+  display: flex;
+  background: linear-gradient(to bottom, #393940, #6d6c6c);
+  justify-content: end;
+  align-items: center;
+  height: 5%; }
+  .footer .footer__listado {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    height: 90%; }
+    .footer .footer__listado .listado__item {
+      font-size: 25px;
+      padding: 2px; }
+      .footer .footer__listado .listado__item .fa {
+        color: whitesmoke;
+        padding: 12px 20px;
+        text-decoration: none; }
+      .footer .footer__listado .listado__item .fa:hover {
+        transform: scale(2, 2);
+        color: #f3dfa2; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  height: 100%; }
+
+.parrafo, .home .home__principal .principal__parrafo, .productos .productos__grilla .grilla__intro .intro__parrafo, .quienes .parrafo--quienes {
+  font-size: 1.2rem;
+  font-family: Palatino, URW Palladio serif;
+  color: whitesmoke;
+  padding: 10px; }
+
+.home {
+  display: flex;
+  flex-direction: column;
+  background-color: #393940;
+  /* VISTA PARA MOVIL 480px ********************************/
+  /* VISTA PARA TABLET 768px ******************************/
+  /* VISTA PARA DESKTOP 1024px **************************/ }
+  .home .home__principal {
+    display: flex; }
+    .home .home__principal .principal__parrafo {
+      width: 95%; }
+  .home .home__lateral {
+    display: flex;
+    align-items: start; }
+    .home .home__lateral .lateral__promociones .promociones__titulo {
+      color: #BB4430;
+      font-family: "Abril Fatface";
+      font-size: 2rem; }
+    .home .home__lateral .lateral__promociones .promociones__listado {
+      padding-left: 5px; }
+    .home .home__lateral .lateral__promociones .listado__item {
+      font-size: 1rem;
+      list-style: disc;
+      list-style-position: inside;
+      font-style: italic;
+      padding-left: 0px; }
+    .home .home__lateral .lateral__newsletter {
+      color: whitesmoke;
+      padding: 10px;
+      margin-bottom: 20px; }
+  @media only screen and (min-width: 480px) {
+    .home .home__principal {
+      flex-direction: column; }
+    .home .home__lateral {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center; }
+      .home .home__lateral .lateral__promociones {
+        height: max-content;
+        margin: 10px;
+        padding: 10px;
+        color: black;
+        background: #EFE6DD;
+        border-radius: 8px;
+        width: 90%;
+        list-style: disc; } }
+  @media only screen and (min-width: 768px) {
+    .home .home__principal {
+      flex-direction: column; }
+    .home .home__lateral {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: initial; }
+      .home .home__lateral .lateral__promociones {
+        height: max-content;
+        margin: 10px;
+        padding: 10px;
+        color: black;
+        background: #EFE6DD;
+        border-radius: 8px;
+        width: 90%;
+        width: 50%; } }
+  @media only screen and (min-width: 1024px) {
+    .home .home__principal {
+      flex-direction: row; }
+    .home .home__lateral {
+      flex-direction: column;
+      justify-content: space-between;
+      flex: 0 0 300px;
+      margin-top: 10px; }
+      .home .home__lateral .lateral__promociones {
+        height: max-content;
+        margin: 10px;
+        padding: 10px;
+        color: black;
+        background: #EFE6DD;
+        border-radius: 8px;
+        width: 90%;
+        list-style: disc; } }
+
+.productos {
+  background-color: #393940;
+  padding: 10px;
+  /* VISTA PARA MOVIL 480px ******************************/
+  /* VISTA PARA TABLET 768px *****************************/
+  /* VISTA PARA DESKTOP 1024px **************************/ }
+  .productos .productos__grilla {
+    display: grid; }
+    .productos .productos__grilla #grilla__tabla .tablaTitulos, .productos .productos__grilla #grilla__tabla .tablaTitulos--superior {
+      background-color: #EFE6DD;
+      border: 1px solid;
+      border-color: black;
+      font-size: 17px;
+      font-style: italic; }
+    .productos .productos__grilla #grilla__tabla .tablaTitulos--superior {
+      font-size: 27px;
+      height: 60px; }
+    .productos .productos__grilla #grilla__tabla .th, .productos .productos__grilla #grilla__tabla tr, .productos .productos__grilla #grilla__tabla td {
+      background-color: #EFE6DD;
+      border-color: black; }
+    .productos .productos__grilla .grilla__foto {
+      width: 100%; }
+    .productos .productos__grilla .grilla__intro {
+      grid-area: intro; }
+    .productos .productos__grilla .grilla__fideos {
+      grid-area: fideos;
+      display: flex; }
+    .productos .productos__grilla .grilla__ravioles {
+      grid-area: ravioles;
+      display: flex; }
+    .productos .productos__grilla .grilla__otrasPastas {
+      grid-area: otrasPastas;
+      display: flex; }
+    .productos .productos__grilla .grilla__salsas {
+      grid-area: salsas;
+      display: flex; }
+  @media only screen and (min-width: 480px) {
+    .productos .productos__grilla {
+      grid-template-columns: 100%;
+      grid-template-rows: repeat(5, auto);
+      grid-template-areas: "intro" "fideos" "ravioles" "otrasPastas" "salsas";
+      align-items: start;
+      gap: 20px; }
+      .productos .productos__grilla #grilla__tabla {
+        width: 100%; }
+      .productos .productos__grilla .grilla__foto {
+        width: 100%; }
+      .productos .productos__grilla .grilla__fideos {
+        flex-direction: column;
+        justify-content: space-around; }
+      .productos .productos__grilla .grilla__ravioles {
+        flex-direction: column;
+        justify-content: space-around; }
+      .productos .productos__grilla .grilla__otrasPastas {
+        flex-direction: column;
+        justify-content: space-around; }
+      .productos .productos__grilla .grilla__salsas {
+        flex-direction: column;
+        justify-content: space-around; } }
+  @media only screen and (min-width: 768px) {
+    .productos .productos__grilla {
+      grid-template-columns: 80% 20%;
+      grid-template-rows: auto repeat(4, auto);
+      grid-template-areas: "intro intro" "fideos fideos" "ravioles ravioles" "otrasPastas otrasPastas" "salsas salsas";
+      align-items: start;
+      gap: 30px; }
+      .productos .productos__grilla #grilla__tabla {
+        width: 50%; }
+      .productos .productos__grilla .grilla__fideos {
+        flex-direction: row;
+        justify-content: space-around; }
+      .productos .productos__grilla .grilla__ravioles {
+        flex-direction: row;
+        justify-content: space-around; }
+      .productos .productos__grilla .grilla__otrasPastas {
+        flex-direction: row;
+        justify-content: space-around; }
+      .productos .productos__grilla .grilla__salsas {
+        flex-direction: row;
+        justify-content: space-around; } }
+  @media only screen and (min-width: 1024px) {
+    .productos .productos__grilla {
+      grid-template-columns: 70% 30%;
+      grid-template-rows: auto repeat(4, auto);
+      grid-template-areas: "intro intro" "fideos fideos" "ravioles ravioles" "otrasPastas otrasPastas" "salsas salsas";
+      align-items: start;
+      gap: 20px; }
+      .productos .productos__grilla #grilla__tabla {
+        width: 50%; }
+      .productos .productos__grilla .grilla__fideos {
+        flex-direction: row;
+        justify-content: space-around; }
+      .productos .productos__grilla .grilla__ravioles {
+        flex-direction: row;
+        justify-content: space-around; }
+      .productos .productos__grilla .grilla__otrasPastas {
+        flex-direction: row;
+        justify-content: space-around; }
+      .productos .productos__grilla .grilla__salsas {
+        flex-direction: row;
+        justify-content: space-around; } }
+
+.galeria {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: auto;
+  background-color: #393940;
+  padding: 10px;
+  /* VISTA PARA MOVIL 480px ******************************/
+  /* VISTA PARA TABLET 768px *****************************/
+  /* VISTA PARA DESKTOP 1024px **************************/ }
+  .galeria .galeria__videos {
+    display: flex;
+    align-items: center; }
+  .galeria .galeria__foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px; }
+  @media only screen and (min-width: 480px) {
+    .galeria .galeria__videos {
+      flex-direction: column;
+      justify-content: start;
+      width: 100%;
+      height: 650px; } }
+  @media only screen and (min-width: 768px) {
+    .galeria .galeria__videos {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 0%;
+      height: auto;
+      padding-left: 5px;
+      padding-right: 5px; } }
+  @media only screen and (min-width: 1024px) {
+    .galeria .galeria__videos {
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 90%;
+      height: auto;
+      padding-left: 5px;
+      padding-right: 5px; }
+    .galeria .carousel {
+      width: 800px;
+      height: 534px; } }
+
+.quienes {
+  display: inline-block;
+  background-color: #393940;
+  /* VISTA PARA MOVIL 480px ********************************/
+  /* VISTA PARA DESKTOP 1024px **************************/ }
+  .quienes .parrafo--quienes {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px; }
+  @media only screen and (min-width: 480px) {
+    .quienes .quienes__recuadro {
+      width: 96%;
+      height: auto;
+      margin: 0;
+      padding: 10px; }
+      .quienes .quienes__recuadro .recuadro__foto {
+        width: 100%;
+        height: auto;
+        margin: 10px; } }
+  @media only screen and (min-width: 1024px) {
+    .quienes .quienes__recuadro {
+      width: 30%;
+      height: auto;
+      margin: 10px;
+      position: relative;
+      padding: 0; }
+      .quienes .quienes__recuadro .recuadro__foto {
+        width: 100%;
+        height: auto;
+        margin: 10px;
+        border-radius: 8px;
+        position: relative;
+        overflow: hidden;
+        float: left;
+        transition: all 1s; }
+      .quienes .quienes__recuadro .recuadro__foto:hover {
+        transform: translate(90px, 40px) scale(1.5, 1.5); } }
+
+.contacto {
+  display: grid;
+  min-height: 100vh;
+  padding: 10px;
+  background-color: #393940;
+  /* VISTA PARA MOVIL 480px ********************************/
+  /* VISTA PARA TABLET 768px *****************************/
+  /* VISTA PARA DESKTOP 1024px **************************/ }
+  .contacto .contacto__formulario {
+    grid-area: formulario;
+    background-color: #EFE6DD;
+    border-radius: 8px;
+    height: max-content;
+    padding: 10px; }
+    .contacto .contacto__formulario .formulario__titulo {
+      border-radius: 8px;
+      padding-left: 10px;
+      padding-bottom: 40px;
+      padding-top: 1px;
+      font-size: 2rem;
+      font-weight: bold;
+      font-family: Palatino, URW Palladio serif;
+      height: 10px; }
+  .contacto .contacto__lateral {
+    grid-area: ubicacion; }
+    .contacto .contacto__lateral .lateral__ubicacion {
+      height: max-content;
+      margin: 10px;
+      padding: 10px;
+      color: #f3dfa2;
+      background: #BB4430;
+      border-radius: 8px;
+      width: 90%; }
+      .contacto .contacto__lateral .lateral__ubicacion .ubicacion__titulo {
+        font-size: 3rem;
+        font-family: Palatino, URW Palladio serif; }
+      .contacto .contacto__lateral .lateral__ubicacion .collapse {
+        color: black; }
+      .contacto .contacto__lateral .lateral__ubicacion .ubicacion__mapa {
+        margin-top: 10px;
+        margin-bottom: 1px;
+        width: 100%; }
+      .contacto .contacto__lateral .lateral__ubicacion .card-body {
+        margin-bottom: 1rem; }
+  @media only screen and (min-width: 480px) {
+    .contacto {
+      grid-template-columns: 100%;
+      grid-template-rows: auto auto;
+      grid-template-areas: "formulario" "ubicacion";
+      row-gap: 50px; }
+      .contacto .contacto__lateral {
+        align-content: center;
+        width: 100%; }
+        .contacto .contacto__lateral .lateral__ubicacion {
+          width: 95%; } }
+  @media only screen and (min-width: 768px) {
+    .contacto {
+      grid-template-columns: 100%;
+      grid-template-rows: auto auto;
+      grid-template-areas: "formulario" "ubicacion";
+      row-gap: 30px;
+      padding: 20px;
+      align-content: flex-start; }
+      .contacto .contacto__lateral {
+        align-content: center;
+        width: 100%; }
+        .contacto .contacto__lateral .lateral__ubicacion {
+          width: 97%; } }
+  @media only screen and (min-width: 1024px) {
+    .contacto {
+      grid-template-columns: 60% 40%;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "formulario ubicacion" "formulario ubicacion";
+      column-gap: 10px; }
+      .contacto .contacto__lateral {
+        grid-area: ubicacion;
+        width: 100%; }
+        .contacto .contacto__lateral .lateral__ubicacion {
+          height: max-content;
+          margin: 10px;
+          padding: 10px;
+          color: #f3dfa2;
+          background: #BB4430;
+          border-radius: 8px;
+          width: 90%;
+          margin-top: 0; } }

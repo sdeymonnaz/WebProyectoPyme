@@ -1,0 +1,552 @@
+@import "paletaColores.scss";
+@import "tipografia.scss";
+@import "intro.scss";
+@import "header.scss";
+@import "tituloPagina.scss";
+@import "footer.scss";
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100%;
+}
+
+.parrafo{
+    font-size: $tamanioParrafo;
+    font-family: $familiaParrafo;
+    color: $colorParrafo;
+    padding: 10px;
+}
+
+@mixin parrafoSec($colorTexto, $colorBack){
+    height:max-content;
+    margin: 10px;
+    padding: 10px;
+    color: $colorTexto;
+    background: $colorBack;
+    border-radius: 8px;
+    width: 90%;
+}
+
+
+.home{
+    display: flex;
+    flex-direction: column;
+    background-color: $colorFondoPpal;
+
+    .home__principal{
+        display: flex;
+        
+        .principal__parrafo{
+            @extend .parrafo;
+            width: 95%;
+        }
+    }
+
+    .home__lateral{
+        display: flex;
+        align-items: start;
+        
+        .lateral__promociones{
+
+            .promociones__titulo{
+                color: $colorPrimario;
+                font-family: $familiaTitulo;
+                font-size: $tamanioMenu;
+            }
+
+            .promociones__listado{
+                padding-left: 5px;
+            }
+
+            .listado__item{
+                font-size: 1rem;
+                list-style: disc;
+                list-style-position: inside;
+                font-style: italic;
+                padding-left: 0px;
+            }
+        }
+
+        .lateral__newsletter{
+            color: $colorParrafo;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+    }
+
+    /* VISTA PARA MOVIL 480px ********************************/
+    @media only screen and (min-width:480px){
+        .home__principal{
+            flex-direction: column;
+        }
+
+        .home__lateral{
+            flex-direction: column;
+            justify-content:space-between;
+            align-items: center;
+
+            .lateral__promociones{
+                @include parrafoSec(black, $colorFondoSec);
+                list-style: disc;
+            }
+        }
+    }
+
+
+    /* VISTA PARA TABLET 768px ******************************/
+    @media only screen and (min-width:768px){
+        .home__principal{
+            flex-direction: column;
+        }
+
+        .home__lateral{
+            flex-direction: row;
+            justify-content:space-around;
+            align-items:initial;
+
+            .lateral__promociones{
+                @include parrafoSec(black, $colorFondoSec);
+                width: 50%;
+            }
+        }
+    }
+
+
+    /* VISTA PARA DESKTOP 1024px **************************/
+    @media only screen and (min-width:1024px){
+        .home__principal{
+            flex-direction: row;
+        }
+
+        .home__lateral{
+            flex-direction: column;
+            justify-content:space-between;
+            flex: 0 0 300px;
+            margin-top: 10px;
+
+            .lateral__promociones{
+                @include parrafoSec(black, $colorFondoSec);
+                list-style: disc;
+            }
+        }
+    }
+}
+
+.productos{
+    background-color: $colorFondoPpal;
+    padding: 10px;
+
+    .productos__grilla{
+        display:grid;
+
+        #grilla__tabla{
+
+            .tablaTitulos{
+                background-color: $colorFondoSec;
+                border: 1px solid;
+                border-color: black;
+                font-size: 17px;
+                font-style: italic;
+            }
+
+            .tablaTitulos--superior{
+                @extend .tablaTitulos;
+                font-size: 27px;
+                height: 60px;
+            }
+
+            .th, tr, td{
+                background-color:#EFE6DD;
+                border-color: black;
+            }
+        }
+
+        .grilla__foto{
+                width: 100%;
+        }
+
+
+        .grilla__intro{
+            grid-area: intro;
+            
+            .intro__parrafo{
+                @extend .parrafo;
+            }
+        }
+
+        .grilla__fideos{
+            grid-area: fideos;
+            display: flex;
+        }
+
+        .grilla__ravioles{
+            grid-area: ravioles;
+            display: flex;
+        }
+
+        .grilla__otrasPastas{
+            grid-area: otrasPastas;
+            display: flex;
+        }
+
+        .grilla__salsas{
+            grid-area: salsas;
+            display: flex;
+        }        
+    }
+    
+    /* VISTA PARA MOVIL 480px ******************************/
+    @media only screen and (min-width:480px){
+        .productos__grilla{
+            grid-template-columns: 100%;
+            grid-template-rows: repeat(5, auto);
+            grid-template-areas:"intro"
+                                "fideos"
+                                "ravioles"
+                                "otrasPastas"
+                                "salsas";
+            align-items: start;
+            gap: 20px;
+
+            #grilla__tabla{
+                width: 100%;
+            }
+
+            .grilla__foto{
+                width: 100%;
+            }
+
+            .grilla__fideos{
+                flex-direction: column;
+                justify-content: space-around;
+            }
+
+            .grilla__ravioles{
+                flex-direction: column;
+                justify-content: space-around;
+            }
+
+            .grilla__otrasPastas{
+                flex-direction: column;
+                justify-content: space-around;
+            }
+
+            .grilla__salsas{
+                flex-direction: column;
+                justify-content: space-around;
+            }   
+        }
+    }
+
+
+    /* VISTA PARA TABLET 768px *****************************/
+    @media only screen and (min-width:768px){
+        .productos__grilla{
+            grid-template-columns: 80% 20%;
+            grid-template-rows: auto repeat(4, auto);
+            grid-template-areas:"intro intro"
+                                "fideos fideos"
+                                "ravioles ravioles"
+                                "otrasPastas otrasPastas"
+                                "salsas salsas";
+            align-items: start;
+            gap: 30px;
+
+            #grilla__tabla{
+                width: 50%;
+            }
+
+            .grilla__fideos{
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            .grilla__ravioles{
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            .grilla__otrasPastas{
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            .grilla__salsas{
+                flex-direction: row;
+                justify-content: space-around;
+            }   
+        }
+    }
+
+
+    /* VISTA PARA DESKTOP 1024px **************************/
+    @media only screen and (min-width:1024px){
+        .productos__grilla{
+            grid-template-columns: 70% 30%;
+            grid-template-rows: auto repeat(4, auto);
+            grid-template-areas:"intro intro"
+                                "fideos fideos"
+                                "ravioles ravioles"
+                                "otrasPastas otrasPastas"
+                                "salsas salsas";
+            align-items: start;
+            gap: 20px;
+
+            #grilla__tabla{
+                width: 50%;
+            }
+
+            .grilla__fideos{
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            .grilla__ravioles{
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            .grilla__otrasPastas{
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            .grilla__salsas{
+                flex-direction: row;
+                justify-content: space-around;
+            }   
+        }
+    }
+}
+
+.galeria{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+    background-color: $colorFondoPpal;
+    padding: 10px;
+
+    .galeria__videos{
+        display: flex;
+        align-items: center;
+    }
+
+    .galeria__foto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+
+    /* VISTA PARA MOVIL 480px ******************************/
+    @media only screen and (min-width:480px){        
+        .galeria__videos{
+            flex-direction: column;
+            justify-content: start;
+            width: 100%;
+            height: 650px;
+        }
+   }
+
+    /* VISTA PARA TABLET 768px *****************************/
+    @media only screen and (min-width:768px){
+        .galeria__videos{
+            flex-direction: row;
+            justify-content: space-between;
+            width: 0%;
+            height: auto;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+
+    /* VISTA PARA DESKTOP 1024px **************************/
+    @media only screen and (min-width:1024px){
+        .galeria__videos{
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 90%;
+            height: auto;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        
+        .carousel {
+                width: 800px;
+                height: 534px;
+        }          
+    }
+}
+
+.quienes{
+    display:inline-block;
+    background-color: $colorFondoPpal;
+
+    .parrafo--quienes{
+        @extend .parrafo;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+
+    /* VISTA PARA MOVIL 480px ********************************/
+    @media only screen and (min-width:480px){
+        .quienes__recuadro{
+        width: 96%;
+        height: auto;
+        margin: 0;
+        padding: 10px;
+
+            .recuadro__foto{
+                width: 100%;
+                height: auto;
+                margin: 10px;
+            }
+        }
+    }
+
+    /* VISTA PARA DESKTOP 1024px **************************/
+    @media only screen and (min-width:1024px){
+        .quienes__recuadro{
+            width: 30%;
+            height: auto;
+            margin: 10px;
+            position: relative;
+            padding: 0;
+    
+            .recuadro__foto{
+                width: 100%;
+                height: auto;
+                margin: 10px;
+                border-radius: 8px;
+                position: relative;
+                overflow: hidden;
+                float: left;
+                transition: all 1s;
+            }
+    
+            .recuadro__foto:hover{
+                transform: translate(90px, 40px) scale(1.5,1.5);
+            }
+        }
+    
+    }
+}
+
+.contacto{
+    display:grid;
+    min-height:100vh;
+    padding: 10px;
+    background-color: $colorFondoPpal;
+
+    .contacto__formulario{
+        grid-area: formulario;
+        background-color: $colorFondoSec;
+        border-radius: 8px;
+        height:max-content;
+        padding: 10px;
+
+        .formulario__titulo{
+            border-radius: 8px;
+            padding-left: 10px;
+            padding-bottom: 40px;
+            padding-top: 1px;
+            font-size: 2rem;
+            font-weight: bold;
+            font-family: $familiaParrafo;
+            height: 10px;
+        }
+    }
+
+    .contacto__lateral{
+        grid-area: ubicacion;
+        
+        .lateral__ubicacion{
+            @include parrafoSec($colorTerciario, $colorFondoTerc);
+
+            .ubicacion__titulo{
+                font-size: 3rem;
+                font-family: $familiaParrafo;
+            }
+
+            .collapse{
+                color: black;
+            }
+
+            .ubicacion__mapa{
+                margin-top: 10px;
+                margin-bottom: 1px;
+                width: 100%;
+            }
+
+            .card-body{
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    /* VISTA PARA MOVIL 480px ********************************/
+    @media only screen and (min-width:480px){
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+        grid-template-areas:"formulario"
+                            "ubicacion";
+        row-gap: 50px;
+
+            .contacto__lateral{
+                align-content: center;
+                width: 100%;
+
+                .lateral__ubicacion{
+                    width: 95%;
+                }
+            }
+    }
+
+    /* VISTA PARA TABLET 768px *****************************/
+    @media only screen and (min-width:768px){
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+        grid-template-areas:"formulario"
+                            "ubicacion";
+        row-gap: 30px;
+        padding: 20px;
+        align-content:flex-start;
+
+        .contacto__lateral{
+            align-content: center;
+            width: 100%;
+
+            .lateral__ubicacion{
+                width: 97%;
+            }
+        }
+    }
+
+    /* VISTA PARA DESKTOP 1024px **************************/
+    @media only screen and (min-width:1024px){
+            grid-template-columns: 60% 40%;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:"formulario ubicacion"
+                                "formulario ubicacion";
+            column-gap: 10px;
+
+        .contacto__lateral{
+            grid-area: ubicacion;
+            width: 100%;
+            
+            .lateral__ubicacion{
+                @include parrafoSec($colorTerciario, $colorFondoTerc);
+                margin-top: 0;
+            }
+        }
+    }
+}
