@@ -23,12 +23,11 @@
                 font-family: $familiaMenu;
                 text-decoration: none;
                 padding: 2px;
-                color:$colorParrafo
+                color:$colorParrafo;
             }
 
             .lista__elem:hover{
-                background-color: $colorTerciario;
-                color: black;
+                color: $colorTerciario;
                 padding: 2px;
             }
         }
@@ -50,6 +49,10 @@
 
             .lista__elem{
                 font-size: $tamanioMenu;
+            }
+
+            .lista__elem:hover{
+                font-size: $tamanioMenu * 1.5;
             }
         }
     }
@@ -75,6 +78,10 @@
                 font-size: $tamanioMenuTablet;
             }
 
+            .lista__elem:hover{
+                font-size: $tamanioMenuTablet * 1.5;
+            }
+
         }
     }
 }
@@ -92,6 +99,10 @@
 
             .lista__elem{
                 font-size: $tamanioMenu;
+            }
+
+            .lista__elem:hover{
+                font-size: $tamanioMenu * 1.5;
             }
         }
     }

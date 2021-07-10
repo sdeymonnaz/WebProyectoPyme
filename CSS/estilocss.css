@@ -59,8 +59,7 @@
         padding: 2px;
         color: whitesmoke; }
       .header .header__nav .nav__lista .lista__elem:hover {
-        background-color: #f3dfa2;
-        color: black;
+        color: #f3dfa2;
         padding: 2px; }
 
 /* VISTA PARA MOVIL 480px ********************************/
@@ -74,7 +73,9 @@
       flex-direction: column;
       justify-content: center; }
       .header .nav__lista .lista__elem {
-        font-size: 2rem; } }
+        font-size: 2rem; }
+      .header .nav__lista .lista__elem:hover {
+        font-size: 3rem; } }
 
 /* VISTA PARA TABLET 768px ******************************/
 @media only screen and (min-width: 768px) {
@@ -88,7 +89,9 @@
       flex-direction: row;
       justify-content: space-evenly; }
       .header .nav__lista .lista__elem {
-        font-size: 1.5rem; } }
+        font-size: 1.5rem; }
+      .header .nav__lista .lista__elem:hover {
+        font-size: 2.25rem; } }
 
 /* VISTA PARA DESKTOP 1024px **************************/
 @media only screen and (min-width: 1024px) {
@@ -98,7 +101,9 @@
       flex-direction: row;
       justify-content: space-evenly; }
       .header .nav__lista .lista__elem {
-        font-size: 2rem; } }
+        font-size: 2rem; }
+      .header .nav__lista .lista__elem:hover {
+        font-size: 3rem; } }
 
 /* TITULOS DE PAGINA ***********************************************/
 .tituloPag {
@@ -363,6 +368,18 @@ body {
   .galeria .galeria__videos {
     display: flex;
     align-items: center; }
+    .galeria .galeria__videos .videos__contenedor {
+      position: relative;
+      padding-top: 56.25%;
+      width: 100%;
+      overflow: hidden; }
+      .galeria .galeria__videos .videos__contenedor .contenedor__iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 10px; }
   .galeria .galeria__foto {
     display: flex;
     justify-content: center;
@@ -373,12 +390,12 @@ body {
       flex-direction: column;
       justify-content: start;
       width: 100%;
-      height: 650px; } }
+      height: auto; } }
   @media only screen and (min-width: 768px) {
     .galeria .galeria__videos {
       flex-direction: row;
       justify-content: space-between;
-      width: 0%;
+      width: 100%;
       height: auto;
       padding-left: 5px;
       padding-right: 5px; } }
@@ -386,10 +403,8 @@ body {
     .galeria .galeria__videos {
       flex-direction: row;
       justify-content: space-evenly;
-      width: 90%;
-      height: auto;
-      padding-left: 5px;
-      padding-right: 5px; }
+      width: 100%;
+      height: 100%; }
     .galeria .carousel {
       width: 800px;
       height: 534px; } }
