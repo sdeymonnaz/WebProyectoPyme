@@ -14,15 +14,13 @@
 
         .nav__lista{
             display: flex;
-            justify-content: space-evenly;
             align-items:center;
             list-style: none;
-            padding-left: 0px;
+            padding-left: 0;
 
             .lista__elem{
                 font-family: $familiaMenu;
                 text-decoration: none;
-                padding: 2px;
                 color:$colorParrafo;
             }
 
@@ -52,7 +50,7 @@
             }
 
             .lista__elem:hover{
-                font-size: $tamanioMenu * 1.5;
+                font-size: $tamanioMenu * 1.2;
             }
         }
     }
@@ -79,7 +77,7 @@
             }
 
             .lista__elem:hover{
-                font-size: $tamanioMenuTablet * 1.5;
+                font-size: $tamanioMenuTablet * 1.2;
             }
 
         }
@@ -93,16 +91,17 @@
         height: 100px;
 
             .nav__lista{
-        flex-direction: row;
-        justify-content: space-evenly;
+                flex-direction: row;
+                justify-content: end;
 
 
             .lista__elem{
                 font-size: $tamanioMenu;
+                padding: 20px;
             }
 
             .lista__elem:hover{
-                font-size: $tamanioMenu * 1.5;
+                font-size: $tamanioMenu * 1.2;
             }
         }
     }

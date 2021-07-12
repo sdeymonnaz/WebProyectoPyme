@@ -13,7 +13,8 @@
     transform: rotateY(180deg); }
   .intro .intro__titulo {
     color: #BB4430;
-    font-family: "Abril Fatface";
+    font-family: "Catamaran", sans-serif;
+    font-weight: 800;
     text-shadow: -1px 1px black;
     padding-left: 10px;
     word-spacing: 5px; }
@@ -49,14 +50,12 @@
     width: 90%; }
     .header .header__nav .nav__lista {
       display: flex;
-      justify-content: space-evenly;
       align-items: center;
       list-style: none;
-      padding-left: 0px; }
+      padding-left: 0; }
       .header .header__nav .nav__lista .lista__elem {
-        font-family: "Cardo", serif;
+        font-family: "Catamaran", sans-serif;
         text-decoration: none;
-        padding: 2px;
         color: whitesmoke; }
       .header .header__nav .nav__lista .lista__elem:hover {
         color: #f3dfa2;
@@ -75,7 +74,7 @@
       .header .nav__lista .lista__elem {
         font-size: 2rem; }
       .header .nav__lista .lista__elem:hover {
-        font-size: 3rem; } }
+        font-size: 2.4rem; } }
 
 /* VISTA PARA TABLET 768px ******************************/
 @media only screen and (min-width: 768px) {
@@ -91,7 +90,7 @@
       .header .nav__lista .lista__elem {
         font-size: 1.5rem; }
       .header .nav__lista .lista__elem:hover {
-        font-size: 2.25rem; } }
+        font-size: 1.8rem; } }
 
 /* VISTA PARA DESKTOP 1024px **************************/
 @media only screen and (min-width: 1024px) {
@@ -99,11 +98,12 @@
     height: 100px; }
     .header .nav__lista {
       flex-direction: row;
-      justify-content: space-evenly; }
+      justify-content: end; }
       .header .nav__lista .lista__elem {
-        font-size: 2rem; }
+        font-size: 2rem;
+        padding: 20px; }
       .header .nav__lista .lista__elem:hover {
-        font-size: 3rem; } }
+        font-size: 2.4rem; } }
 
 /* TITULOS DE PAGINA ***********************************************/
 .tituloPag {
@@ -113,7 +113,8 @@
   background-color: #393940;
   height: 5%; }
   .tituloPag .tituloPag__titular, .tituloPag .tituloPag__titular--galeria {
-    font-family: "Abril Fatface";
+    font-family: "Catamaran", sans-serif;
+    font-weight: 800;
     color: #7EBDC2;
     padding: 20px;
     word-spacing: 5px; }
@@ -167,9 +168,11 @@ body {
   height: 100%; }
 
 .parrafo, .home .home__principal .principal__parrafo, .productos .productos__grilla .grilla__intro .intro__parrafo, .quienes .parrafo--quienes {
-  font-size: 1.2rem;
-  font-family: Palatino, URW Palladio serif;
+  font-size: 1.4rem;
+  font-family: "Catamaran", sans-serif;
+  font-weight: 400;
   color: whitesmoke;
+  word-spacing: 3px;
   padding: 10px; }
 
 .home {
@@ -188,7 +191,7 @@ body {
     align-items: start; }
     .home .home__lateral .lateral__promociones .promociones__titulo {
       color: #BB4430;
-      font-family: "Abril Fatface";
+      font-family: "Catamaran", sans-serif;
       font-size: 2rem; }
     .home .home__lateral .lateral__promociones .promociones__listado {
       padding-left: 5px; }
@@ -468,7 +471,7 @@ body {
       padding-top: 1px;
       font-size: 2rem;
       font-weight: bold;
-      font-family: Palatino, URW Palladio serif;
+      font-family: "Catamaran", sans-serif;
       height: 10px; }
   .contacto .contacto__lateral {
     grid-area: ubicacion; }
@@ -482,7 +485,7 @@ body {
       width: 90%; }
       .contacto .contacto__lateral .lateral__ubicacion .ubicacion__titulo {
         font-size: 3rem;
-        font-family: Palatino, URW Palladio serif; }
+        font-family: "Catamaran", sans-serif; }
       .contacto .contacto__lateral .lateral__ubicacion .collapse {
         color: black; }
       .contacto .contacto__lateral .lateral__ubicacion .ubicacion__mapa {

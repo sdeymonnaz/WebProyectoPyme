@@ -19,7 +19,9 @@ body{
 .parrafo{
     font-size: $tamanioParrafo;
     font-family: $familiaParrafo;
+    font-weight: $pesoParrafo;
     color: $colorParrafo;
+    word-spacing: $espaciadoParrafo;
     padding: 10px;
 }
 

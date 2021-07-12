@@ -1,15 +1,20 @@
-$familiaTitulo: 'Abril Fatface';
+// FORMATO DE TITULOS //
+$familiaTitulo: 'Catamaran', sans-serif;
+$pesoTitulo: 800;
 $tamanioTitulo: 4rem;
 $tamanioTituloMob: 3rem;
 $sombraTitulos: -1px 1px black;
 $espaciadoTitulos: 5px;
 
-$familiaParrafo: Palatino, URW Palladio serif;
-$tamanioParrafo: 1.2rem;
+// FORMATO DE PARRAFOS //
+$familiaParrafo: 'Catamaran', sans-serif;
+$pesoParrafo: 400;
+$tamanioParrafo: 1.4rem;
 $interlineado: 1.5;
 $espaciadoParrafo: 3px;
 
 // MENU DE NAVEGACION //
-$familiaMenu: 'Cardo', serif;
+$familiaMenu: 'Catamaran', sans-serif;
+$pesoMenu:600;
 $tamanioMenu: 2rem;
 $tamanioMenuTablet: 1.5rem;
