@@ -36,7 +36,7 @@ body{
     width: 90%;
 }
 
-
+// PAGINA INICIO //
 .home{
     display: flex;
     flex-direction: column;
@@ -141,6 +141,7 @@ body{
     }
 }
 
+// PAGINA PRODUCTOS //
 .productos{
     background-color: $colorFondoPpal;
     display: flex;
@@ -166,6 +167,8 @@ body{
             height: 400px;
             margin: 10px;
             padding: 10px;
+            background-repeat:no-repeat;
+            max-width: 800px;
 
             .producto__titulo{
                 font-size: $tamanioGrillaTitulo;
@@ -189,6 +192,7 @@ body{
             @extend .grilla__producto;
             grid-area: fideos;
             background-image: url("/images/grilla-fideos.png");
+            
         }
 
         .grilla__producto--ravioles{
@@ -266,6 +270,7 @@ body{
     }
 }
 
+// PAGINA GALERIA DE IMAGENEES //
 .galeria{
     display:flex;
     flex-direction: column;
@@ -341,6 +346,7 @@ body{
     }
 }
 
+// PAGINA QUIENES SOMOS //
 .quienes{
     display:inline-block;
     background-color: $colorFondoPpal;
@@ -397,6 +403,7 @@ body{
     }
 }
 
+// PAGINA CONTACTO //
 .contacto{
     display:grid;
     min-height:100vh;
