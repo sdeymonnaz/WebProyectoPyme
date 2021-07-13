@@ -5,7 +5,6 @@
 @import "tituloPagina.scss";
 @import "footer.scss";
 
-
 *{
     margin: 0;
     padding: 0;
@@ -14,6 +13,7 @@
 body{
     height: 100%;
 }
+
 
 // FUNCION PARA FORMATEAR PARRAFO PRINCIPAL ***********//
 .parrafo{
@@ -143,66 +143,73 @@ body{
 
 .productos{
     background-color: $colorFondoPpal;
-    padding: 10px;
+    display: flex;
+    justify-content: center;
 
     .productos__grilla{
         display:grid;
-
-        #grilla__tabla{
-
-            .tablaTitulos{
-                background-color: $colorFondoSec;
-                border: 1px solid;
-                border-color: black;
-                font-size: 17px;
-                font-style: italic;
-            }
-
-            .tablaTitulos--superior{
-                @extend .tablaTitulos;
-                font-size: 27px;
-                height: 60px;
-            }
-
-            .th, tr, td{
-                background-color:#EFE6DD;
-                border-color: black;
-            }
-        }
-
-        .grilla__foto{
-                width: 100%;
-        }
-
+        width: 100%;
+        justify-items: center;
 
         .grilla__intro{
             grid-area: intro;
+            padding-left: 20px;
             
             .intro__parrafo{
                 @extend .parrafo;
             }
         }
+   
+        .grilla__producto{
+            display: flex;
+            width: 90%;
+            height: 400px;
+            margin: 10px;
+            padding: 10px;
 
-        .grilla__fideos{
+            .producto__titulo{
+                font-size: $tamanioGrillaTitulo;
+                font-weight: $pesoGrillaTitulo;
+                color: $colorParrafo;
+                text-shadow: $sombraTitulos;
+            }
+
+            .producto__lista{
+                background-color: $colorFondoProductos;
+                font-family: $familiaParrafo;
+                font-size: $tamanioParrafo;
+                width: 90%;
+                height: auto;
+                border-radius: 8%;
+                padding: 10px;
+            }
+        }
+
+        .grilla__producto--fideos{
+            @extend .grilla__producto;
             grid-area: fideos;
-            display: flex;
+            background-image: url("/images/grilla-fideos.png");
         }
 
-        .grilla__ravioles{
+        .grilla__producto--ravioles{
+            @extend .grilla__producto;
             grid-area: ravioles;
-            display: flex;
+            background-image: url("/images/grilla-ravioles.png");
         }
 
-        .grilla__otrasPastas{
-            grid-area: otrasPastas;
-            display: flex;
+        .grilla__producto--otras{
+            @extend .grilla__producto;
+            grid-area: otras;
+            background-image: url("/images/grilla-otras.png");
         }
 
-        .grilla__salsas{
+        .grilla__producto--salsas{
+            @extend .grilla__producto;
             grid-area: salsas;
-            display: flex;
-        }        
-    }
+            background-image: url("/images/grilla-salsas.png");
+        }
+    }       
+
     
     /* VISTA PARA MOVIL 480px ******************************/
     @media only screen and (min-width:480px){
@@ -212,38 +219,13 @@ body{
             grid-template-areas:"intro"
                                 "fideos"
                                 "ravioles"
-                                "otrasPastas"
+                                "otras"
                                 "salsas";
-            align-items: start;
-            gap: 20px;
-
-            #grilla__tabla{
-                width: 100%;
-            }
-
-            .grilla__foto{
-                width: 100%;
-            }
-
-            .grilla__fideos{
+            .grilla__producto{
                 flex-direction: column;
-                justify-content: space-around;
+                justify-content: space-evenly;
+                align-items: center;
             }
-
-            .grilla__ravioles{
-                flex-direction: column;
-                justify-content: space-around;
-            }
-
-            .grilla__otrasPastas{
-                flex-direction: column;
-                justify-content: space-around;
-            }
-
-            .grilla__salsas{
-                flex-direction: column;
-                justify-content: space-around;
-            }   
         }
     }
 
@@ -251,39 +233,17 @@ body{
     /* VISTA PARA TABLET 768px *****************************/
     @media only screen and (min-width:768px){
         .productos__grilla{
-            grid-template-columns: 80% 20%;
-            grid-template-rows: auto repeat(4, auto);
+            grid-template-columns: 50% 50%;
+            grid-template-rows: auto auto auto;
             grid-template-areas:"intro intro"
-                                "fideos fideos"
-                                "ravioles ravioles"
-                                "otrasPastas otrasPastas"
-                                "salsas salsas";
-            align-items: start;
-            gap: 30px;
+                                "fideos ravioles"
+                                "otras salsas";
 
-            #grilla__tabla{
-                width: 50%;
+            .grilla__producto{
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
             }
-
-            .grilla__fideos{
-                flex-direction: row;
-                justify-content: space-around;
-            }
-
-            .grilla__ravioles{
-                flex-direction: row;
-                justify-content: space-around;
-            }
-
-            .grilla__otrasPastas{
-                flex-direction: row;
-                justify-content: space-around;
-            }
-
-            .grilla__salsas{
-                flex-direction: row;
-                justify-content: space-around;
-            }   
         }
     }
 
@@ -291,39 +251,17 @@ body{
     /* VISTA PARA DESKTOP 1024px **************************/
     @media only screen and (min-width:1024px){
         .productos__grilla{
-            grid-template-columns: 70% 30%;
-            grid-template-rows: auto repeat(4, auto);
+            grid-template-columns: 50% 50%;
+            grid-template-rows: auto auto auto;
             grid-template-areas:"intro intro"
-                                "fideos fideos"
-                                "ravioles ravioles"
-                                "otrasPastas otrasPastas"
-                                "salsas salsas";
-            align-items: start;
-            gap: 20px;
+                                "fideos ravioles"
+                                "otras salsas";
 
-            #grilla__tabla{
-                width: 50%;
+            .grilla__producto{
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
             }
-
-            .grilla__fideos{
-                flex-direction: row;
-                justify-content: space-around;
-            }
-
-            .grilla__ravioles{
-                flex-direction: row;
-                justify-content: space-around;
-            }
-
-            .grilla__otrasPastas{
-                flex-direction: row;
-                justify-content: space-around;
-            }
-
-            .grilla__salsas{
-                flex-direction: row;
-                justify-content: space-around;
-            }   
         }
     }
 }
