@@ -191,26 +191,26 @@ body{
         .grilla__producto--fideos{
             @extend .grilla__producto;
             grid-area: fideos;
-            background-image: url("images/grilla-fideos.png");
+            background-image: url("/images/grilla-fideos.png");
             
         }
 
         .grilla__producto--ravioles{
             @extend .grilla__producto;
             grid-area: ravioles;
-            background-image: url("images/grilla-ravioles.png");
+            background-image: url("/images/grilla-ravioles.png");
         }
 
         .grilla__producto--otras{
             @extend .grilla__producto;
             grid-area: otras;
-            background-image: url("images/grilla-otras.png");
+            background-image: url("/images/grilla-otras.png");
         }
 
         .grilla__producto--salsas{
             @extend .grilla__producto;
             grid-area: salsas;
-            background-image: url("images/grilla-salsas.png");
+            background-image: url("/images/grilla-salsas.png");
         }
     }       
 
