@@ -139,7 +139,7 @@
 .footer {
   display: flex;
   background: linear-gradient(to bottom, #393940, #6d6c6c);
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   height: 5%; }
   .footer .footer__listado {
