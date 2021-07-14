@@ -1,5 +1,5 @@
 .intro {
-  background-image: url("/images/fondo3.jpg");
+  background-image: url("../images/fondo3.jpg");
   background-size: cover;
   height: 100vh;
   width: 100%;
@@ -292,16 +292,16 @@ body {
         padding: 10px; }
     .productos .productos__grilla .grilla__producto--fideos {
       grid-area: fideos;
-      background-image: url("/images/grilla-fideos.png"); }
+      background-image: url("../images/grilla-fideos.png"); }
     .productos .productos__grilla .grilla__producto--ravioles {
       grid-area: ravioles;
-      background-image: url("/images/grilla-ravioles.png"); }
+      background-image: url("../images/grilla-ravioles.png"); }
     .productos .productos__grilla .grilla__producto--otras {
       grid-area: otras;
-      background-image: url("/images/grilla-otras.png"); }
+      background-image: url("../images/grilla-otras.png"); }
     .productos .productos__grilla .grilla__producto--salsas {
       grid-area: salsas;
-      background-image: url("/images/grilla-salsas.png"); }
+      background-image: url("../images/grilla-salsas.png"); }
   @media only screen and (min-width: 480px) {
     .productos .productos__grilla {
       grid-template-columns: 100%;
