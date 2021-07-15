@@ -19,7 +19,7 @@
       word-spacing: 5px; }
   .intro .intro__derecha {
     display: flex;
-    background-image: url("/images/fondo2.webp"); }
+    background-image: url("../images/fondo2.png"); }
 
 /* VISTA PARA MOVIL 480px ********************************/
 @media only screen and (min-width: 480px) {
@@ -32,7 +32,7 @@
       align-items: center;
       justify-content: center; }
       .intro .intro__izquierda .izquierda__titulo {
-        font-size: 3.3rem; }
+        font-size: 5rem; }
     .intro .intro__derecha {
       width: 100%;
       height: 300px; } }
@@ -42,7 +42,7 @@
   .intro {
     flex-direction: column; }
     .intro .intro__izquierda .izquierda__titulo {
-      font-size: 5rem; }
+      font-size: 6rem; }
     .intro .intro__derecha {
       height: 400px; } }
 
@@ -103,9 +103,9 @@
       flex-direction: column;
       justify-content: center; }
       .header .nav__lista .lista__elem {
-        font-size: 2rem; }
+        font-size: 1.5rem; }
       .header .nav__lista .lista__elem:hover {
-        font-size: 2.4rem; } }
+        font-size: 1.8rem; } }
 
 /* VISTA PARA TABLET 768px ******************************/
 @media only screen and (min-width: 768px) {
@@ -129,12 +129,12 @@
     height: 100px; }
     .header .nav__lista {
       flex-direction: row;
-      justify-content: end; }
+      justify-content: flex-end; }
       .header .nav__lista .lista__elem {
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding: 20px; }
       .header .nav__lista .lista__elem:hover {
-        font-size: 2.4rem; } }
+        font-size: 1.8rem; } }
 
 /* TITULOS DE PAGINA ***********************************************/
 .tituloPag {
@@ -170,7 +170,7 @@
 .footer {
   display: flex;
   background: linear-gradient(to bottom, #393940, #6d6c6c);
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   height: 5%; }
   .footer .footer__listado {
@@ -223,7 +223,7 @@ body {
     .home .home__lateral .lateral__promociones .promociones__titulo {
       color: #BB4430;
       font-family: "Catamaran", sans-serif;
-      font-size: 2rem; }
+      font-size: 1.5rem; }
     .home .home__lateral .lateral__promociones .promociones__listado {
       padding-left: 5px; }
     .home .home__lateral .lateral__promociones .listado__item {
@@ -288,105 +288,78 @@ body {
 
 .productos {
   background-color: #393940;
-  padding: 10px;
+  display: flex;
+  justify-content: center;
   /* VISTA PARA MOVIL 480px ******************************/
   /* VISTA PARA TABLET 768px *****************************/
   /* VISTA PARA DESKTOP 1024px **************************/ }
   .productos .productos__grilla {
-    display: grid; }
-    .productos .productos__grilla #grilla__tabla .tablaTitulos, .productos .productos__grilla #grilla__tabla .tablaTitulos--superior {
-      background-color: #EFE6DD;
-      border: 1px solid;
-      border-color: black;
-      font-size: 17px;
-      font-style: italic; }
-    .productos .productos__grilla #grilla__tabla .tablaTitulos--superior {
-      font-size: 27px;
-      height: 60px; }
-    .productos .productos__grilla #grilla__tabla .th, .productos .productos__grilla #grilla__tabla tr, .productos .productos__grilla #grilla__tabla td {
-      background-color: #EFE6DD;
-      border-color: black; }
-    .productos .productos__grilla .grilla__foto {
-      width: 100%; }
+    display: grid;
+    width: 100%;
+    justify-items: center; }
     .productos .productos__grilla .grilla__intro {
-      grid-area: intro; }
-    .productos .productos__grilla .grilla__fideos {
+      grid-area: intro;
+      padding-left: 20px; }
+    .productos .productos__grilla .grilla__producto, .productos .productos__grilla .grilla__producto--fideos, .productos .productos__grilla .grilla__producto--ravioles, .productos .productos__grilla .grilla__producto--otras, .productos .productos__grilla .grilla__producto--salsas {
+      display: flex;
+      width: 90%;
+      height: 400px;
+      margin: 10px;
+      padding: 10px;
+      background-repeat: no-repeat;
+      max-width: 800px; }
+      .productos .productos__grilla .grilla__producto .producto__titulo, .productos .productos__grilla .grilla__producto--fideos .producto__titulo, .productos .productos__grilla .grilla__producto--ravioles .producto__titulo, .productos .productos__grilla .grilla__producto--otras .producto__titulo, .productos .productos__grilla .grilla__producto--salsas .producto__titulo {
+        font-size: 3.5rem;
+        font-weight: 600;
+        color: whitesmoke;
+        text-shadow: -1px 1px black; }
+      .productos .productos__grilla .grilla__producto .producto__lista, .productos .productos__grilla .grilla__producto--fideos .producto__lista, .productos .productos__grilla .grilla__producto--ravioles .producto__lista, .productos .productos__grilla .grilla__producto--otras .producto__lista, .productos .productos__grilla .grilla__producto--salsas .producto__lista {
+        background-color: RGBA(239, 230, 221, 0.7);
+        font-family: "Catamaran", sans-serif;
+        font-size: 1.4rem;
+        width: 90%;
+        height: auto;
+        border-radius: 8%;
+        padding: 10px; }
+    .productos .productos__grilla .grilla__producto--fideos {
       grid-area: fideos;
-      display: flex; }
-    .productos .productos__grilla .grilla__ravioles {
+      background-image: url("../images/grilla-fideos.png"); }
+    .productos .productos__grilla .grilla__producto--ravioles {
       grid-area: ravioles;
-      display: flex; }
-    .productos .productos__grilla .grilla__otrasPastas {
-      grid-area: otrasPastas;
-      display: flex; }
-    .productos .productos__grilla .grilla__salsas {
+      background-image: url("../images/grilla-ravioles.png"); }
+    .productos .productos__grilla .grilla__producto--otras {
+      grid-area: otras;
+      background-image: url("../images/grilla-otras.png"); }
+    .productos .productos__grilla .grilla__producto--salsas {
       grid-area: salsas;
-      display: flex; }
+      background-image: url("../images/grilla-salsas.png"); }
   @media only screen and (min-width: 480px) {
     .productos .productos__grilla {
       grid-template-columns: 100%;
       grid-template-rows: repeat(5, auto);
-      grid-template-areas: "intro" "fideos" "ravioles" "otrasPastas" "salsas";
-      align-items: start;
-      gap: 20px; }
-      .productos .productos__grilla #grilla__tabla {
-        width: 100%; }
-      .productos .productos__grilla .grilla__foto {
-        width: 100%; }
-      .productos .productos__grilla .grilla__fideos {
+      grid-template-areas: "intro" "fideos" "ravioles" "otras" "salsas"; }
+      .productos .productos__grilla .grilla__producto, .productos .productos__grilla .grilla__producto--fideos, .productos .productos__grilla .grilla__producto--ravioles, .productos .productos__grilla .grilla__producto--otras, .productos .productos__grilla .grilla__producto--salsas {
         flex-direction: column;
-        justify-content: space-around; }
-      .productos .productos__grilla .grilla__ravioles {
-        flex-direction: column;
-        justify-content: space-around; }
-      .productos .productos__grilla .grilla__otrasPastas {
-        flex-direction: column;
-        justify-content: space-around; }
-      .productos .productos__grilla .grilla__salsas {
-        flex-direction: column;
-        justify-content: space-around; } }
+        justify-content: space-evenly;
+        align-items: center; } }
   @media only screen and (min-width: 768px) {
     .productos .productos__grilla {
-      grid-template-columns: 80% 20%;
-      grid-template-rows: auto repeat(4, auto);
-      grid-template-areas: "intro intro" "fideos fideos" "ravioles ravioles" "otrasPastas otrasPastas" "salsas salsas";
-      align-items: start;
-      gap: 30px; }
-      .productos .productos__grilla #grilla__tabla {
-        width: 50%; }
-      .productos .productos__grilla .grilla__fideos {
-        flex-direction: row;
-        justify-content: space-around; }
-      .productos .productos__grilla .grilla__ravioles {
-        flex-direction: row;
-        justify-content: space-around; }
-      .productos .productos__grilla .grilla__otrasPastas {
-        flex-direction: row;
-        justify-content: space-around; }
-      .productos .productos__grilla .grilla__salsas {
-        flex-direction: row;
-        justify-content: space-around; } }
+      grid-template-columns: 50% 50%;
+      grid-template-rows: auto auto auto;
+      grid-template-areas: "intro intro" "fideos ravioles" "otras salsas"; }
+      .productos .productos__grilla .grilla__producto, .productos .productos__grilla .grilla__producto--fideos, .productos .productos__grilla .grilla__producto--ravioles, .productos .productos__grilla .grilla__producto--otras, .productos .productos__grilla .grilla__producto--salsas {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center; } }
   @media only screen and (min-width: 1024px) {
     .productos .productos__grilla {
-      grid-template-columns: 70% 30%;
-      grid-template-rows: auto repeat(4, auto);
-      grid-template-areas: "intro intro" "fideos fideos" "ravioles ravioles" "otrasPastas otrasPastas" "salsas salsas";
-      align-items: start;
-      gap: 20px; }
-      .productos .productos__grilla #grilla__tabla {
-        width: 50%; }
-      .productos .productos__grilla .grilla__fideos {
-        flex-direction: row;
-        justify-content: space-around; }
-      .productos .productos__grilla .grilla__ravioles {
-        flex-direction: row;
-        justify-content: space-around; }
-      .productos .productos__grilla .grilla__otrasPastas {
-        flex-direction: row;
-        justify-content: space-around; }
-      .productos .productos__grilla .grilla__salsas {
-        flex-direction: row;
-        justify-content: space-around; } }
+      grid-template-columns: 50% 50%;
+      grid-template-rows: auto auto auto;
+      grid-template-areas: "intro intro" "fideos ravioles" "otras salsas"; }
+      .productos .productos__grilla .grilla__producto, .productos .productos__grilla .grilla__producto--fideos, .productos .productos__grilla .grilla__producto--ravioles, .productos .productos__grilla .grilla__producto--otras, .productos .productos__grilla .grilla__producto--salsas {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center; } }
 
 .galeria {
   display: flex;

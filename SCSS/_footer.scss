@@ -2,7 +2,7 @@
 .footer{
     display: flex;
     background: linear-gradient(to bottom, $colorFondoPpal, $gradientClaro);
-    justify-content: end;
+    justify-content: flex-end;
     align-items:center;
     height: 5%;
     
