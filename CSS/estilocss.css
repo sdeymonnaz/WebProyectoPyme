@@ -98,7 +98,7 @@
     height: 100px; }
     .header .nav__lista {
       flex-direction: row;
-      justify-content: end; }
+      justify-content: flex-end; }
       .header .nav__lista .lista__elem {
         font-size: 1.5rem;
         padding: 20px; }
