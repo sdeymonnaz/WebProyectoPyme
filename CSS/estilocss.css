@@ -19,7 +19,7 @@
       word-spacing: 5px; }
   .intro .intro__derecha {
     display: flex;
-    background-image: url("/images/fondo2.webp"); }
+    background-image: url("../images/fondo2.png"); }
 
 /* VISTA PARA MOVIL 480px ********************************/
 @media only screen and (min-width: 480px) {
