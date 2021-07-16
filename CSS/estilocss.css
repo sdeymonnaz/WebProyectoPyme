@@ -451,13 +451,15 @@ body {
       .quienes .quienes__seccion .seccion__imagen {
         display: block;
         float: left;
+        overflow: hidden;
         max-width: 40%;
         height: auto;
         padding: 10px;
         border-radius: 30px;
-        transition: 2seg; }
+        transition: all 1.5s;
+        transition-timing-function: ease-in; }
       .quienes .quienes__seccion .seccion__imagen:hover {
-        transform: scale(1.5) translate(200px, 10px); } }
+        transform: scale(1.5) translate(50%, 0); } }
 
 .contacto {
   display: grid;
