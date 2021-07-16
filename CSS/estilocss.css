@@ -417,42 +417,47 @@ body {
       height: 534px; } }
 
 .quienes {
-  display: inline-block;
+  padding: 10px;
   background-color: #393940;
-  /* VISTA PARA MOVIL 480px ********************************/
+  width: 100%;
+  /* VISTA PARA MOVIL 480px ******************************/
   /* VISTA PARA DESKTOP 1024px **************************/ }
+  .quienes .seccion__imagen {
+    height: auto;
+    padding: 10px;
+    border-radius: 30px; }
   .quienes .parrafo--quienes {
-    margin: 10px;
     padding: 10px;
     border-radius: 8px; }
   @media only screen and (min-width: 480px) {
-    .quienes .quienes__recuadro {
-      width: 96%;
-      height: auto;
-      margin: 0;
-      padding: 10px; }
-      .quienes .quienes__recuadro .recuadro__foto {
-        width: 100%;
+    .quienes .quienes {
+      display: flex;
+      flex-direction: column; }
+    .quienes .quienes__seccion {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start; }
+      .quienes .quienes__seccion .seccion__imagen {
+        max-width: 100%;
         height: auto;
-        margin: 10px; } }
+        padding: 10px;
+        border-radius: 30px; } }
   @media only screen and (min-width: 1024px) {
-    .quienes .quienes__recuadro {
-      width: 30%;
-      height: auto;
-      margin: 10px;
-      position: relative;
-      padding: 0; }
-      .quienes .quienes__recuadro .recuadro__foto {
-        width: 100%;
-        height: auto;
-        margin: 10px;
-        border-radius: 8px;
-        position: relative;
-        overflow: hidden;
+    .quienes .quienes {
+      display: inline-block; }
+    .quienes .quienes__seccion {
+      display: inline-block; }
+      .quienes .quienes__seccion .seccion__imagen {
+        display: block;
         float: left;
-        transition: all 1s; }
-      .quienes .quienes__recuadro .recuadro__foto:hover {
-        transform: translate(90px, 40px) scale(1.5, 1.5); } }
+        max-width: 40%;
+        height: auto;
+        padding: 10px;
+        border-radius: 30px;
+        transition: 2seg; }
+      .quienes .quienes__seccion .seccion__imagen:hover {
+        transform: scale(1.5) translate(200px, 10px); } }
 
 .contacto {
   display: grid;

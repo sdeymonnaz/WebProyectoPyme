@@ -348,58 +348,70 @@ body{
 
 // PAGINA QUIENES SOMOS //
 .quienes{
-    display:inline-block;
+    padding: 10px;
     background-color: $colorFondoPpal;
+    width: 100%;
 
+    .seccion__imagen{
+        height: auto;
+        padding: 10px;
+        border-radius: 30px;
+    }
+    
     .parrafo--quienes{
         @extend .parrafo;
-        margin: 10px;
         padding: 10px;
         border-radius: 8px;
     }
 
-
-    /* VISTA PARA MOVIL 480px ********************************/
-    @media only screen and (min-width:480px){
-        .quienes__recuadro{
-        width: 96%;
-        height: auto;
-        margin: 0;
-        padding: 10px;
-
-            .recuadro__foto{
-                width: 100%;
+    /* VISTA PARA MOVIL 480px ******************************/
+    @media only screen and (min-width:480px){        
+        .quienes{
+            display:flex;
+            flex-direction: column;
+        }
+        
+        .quienes__seccion{
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+    
+            .seccion__imagen{
+                max-width: 100%;
                 height: auto;
-                margin: 10px;
+                padding: 10px;
+                border-radius: 30px;
             }
         }
-    }
+   }
+   
 
     /* VISTA PARA DESKTOP 1024px **************************/
     @media only screen and (min-width:1024px){
-        .quienes__recuadro{
-            width: 30%;
-            height: auto;
-            margin: 10px;
-            position: relative;
-            padding: 0;
-    
-            .recuadro__foto{
-                width: 100%;
-                height: auto;
-                margin: 10px;
-                border-radius: 8px;
-                position: relative;
-                overflow: hidden;
+        .quienes{
+            display: inline-block;
+        }
+        
+        .quienes__seccion{
+            display: inline-block;
+        
+            .seccion__imagen{
+                display: block;
                 float: left;
-                transition: all 1s;
+                max-width: 40%;
+                height: auto;
+                padding: 10px;
+                border-radius: 30px;
+                transition: 2seg;
             }
-    
-            .recuadro__foto:hover{
-                transform: translate(90px, 40px) scale(1.5,1.5);
+
+            .seccion__imagen:hover{
+                transform: scale(1.5) translate(200px, 10px);
             }
         }
-    
+
+        
     }
 }
 
