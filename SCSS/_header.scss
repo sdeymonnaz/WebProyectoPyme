@@ -4,9 +4,17 @@
     flex-direction: row;
     background: linear-gradient(to bottom, $gradientClaro, $colorFondoPpal);
 
+    a{
+        text-decoration: none;
+    }
+
     .header__logo{
-            height: 100px;
-            padding: 10px;
+        height: 100px;
+        padding: 10px;
+    }
+
+    .header__nombre{
+        color: $colorPrimario;
     }
 
     .header__nav{

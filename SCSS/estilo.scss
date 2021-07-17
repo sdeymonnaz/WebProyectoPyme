@@ -14,7 +14,6 @@ body{
     height: 100%;
 }
 
-
 // FUNCION PARA FORMATEAR PARRAFO PRINCIPAL ***********//
 .parrafo{
     font-size: $tamanioParrafo;
@@ -424,6 +423,17 @@ body{
     padding: 10px;
     background-color: $colorFondoPpal;
 
+    .contacto__banner{
+        grid-area: banner;
+        width: 100%;
+        height: auto;
+
+        .banner__foto{
+            width: 100%;
+            height: auto;
+        }
+    }
+
     .contacto__formulario{
         grid-area: formulario;
         background-color: $colorFondoSec;
@@ -473,10 +483,11 @@ body{
     /* VISTA PARA MOVIL 480px ********************************/
     @media only screen and (min-width:480px){
         grid-template-columns: 100%;
-        grid-template-rows: auto auto;
-        grid-template-areas:"formulario"
+        grid-template-rows: auto auto auto;
+        grid-template-areas:"banner"
+                            "formulario"
                             "ubicacion";
-        row-gap: 50px;
+        row-gap: 10px;
 
             .contacto__lateral{
                 align-content: center;
@@ -491,11 +502,11 @@ body{
     /* VISTA PARA TABLET 768px *****************************/
     @media only screen and (min-width:768px){
         grid-template-columns: 100%;
-        grid-template-rows: auto auto;
-        grid-template-areas:"formulario"
+        grid-template-rows: auto auto auto;
+        grid-template-areas:"banner"
+                            "formulario"
                             "ubicacion";
-        row-gap: 30px;
-        padding: 20px;
+        row-gap: 10px;
         align-content:flex-start;
 
         .contacto__lateral{
@@ -511,8 +522,9 @@ body{
     /* VISTA PARA DESKTOP 1024px **************************/
     @media only screen and (min-width:1024px){
             grid-template-columns: 60% 40%;
-            grid-template-rows: 1fr 1fr;
-            grid-template-areas:"formulario ubicacion"
+            grid-template-rows: auto 1fr 1fr;
+            grid-template-areas:"banner banner"
+                                "formulario ubicacion"
                                 "formulario ubicacion";
             column-gap: 10px;
 
