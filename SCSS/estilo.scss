@@ -5,6 +5,7 @@
 @import "tituloPagina.scss";
 @import "footer.scss";
 
+
 *{
     margin: 0;
     padding: 0;
@@ -13,6 +14,9 @@
 body{
     height: 100%;
 }
+
+
+
 
 // FUNCION PARA FORMATEAR PARRAFO PRINCIPAL ***********//
 .parrafo{
@@ -60,6 +64,19 @@ body{
                 color: $colorPrimario;
                 font-family: $familiaTitulo;
                 font-size: $tamanioMenu;
+            }
+
+            .accordion-item{
+                background-color: #EFE6DD;
+            }
+
+            .accordion-button:not(.collapsed){
+                color: $colorPrimario;
+                background-color: $colorTerciario;
+            }
+
+            .promociones__foto{
+                width: 100%;
             }
 
             .promociones__listado{
