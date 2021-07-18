@@ -14,7 +14,7 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, #393940, #6d6c6c); }
+    background: linear-gradient(to bottom, #0B4C16, #2a7854); }
     .intro .intro__centro .centro__logo {
       width: fit-content;
       padding: 10px;
@@ -23,12 +23,13 @@
       transform: rotateY(180deg); }
     .intro .intro__centro .centro__titulo {
       width: fit-content;
-      color: #BB4430;
+      color: #f5f5f5;
       font-family: "Catamaran", sans-serif;
       font-weight: 800;
-      text-shadow: -1px 1px black;
+      text-shadow: 2px 2px black;
+      padding-top: 1px;
       padding-left: 10px;
-      word-spacing: 5px; }
+      padding-right: 10px; }
 
 /* VISTA PARA MOVIL 480px ********************************/
 @media only screen and (min-width: 480px) {
@@ -43,26 +44,29 @@
   .intro .intro__centro {
     clip-path: ellipse(25% 25%); }
     .intro .intro__centro .centro__titulo {
-      font-size: 3.5rem; } }
+      font-size: 2.8rem; } }
 
 /* VISTA PARA DESKTOP 1024px **************************/
 @media only screen and (min-width: 1024px) {
   .intro .intro__centro {
     clip-path: ellipse(23% 30%); }
     .intro .intro__centro .centro__titulo {
-      font-size: 4.5rem; } }
+      font-size: 4rem; } }
 
 .header {
   display: flex;
   flex-direction: row;
-  background: linear-gradient(to bottom, #6d6c6c, #393940); }
+  background: linear-gradient(to bottom, #2a7854, #0B4C16); }
   .header a {
     text-decoration: none; }
   .header .header__logo {
     height: 100px;
     padding: 10px; }
   .header .header__nombre {
-    color: #BB4430; }
+    color: #f5f5f5; }
+  .header .header__nombre:hover {
+    color: #F3EE5A;
+    padding: 2px; }
   .header .header__nav {
     width: 90%; }
     .header .header__nav .nav__lista {
@@ -73,9 +77,9 @@
       .header .header__nav .nav__lista .lista__elem {
         font-family: "Catamaran", sans-serif;
         text-decoration: none;
-        color: whitesmoke; }
+        color: #f5f5f5; }
       .header .header__nav .nav__lista .lista__elem:hover {
-        color: #f3dfa2;
+        color: #F3EE5A;
         padding: 2px; }
 
 /* VISTA PARA MOVIL 480px ********************************/
@@ -127,12 +131,12 @@
   display: flex;
   justify-content: start;
   align-items: center;
-  background-color: #393940;
+  background-color: #0B4C16;
   height: 5%; }
   .tituloPag .tituloPag__titular, .tituloPag .tituloPag__titular--galeria {
     font-family: "Catamaran", sans-serif;
     font-weight: 800;
-    color: #7EBDC2;
+    color: #F3EE5A;
     padding: 20px;
     word-spacing: 5px; }
   .tituloPag .tituloPag__titular--galeria {
@@ -155,7 +159,7 @@
 
 .footer {
   display: flex;
-  background: linear-gradient(to bottom, #393940, #6d6c6c);
+  background: linear-gradient(to bottom, #0B4C16, #2a7854);
   justify-content: flex-end;
   align-items: center;
   height: 5%; }
@@ -170,12 +174,12 @@
       font-size: 25px;
       padding: 2px; }
       .footer .footer__listado .listado__item .fa {
-        color: whitesmoke;
+        color: #f5f5f5;
         padding: 12px 20px;
         text-decoration: none; }
       .footer .footer__listado .listado__item .fa:hover {
         transform: scale(2, 2);
-        color: #f3dfa2; }
+        color: #F3EE5A; }
 
 * {
   margin: 0;
@@ -188,14 +192,14 @@ body {
   font-size: 1.4rem;
   font-family: "Catamaran", sans-serif;
   font-weight: 400;
-  color: whitesmoke;
+  color: #f5f5f5;
   word-spacing: 3px;
   padding: 10px; }
 
 .home {
   display: flex;
   flex-direction: column;
-  background-color: #393940;
+  background-color: #0B4C16;
   /* VISTA PARA MOVIL 480px ********************************/
   /* VISTA PARA TABLET 768px ******************************/
   /* VISTA PARA DESKTOP 1024px **************************/ }
@@ -206,38 +210,41 @@ body {
   .home .home__lateral {
     display: flex;
     align-items: start; }
-    .home .home__lateral .lateral__promociones .promociones__titulo {
-      color: #BB4430;
-      font-family: "Catamaran", sans-serif;
-      font-size: 1.5rem; }
-    .home .home__lateral .lateral__promociones .promociones__foto {
-      width: 100%; }
-    .home .home__lateral .lateral__promociones .accordion-button {
-      color: #BB4430; }
-    .home .home__lateral .lateral__promociones .accordion-button:not(.collapsed) {
-      background-color: #EFE6DD; }
-    .home .home__lateral .lateral__promociones .accordion-button::after {
-      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23BB4430'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"); }
+    .home .home__lateral .lateral__promociones {
+      height: max-content;
+      margin: 10px;
+      padding: 10px;
+      color: black;
+      background: #0B4C16;
+      border-radius: 4px;
+      width: 90%;
+      border: 4px solid #F3EE5A; }
+      .home .home__lateral .lateral__promociones .promociones__titulo {
+        color: #F3EE5A;
+        font-family: "Catamaran", sans-serif;
+        font-size: 1.5rem; }
+      .home .home__lateral .lateral__promociones .promociones__foto {
+        width: 100%; }
+      .home .home__lateral .lateral__promociones .accordion-button {
+        color: black; }
+      .home .home__lateral .lateral__promociones .accordion-button:not(.collapsed) {
+        background-color: #328860; }
+      .home .home__lateral .lateral__promociones .accordion-button::after {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23f5f5f5'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"); }
     .home .home__lateral .lateral__newsletter {
-      color: whitesmoke;
+      color: #f5f5f5;
       padding: 10px;
       margin-bottom: 20px; }
+      .home .home__lateral .lateral__newsletter .btn-primary {
+        background-color: #B63B30;
+        border-color: #B63B30; }
   @media only screen and (min-width: 480px) {
     .home .home__principal {
       flex-direction: column; }
     .home .home__lateral {
       flex-direction: column;
       justify-content: space-between;
-      align-items: center; }
-      .home .home__lateral .lateral__promociones {
-        height: max-content;
-        margin: 10px;
-        padding: 10px;
-        color: black;
-        background: #EFE6DD;
-        border-radius: 8px;
-        width: 90%;
-        list-style: disc; } }
+      align-items: center; } }
   @media only screen and (min-width: 768px) {
     .home .home__principal {
       flex-direction: column; }
@@ -246,13 +253,6 @@ body {
       justify-content: space-around;
       align-items: initial; }
       .home .home__lateral .lateral__promociones {
-        height: max-content;
-        margin: 10px;
-        padding: 10px;
-        color: black;
-        background: #EFE6DD;
-        border-radius: 8px;
-        width: 90%;
         width: 50%; } }
   @media only screen and (min-width: 1024px) {
     .home .home__principal {
@@ -263,17 +263,10 @@ body {
       flex: 0 0 300px;
       margin-top: 10px; }
       .home .home__lateral .lateral__promociones {
-        height: max-content;
-        margin: 10px;
-        padding: 10px;
-        color: black;
-        background: #EFE6DD;
-        border-radius: 8px;
-        width: 90%;
-        list-style: disc; } }
+        width: 90%; } }
 
 .productos {
-  background-color: #393940;
+  background-color: #0B4C16;
   display: flex;
   justify-content: center;
   /* VISTA PARA MOVIL 480px ******************************/
@@ -298,7 +291,7 @@ body {
       .productos .productos__grilla .grilla__producto .producto__titulo, .productos .productos__grilla .grilla__producto--fideos .producto__titulo, .productos .productos__grilla .grilla__producto--ravioles .producto__titulo, .productos .productos__grilla .grilla__producto--otras .producto__titulo, .productos .productos__grilla .grilla__producto--salsas .producto__titulo {
         font-size: 3.5rem;
         font-weight: 600;
-        color: whitesmoke;
+        color: #f5f5f5;
         text-shadow: -1px 1px black; }
       .productos .productos__grilla .grilla__producto .producto__lista, .productos .productos__grilla .grilla__producto--fideos .producto__lista, .productos .productos__grilla .grilla__producto--ravioles .producto__lista, .productos .productos__grilla .grilla__producto--otras .producto__lista, .productos .productos__grilla .grilla__producto--salsas .producto__lista {
         background-color: RGBA(239, 230, 221, 0.7);
@@ -310,7 +303,8 @@ body {
         .productos .productos__grilla .grilla__producto .producto__lista .btn, .productos .productos__grilla .grilla__producto--fideos .producto__lista .btn, .productos .productos__grilla .grilla__producto--ravioles .producto__lista .btn, .productos .productos__grilla .grilla__producto--otras .producto__lista .btn, .productos .productos__grilla .grilla__producto--salsas .producto__lista .btn {
           float: right;
           font-size: 12px;
-          background-color: #BB4430; }
+          background-color: #B63B30;
+          border-color: #B63B30; }
     .productos .productos__grilla .grilla__producto--fideos {
       grid-area: fideos;
       background-image: url("../images/grilla-fideos.png"); }
@@ -357,7 +351,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   height: auto;
-  background-color: #393940;
+  background-color: #0B4C16;
   padding: 10px;
   /* VISTA PARA MOVIL 480px ******************************/
   /* VISTA PARA TABLET 768px *****************************/
@@ -408,7 +402,7 @@ body {
 
 .quienes {
   padding: 10px;
-  background-color: #393940;
+  background-color: #0B4C16;
   width: 100%;
   /* VISTA PARA MOVIL 480px ******************************/
   /* VISTA PARA DESKTOP 1024px **************************/ }
@@ -454,30 +448,30 @@ body {
 .contacto {
   display: grid;
   min-height: 100vh;
-  padding: 10px;
-  background-color: #393940;
+  background-color: #0B4C16;
   /* VISTA PARA MOVIL 480px ********************************/
   /* VISTA PARA TABLET 768px *****************************/
   /* VISTA PARA DESKTOP 1024px **************************/ }
   .contacto .contacto__banner {
     grid-area: banner;
     width: 100%;
-    height: 300px;
-    padding-right: 10px;
+    height: 200px;
     background-image: url("../images/banner.png");
     background-position: center; }
     .contacto .contacto__banner .banner__titulo {
       font-size: 2.5rem;
-      color: whitesmoke;
+      color: #f5f5f5;
+      text-shadow: 2px 2px black;
       padding: 10px; }
     .contacto .contacto__banner .banner__foto {
       width: 100%;
       height: auto; }
   .contacto .contacto__formulario {
     grid-area: formulario;
-    background-color: #EFE6DD;
+    background-color: #F3EE5A;
     border-radius: 8px;
     height: max-content;
+    margin: 10px;
     padding: 10px; }
     .contacto .contacto__formulario .formulario__titulo {
       border-radius: 8px;
@@ -488,19 +482,31 @@ body {
       font-weight: bold;
       font-family: "Catamaran", sans-serif;
       height: 10px; }
+    .contacto .contacto__formulario .form-check-input:checked {
+      background-color: #B63B30;
+      border-color: #B63B30; }
+    .contacto .contacto__formulario .btn-primary {
+      background-color: #B63B30;
+      border-color: #B63B30; }
   .contacto .contacto__lateral {
-    grid-area: ubicacion; }
+    grid-area: ubicacion;
+    width: 90%; }
     .contacto .contacto__lateral .lateral__ubicacion {
       height: max-content;
       margin: 10px;
       padding: 10px;
-      color: #f3dfa2;
-      background: #BB4430;
-      border-radius: 8px;
-      width: 90%; }
+      color: #f5f5f5;
+      background: #0B4C16;
+      border-radius: 4px;
+      width: 90%;
+      border: 4px solid #F3EE5A; }
       .contacto .contacto__lateral .lateral__ubicacion .ubicacion__titulo {
-        font-size: 3rem;
-        font-family: "Catamaran", sans-serif; }
+        font-size: 1.5rem;
+        font-family: "Catamaran", sans-serif;
+        color: #F3EE5A; }
+      .contacto .contacto__lateral .lateral__ubicacion .btn-primary {
+        background-color: #B63B30;
+        border-color: #B63B30; }
       .contacto .contacto__lateral .lateral__ubicacion .collapse {
         color: black; }
       .contacto .contacto__lateral .lateral__ubicacion .ubicacion__mapa {
@@ -516,8 +522,7 @@ body {
       grid-template-areas: "banner" "formulario" "ubicacion";
       row-gap: 10px; }
       .contacto .contacto__lateral {
-        align-content: center;
-        width: 100%; }
+        align-content: center; }
         .contacto .contacto__lateral .lateral__ubicacion {
           width: 95%; } }
   @media only screen and (min-width: 768px) {
@@ -528,25 +533,15 @@ body {
       row-gap: 10px;
       align-content: flex-start; }
       .contacto .contacto__lateral {
-        align-content: center;
-        width: 100%; }
+        align-content: center; }
         .contacto .contacto__lateral .lateral__ubicacion {
           width: 97%; } }
   @media only screen and (min-width: 1024px) {
     .contacto {
       grid-template-columns: 60% 40%;
       grid-template-rows: auto 1fr 1fr;
-      grid-template-areas: "banner banner" "formulario ubicacion" "formulario ubicacion";
-      column-gap: 10px; }
+      grid-template-areas: "banner banner" "formulario ubicacion" "formulario ubicacion"; }
       .contacto .contacto__lateral {
-        grid-area: ubicacion;
-        width: 100%; }
+        grid-area: ubicacion; }
         .contacto .contacto__lateral .lateral__ubicacion {
-          height: max-content;
-          margin: 10px;
-          padding: 10px;
-          color: #f3dfa2;
-          background: #BB4430;
-          border-radius: 8px;
-          width: 90%;
-          margin-top: 0; } }
+          margin-top: 10px; } }

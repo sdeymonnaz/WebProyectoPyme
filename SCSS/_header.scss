@@ -14,7 +14,12 @@
     }
 
     .header__nombre{
-        color: $colorPrimario;
+        color: $colorParrafo;
+    }
+
+    .header__nombre:hover{
+        color: $colorSecundario;
+        padding: 2px;
     }
 
     .header__nav{
@@ -33,7 +38,7 @@
             }
 
             .lista__elem:hover{
-                color: $colorTerciario;
+                color: $colorSecundario;
                 padding: 2px;
             }
         }
