@@ -66,7 +66,7 @@
       justify-content: flex-start;
       width: 500px;
       height: 400px;
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 50%, 66.5% 100%, 0 100%);
       border-top-left-radius: 200px;
       border-bottom-left-radius: 200px;
       transform: skew(40deg, -40deg); } }
@@ -322,11 +322,14 @@ body {
       .productos .productos__grilla .grilla__producto .producto__lista, .productos .productos__grilla .grilla__producto--fideos .producto__lista, .productos .productos__grilla .grilla__producto--ravioles .producto__lista, .productos .productos__grilla .grilla__producto--otras .producto__lista, .productos .productos__grilla .grilla__producto--salsas .producto__lista {
         background-color: RGBA(239, 230, 221, 0.7);
         font-family: "Catamaran", sans-serif;
-        font-size: 1.4rem;
-        width: 90%;
+        width: 98%;
         height: auto;
-        border-radius: 8%;
-        padding: 10px; }
+        padding: 10px;
+        border-radius: .25rem; }
+        .productos .productos__grilla .grilla__producto .producto__lista .btn, .productos .productos__grilla .grilla__producto--fideos .producto__lista .btn, .productos .productos__grilla .grilla__producto--ravioles .producto__lista .btn, .productos .productos__grilla .grilla__producto--otras .producto__lista .btn, .productos .productos__grilla .grilla__producto--salsas .producto__lista .btn {
+          float: right;
+          font-size: 12px;
+          background-color: #BB4430; }
     .productos .productos__grilla .grilla__producto--fideos {
       grid-area: fideos;
       background-image: url("../images/grilla-fideos.png"); }
@@ -478,7 +481,14 @@ body {
   .contacto .contacto__banner {
     grid-area: banner;
     width: 100%;
-    height: auto; }
+    height: 300px;
+    padding-right: 10px;
+    background-image: url("../images/banner.png");
+    background-position: center; }
+    .contacto .contacto__banner .banner__titulo {
+      font-size: 2.5rem;
+      color: whitesmoke;
+      padding: 10px; }
     .contacto .contacto__banner .banner__foto {
       width: 100%;
       height: auto; }

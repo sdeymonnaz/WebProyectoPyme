@@ -106,7 +106,7 @@
             justify-content:flex-start;
             width: 500px;
             height: 400px;
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 50%, 66.5% 100%, 0 100%);
             border-top-left-radius: 200px;
             border-bottom-left-radius: 200px;
             transform: skew(40deg, -40deg);
