@@ -433,12 +433,14 @@ body{
 
 // PAGINA CONTACTO //
 .contacto{
-    display:grid;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     min-height:100vh;
     background-color: $colorFondoPpal;
 
     .contacto__banner{
-        grid-area: banner;
         width: 100%;
         height: 200px;
         background-image: url("../images/banner.png");
@@ -446,7 +448,7 @@ body{
         
         .banner__titulo{
             font-size: 2.5rem;
-            color: $colorParrafo;
+            color: $colorSecundario;
             text-shadow: 2px 2px black;
             padding: 10px;
         }
@@ -458,7 +460,6 @@ body{
     }
 
     .contacto__formulario{
-        grid-area: formulario;
         background-color: $colorSecundario;
         border-radius: 8px;
         height:max-content;
@@ -488,8 +489,6 @@ body{
     }
 
     .contacto__lateral{
-        grid-area: ubicacion;
-        width: 90%;
         
         .lateral__ubicacion{
             @include parrafoSec($colorParrafo, $colorFondoPpal);
@@ -524,55 +523,23 @@ body{
 
     /* VISTA PARA MOVIL 480px ********************************/
     @media only screen and (min-width:480px){
-        grid-template-columns: 100%;
-        grid-template-rows: auto auto auto;
-        grid-template-areas:"banner"
-                            "formulario"
-                            "ubicacion";
-        row-gap: 10px;
-
-            .contacto__lateral{
-                align-content: center;
-                
-                .lateral__ubicacion{
-                    width: 95%;
-                }
-            }
-    }
-
-    /* VISTA PARA TABLET 768px *****************************/
-    @media only screen and (min-width:768px){
-        grid-template-columns: 100%;
-        grid-template-rows: auto auto auto;
-        grid-template-areas:"banner"
-                            "formulario"
-                            "ubicacion";
-        row-gap: 10px;
-        align-content:flex-start;
-
+        .contacto__formulario{
+            width: 95%;
+        }    
+        
         .contacto__lateral{
-            align-content: center;
-
-            .lateral__ubicacion{
-                width: 97%;
-            }
+            width: 90%;
         }
     }
 
     /* VISTA PARA DESKTOP 1024px **************************/
     @media only screen and (min-width:1024px){
-            grid-template-columns: 60% 40%;
-            grid-template-rows: auto 1fr 1fr;
-            grid-template-areas:"banner banner"
-                                "formulario ubicacion"
-                                "formulario ubicacion";
-
+        .contacto__formulario{
+            width: 85%;
+        }
+        
         .contacto__lateral{
-            grid-area: ubicacion;
-            
-            .lateral__ubicacion{
-                margin-top: 10px;
-            }
+            width: 80%;
         }
     }
 }
