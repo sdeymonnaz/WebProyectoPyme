@@ -19,7 +19,6 @@
 
     .header__nombre:hover{
         color: $colorSecundario;
-        padding: 2px;
     }
 
     .header__nav{
@@ -39,7 +38,6 @@
 
             .lista__elem:hover{
                 color: $colorSecundario;
-                padding: 2px;
             }
         }
     }
@@ -60,10 +58,6 @@
 
             .lista__elem{
                 font-size: $tamanioMenu;
-            }
-
-            .lista__elem:hover{
-                font-size: $tamanioMenu * 1.2;
             }
         }
     }
@@ -88,11 +82,6 @@
             .lista__elem{
                 font-size: $tamanioMenuTablet;
             }
-
-            .lista__elem:hover{
-                font-size: $tamanioMenuTablet * 1.2;
-            }
-
         }
     }
 }
@@ -111,10 +100,6 @@
             .lista__elem{
                 font-size: $tamanioMenu;
                 padding: 20px;
-            }
-
-            .lista__elem:hover{
-                font-size: $tamanioMenu * 1.2;
             }
         }
     }

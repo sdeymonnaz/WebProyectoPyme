@@ -23,6 +23,7 @@ body{
     font-weight: $pesoParrafo;
     color: $colorParrafo;
     word-spacing: $espaciadoParrafo;
+    text-align: justify;
     padding: 10px;
 }
 
@@ -136,7 +137,8 @@ body{
         .home__lateral{
             flex-direction: column;
             justify-content:space-between;
-            flex: 0 0 300px;
+            width: 40%;
+            flex: 0 0 500px;
             margin-top: 10px;
 
             .lateral__promociones{
