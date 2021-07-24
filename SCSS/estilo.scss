@@ -47,42 +47,7 @@ body{
     height: auto;
     padding: 30px;
 
-    .home__principal{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: flex-start;
-        width: 100%;
-        height: auto;
-        padding: 30px;
-        padding-top: 50px;
-        padding-bottom: 50px;
 
-        
-        .principal__parrafo{
-            @extend .parrafo;
-            width: 40%;
-            height: auto;
-            padding-right: 40px;
-        }
-
-        .principal__imagenes{
-            display: flex;
-            flex-direction: row;
-            width: 60%;
-            height: 30%;
-
-                .imagenes__foto{
-                    width: 70%;
-                    height: auto;
-                    opacity: 0.7;
-                }
-
-                .imagenes__foto:hover{
-                    opacity: 1.0;
-                }
-        }
-    }
 
     .home__novedades{
         display: flex;
@@ -112,10 +77,63 @@ body{
         }
     }
 
+
+    .home__principal{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: stretch;
+        width: 100%;
+        height: 500px;
+        padding: 30px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        .principal__texto{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            width: 40%;
+            height: auto;
+            padding-right: 40px;
+
+            .texto__parrafo{
+                @extend .parrafo;
+                padding-bottom: 30px;
+            }
+
+            .btn-primary{
+                background-color: $colorPrimario;
+                border-color: $colorPrimario;
+                width: 30%;
+            }
+        }
+
+        .principal__imagenes{
+            display: flex;
+            flex-direction: row;
+            width: 60%;
+
+                .imagenes__foto{
+                    width: 100px;
+                    height: 400px;
+                    opacity: 0.7;
+                }
+
+                .imagenes__foto:hover{
+                    opacity: 1.0;
+                }
+        }
+    }
+
+
     .home__platos{
         display: flex;
+        flex-direction: row;
         justify-content: center;
         width: 100%;
+        height: auto;
         padding: 30px;
         
         .platos__contenedor{
@@ -129,7 +147,6 @@ body{
 
             .contenedor__foto{
                 width: 100%;
-                height: auto;
             }
 
             .accordion-button{
