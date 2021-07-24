@@ -237,7 +237,7 @@ body {
       .home .home__principal .principal__texto .btn-primary {
         background-color: #B63B30;
         border-color: #B63B30;
-        width: 30%; }
+        width: fit-content; }
     .home .home__principal .principal__imagenes {
       display: flex;
       flex-direction: row;
