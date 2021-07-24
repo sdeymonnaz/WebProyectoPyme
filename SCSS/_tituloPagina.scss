@@ -21,6 +21,32 @@
     }
 }
 
+.tituloPagAlt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $colorFondoPpal;
+    height: 15%;
+    margin: 30px 0 30px 0;
+
+    .tituloPagAlt__tituloAlt{
+        font-family: $familiaTitulo;
+        font-weight: $pesoTitulo;
+        font-size: $tamanioTituloAlt;
+        color: $colorSecundario;
+        word-spacing: 5px;
+    }
+
+    .tituloPagAlt__texto{
+        width: 50%;
+        color: $colorParrafo;
+        font-size: $tamanioParrafo;
+        text-align: center;
+    }
+
+}
+
 /* VISTA PARA MOVIL 480px ********************************/
 @media only screen and (min-width:480px){
     .tituloPag__titular{
