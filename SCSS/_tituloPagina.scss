@@ -4,7 +4,7 @@
     justify-content: start;
     align-items: center;
     background-color: $colorFondoPpal;
-    height: 5%;
+    height: 300px;
 
 
     .tituloPag__titular{
@@ -27,13 +27,12 @@
     justify-content: center;
     align-items: center;
     background-color: $colorFondoPpal;
-    height: 15%;
-    margin: 30px 0 30px 0;
+    height: 300px;
 
     .tituloPagAlt__tituloAlt{
         font-family: $familiaTitulo;
         font-weight: $pesoTitulo;
-        font-size: $tamanioTituloAlt;
+        font-size: $tamanioTituloMob;
         color: $colorSecundario;
         word-spacing: 5px;
     }
@@ -44,7 +43,6 @@
         font-size: $tamanioParrafo;
         text-align: center;
     }
-
 }
 
 /* VISTA PARA MOVIL 480px ********************************/
@@ -52,6 +50,15 @@
     .tituloPag__titular{
         font-size: $tamanioTituloMob;
     }
+
+    .tituloPagAlt{
+        margin: 30px;
+
+        .tituloPagAlt__texto{
+            width: 75%;
+        }
+    }
+
 }
 
 
@@ -60,11 +67,36 @@
     .tituloPag__titular{
         font-size: $tamanioTituloMob;
     }
+
+
+    .tituloPagAlt{
+        margin: 30px;
+
+        .tituloPagAlt__tituloAlt{
+            font-size: $tamanioTituloTablet;
+        }
+
+        .tituloPagAlt__texto{
+            width: 75%;
+        }
+    }
 }
 
 /* VISTA PARA DESKTOP 1024px **************************/
 @media only screen and (min-width:1024px){
     .tituloPag__titular{
         font-size: $tamanioTitulo;
+    }
+
+    .tituloPagAlt{
+        margin: 30px;
+
+        .tituloPagAlt__tituloAlt{
+            font-size: $tamanioTitulo;
+        }
+
+        .tituloPagAlt__texto{
+            width: 75%;
+        }
     }
 }
