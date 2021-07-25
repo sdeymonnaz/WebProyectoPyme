@@ -14,9 +14,10 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, #0B4C16, #2a7854);
-    clip-path: ellipse(200px 260px); }
+    background: #0b4c16;
+    clip-path: ellipse(180px 220px); }
     .intro .intro__centro .centro__logo {
+      height: 170px;
       width: fit-content;
       padding: 10px;
       transition: 2s; }
@@ -24,7 +25,7 @@
       transform: rotateY(180deg); }
     .intro .intro__centro .centro__titulo {
       width: fit-content;
-      color: #f5f5f5;
+      color: whitesmoke;
       font-family: "Catamaran", sans-serif;
       font-size: 4rem;
       font-weight: 800;
@@ -36,17 +37,17 @@
 .header {
   display: flex;
   flex-direction: row;
-  background: linear-gradient(to bottom, #2a7854, #0B4C16);
+  background: linear-gradient(to bottom, #328860, #efe6dd);
   padding: 30px; }
   .header a {
     text-decoration: none; }
   .header .header__logo {
-    height: 100px;
+    height: 60px;
     padding: 10px; }
   .header .header__nombre {
-    color: #f5f5f5; }
+    color: #0b4c16; }
   .header .header__nombre:hover {
-    color: #F3EE5A; }
+    color: #f3ee5a; }
   .header .header__nav {
     width: 90%; }
     .header .header__nav .nav__lista {
@@ -57,9 +58,9 @@
       .header .header__nav .nav__lista .lista__elem {
         font-family: "Catamaran", sans-serif;
         text-decoration: none;
-        color: #f5f5f5; }
+        color: #0b4c16; }
       .header .header__nav .nav__lista .lista__elem:hover {
-        color: #F3EE5A; }
+        color: #f3ee5a; }
 
 /* VISTA PARA MOVIL 480px ********************************/
 @media only screen and (min-width: 480px) {
@@ -104,12 +105,12 @@
   display: flex;
   justify-content: start;
   align-items: center;
-  background-color: #0B4C16;
+  background-color: #efe6dd;
   height: 300px; }
   .tituloPag .tituloPag__titular, .tituloPag .tituloPag__titular--galeria {
     font-family: "Catamaran", sans-serif;
     font-weight: 800;
-    color: #F3EE5A;
+    color: #0b4c16;
     padding: 20px;
     word-spacing: 5px; }
   .tituloPag .tituloPag__titular--galeria {
@@ -120,17 +121,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #0B4C16;
+  background-color: #efe6dd;
   height: 300px; }
   .tituloPagAlt .tituloPagAlt__tituloAlt {
     font-family: "Catamaran", sans-serif;
     font-weight: 800;
     font-size: 1.5rem;
-    color: #F3EE5A;
+    color: #0b4c16;
     word-spacing: 5px; }
   .tituloPagAlt .tituloPagAlt__texto {
     width: 50%;
-    color: #f5f5f5;
+    color: black;
     font-size: 1.2rem;
     text-align: center; }
 
@@ -167,7 +168,7 @@
 
 .footer {
   display: flex;
-  background: linear-gradient(to bottom, #0B4C16, #2a7854);
+  background: linear-gradient(to bottom, #efe6dd, #328860);
   justify-content: flex-end;
   align-items: center;
   height: 5%; }
@@ -182,12 +183,12 @@
       font-size: 25px;
       padding: 2px; }
       .footer .footer__listado .listado__item .fa {
-        color: #f5f5f5;
+        color: black;
         padding: 12px 20px;
         text-decoration: none; }
       .footer .footer__listado .listado__item .fa:hover {
         transform: scale(2, 2);
-        color: #F3EE5A; }
+        color: #f3ee5a; }
 
 * {
   margin: 0;
@@ -200,7 +201,7 @@ body {
   font-size: 1.2rem;
   font-family: "Catamaran", sans-serif;
   font-weight: 300;
-  color: #f5f5f5;
+  color: black;
   word-spacing: 3px;
   text-align: justify; }
 
@@ -209,7 +210,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #0B4C16;
+  background: #efe6dd;
   width: 100%;
   height: auto;
   /* VISTA PARA MOVIL 480px ********************************/
@@ -230,12 +231,13 @@ body {
         margin: 20px; }
         .home .home__novedades .novedades__primerCont .primerCont__contenedor .contenedor__titulo {
           padding: 10px 0 0 0;
-          color: #F3EE5A; }
+          color: #0b4c16;
+          font-weight: 800; }
         .home .home__novedades .novedades__primerCont .primerCont__contenedor .contenedor__foto {
           width: 100%;
           height: auto; }
         .home .home__novedades .novedades__primerCont .primerCont__contenedor .contenedor__texto {
-          color: #f5f5f5;
+          color: black;
           text-align: justify; }
     .home .home__novedades .novedades__segundoCont {
       display: flex; }
@@ -245,12 +247,13 @@ body {
         margin: 20px; }
         .home .home__novedades .novedades__segundoCont .segundoCont__contenedor .contenedor__titulo {
           padding: 10px 0 0 0;
-          color: #F3EE5A; }
+          color: #0b4c16;
+          font-weight: 800; }
         .home .home__novedades .novedades__segundoCont .segundoCont__contenedor .contenedor__foto {
           width: 100%;
           height: auto; }
         .home .home__novedades .novedades__segundoCont .segundoCont__contenedor .contenedor__texto {
-          color: #f5f5f5;
+          color: black;
           text-align: justify; }
   .home .home__principal {
     display: flex;
@@ -295,11 +298,11 @@ body {
       margin: 10px;
       padding: 10px;
       color: black;
-      background: #0B4C16;
+      background: #efe6dd;
       border-radius: 4px;
       width: 90%; }
       .home .home__platos .platos__contenedor .contenedor__titulo {
-        color: #F3EE5A;
+        color: #0b4c16;
         font-family: "Catamaran", sans-serif;
         font-size: 1.5rem; }
       .home .home__platos .platos__contenedor .contenedor__foto {
@@ -315,7 +318,7 @@ body {
     justify-content: center;
     padding: 30px; }
     .home .home__news .news__contenedor {
-      color: #f5f5f5;
+      color: black;
       padding: 10px;
       margin-bottom: 20px; }
       .home .home__news .news__contenedor .btn-primary {
@@ -363,7 +366,7 @@ body {
         flex-direction: row; } }
 
 .productos {
-  background-color: #0B4C16;
+  background-color: #efe6dd;
   display: flex;
   justify-content: center;
   /* VISTA PARA MOVIL 480px ******************************/
@@ -388,7 +391,7 @@ body {
       .productos .productos__grilla .grilla__producto .producto__titulo, .productos .productos__grilla .grilla__producto--fideos .producto__titulo, .productos .productos__grilla .grilla__producto--ravioles .producto__titulo, .productos .productos__grilla .grilla__producto--otras .producto__titulo, .productos .productos__grilla .grilla__producto--salsas .producto__titulo {
         font-size: 3.5rem;
         font-weight: 600;
-        color: #f5f5f5;
+        color: black;
         text-shadow: -1px 1px black; }
       .productos .productos__grilla .grilla__producto .producto__lista, .productos .productos__grilla .grilla__producto--fideos .producto__lista, .productos .productos__grilla .grilla__producto--ravioles .producto__lista, .productos .productos__grilla .grilla__producto--otras .producto__lista, .productos .productos__grilla .grilla__producto--salsas .producto__lista {
         background-color: RGBA(239, 230, 221, 0.7);
@@ -448,7 +451,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   height: auto;
-  background-color: #0B4C16;
+  background-color: #efe6dd;
   padding: 10px;
   /* VISTA PARA MOVIL 480px ******************************/
   /* VISTA PARA TABLET 768px *****************************/
@@ -499,7 +502,7 @@ body {
 
 .quienes {
   padding: 10px;
-  background-color: #0B4C16;
+  background-color: #efe6dd;
   width: 100%;
   /* VISTA PARA MOVIL 480px ******************************/
   /* VISTA PARA DESKTOP 1024px **************************/ }
@@ -548,7 +551,7 @@ body {
   justify-content: space-between;
   align-items: center;
   min-height: 100vh;
-  background-color: #0B4C16;
+  background-color: #efe6dd;
   /* VISTA PARA MOVIL 480px ********************************/
   /* VISTA PARA DESKTOP 1024px **************************/ }
   .contacto .contacto__banner {
@@ -558,14 +561,14 @@ body {
     background-position: center; }
     .contacto .contacto__banner .banner__titulo {
       font-size: 2.5rem;
-      color: #F3EE5A;
+      color: #0b4c16;
       text-shadow: 2px 2px black;
       padding: 10px; }
     .contacto .contacto__banner .banner__foto {
       width: 100%;
       height: auto; }
   .contacto .contacto__formulario {
-    background-color: #F3EE5A;
+    background-color: #0b4c16;
     border-radius: 8px;
     height: max-content;
     margin: 10px;
@@ -589,15 +592,15 @@ body {
     height: max-content;
     margin: 10px;
     padding: 10px;
-    color: #f5f5f5;
-    background: #0B4C16;
+    color: black;
+    background: #efe6dd;
     border-radius: 4px;
     width: 90%;
-    border: 4px solid #F3EE5A; }
+    border: 4px solid #0b4c16; }
     .contacto .contacto__lateral .lateral__ubicacion .ubicacion__titulo {
       font-size: 1.5rem;
       font-family: "Catamaran", sans-serif;
-      color: #F3EE5A; }
+      color: #0b4c16; }
     .contacto .contacto__lateral .lateral__ubicacion .btn-primary {
       background-color: #B63B30;
       border-color: #B63B30; }

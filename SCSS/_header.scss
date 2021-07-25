@@ -2,7 +2,7 @@
 .header{
     display: flex;
     flex-direction: row;
-    background: linear-gradient(to bottom, $gradientClaro, $colorFondoPpal);
+    background: linear-gradient(to bottom, $colorTerciario, $colorFondoPpal);
     padding: 30px;
 
     a{
@@ -10,16 +10,16 @@
     }
 
     .header__logo{
-        height: 100px;
+        height: 60px;
         padding: 10px;
     }
 
     .header__nombre{
-        color: $colorParrafo;
+        color: $colorSecundario;
     }
 
     .header__nombre:hover{
-        color: $colorSecundario;
+        color: $colorCinco;
     }
 
     .header__nav{
@@ -34,11 +34,11 @@
             .lista__elem{
                 font-family: $familiaMenu;
                 text-decoration: none;
-                color:$colorParrafo;
+                color:$colorSecundario;
             }
 
             .lista__elem:hover{
-                color: $colorSecundario;
+                color: $colorCinco;
             }
         }
     }
