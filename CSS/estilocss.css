@@ -190,6 +190,42 @@
         transform: scale(2, 2);
         color: #f3ee5a; }
 
+.carrito {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 200px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #efe6dd; }
+  .carrito .carrito__titulo {
+    display: flex;
+    justify-content: flex-start;
+    width: 70%;
+    height: auto; }
+    .carrito .carrito__titulo .titulo__texto {
+      font-family: "Catamaran", sans-serif;
+      font-weight: 800;
+      font-size: 3rem;
+      color: #0b4c16;
+      word-spacing: 5px; }
+  .carrito .carrito__contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 30%;
+    height: auto; }
+  .carrito .btn-warning {
+    float: right;
+    font-size: 26px;
+    color: whitesmoke;
+    background-color: #B63B30;
+    border-color: #B63B30; }
+    .carrito .btn-warning .contenedor__logo {
+      width: 40px;
+      color: whitesmoke; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -197,7 +233,7 @@
 body {
   height: 100%; }
 
-.parrafo, .home .home__principal .principal__texto .texto__parrafo, .productos .productos__grilla .grilla__intro .intro__parrafo, .quienes .parrafo--quienes {
+.parrafo, .home .home__principal .principal__texto .texto__parrafo, .productos .productos__grilla .grilla__intro .intro__parrafo, .productos .productos__grilla .grilla__fideos .fideos__opciones .opciones__texto .texto__parrafo, .quienes .parrafo--quienes {
   font-size: 1.2rem;
   font-family: "Catamaran", sans-serif;
   font-weight: 300;
@@ -310,7 +346,8 @@ body {
       .home .home__platos .platos__contenedor .accordion-button {
         color: black; }
       .home .home__platos .platos__contenedor .accordion-button:not(.collapsed) {
-        background-color: #328860; }
+        background-color: #328860;
+        color: whitesmoke; }
       .home .home__platos .platos__contenedor .accordion-button::after {
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23f5f5f5'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"); }
   .home .home__news {
@@ -373,9 +410,10 @@ body {
   /* VISTA PARA TABLET 768px *****************************/
   /* VISTA PARA DESKTOP 1024px **************************/ }
   .productos .productos__grilla {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    justify-items: center; }
+    justify-content: center; }
     .productos .productos__grilla .grilla__intro {
       grid-area: intro;
       padding-left: 20px; }
@@ -405,6 +443,53 @@ body {
           font-size: 12px;
           background-color: #B63B30;
           border-color: #B63B30; }
+    .productos .productos__grilla .grilla__fideos {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 600px; }
+      .productos .productos__grilla .grilla__fideos .fideos__foto {
+        width: 50%;
+        height: 600px; }
+        .productos .productos__grilla .grilla__fideos .fideos__foto .foto__img {
+          width: 100%;
+          height: 100%; }
+      .productos .productos__grilla .grilla__fideos .fideos__opciones {
+        width: 50%;
+        height: 600px; }
+        .productos .productos__grilla .grilla__fideos .fideos__opciones .opciones__texto {
+          width: 100%;
+          height: 300px;
+          background-color: #B63B30;
+          padding: 10px; }
+          .productos .productos__grilla .grilla__fideos .fideos__opciones .opciones__texto .texto__titulo {
+            font-size: 3.5rem;
+            font-weight: 600;
+            color: whitesmoke;
+            text-shadow: -1px 1px black; }
+          .productos .productos__grilla .grilla__fideos .fideos__opciones .opciones__texto .texto__parrafo {
+            color: whitesmoke;
+            padding: 5px; }
+          .productos .productos__grilla .grilla__fideos .fideos__opciones .opciones__texto .list-group {
+            background-color: RGBA(239, 230, 221, 0.7);
+            font-family: "Catamaran", sans-serif;
+            font-size: 16px;
+            width: 100%;
+            height: auto;
+            padding: 5px;
+            border-radius: .25rem; }
+          .productos .productos__grilla .grilla__fideos .fideos__opciones .opciones__texto .btn {
+            float: right;
+            font-size: 20px;
+            color: black;
+            background-color: #f3ee5a;
+            border-color: #f3ee5a; }
+        .productos .productos__grilla .grilla__fideos .fideos__opciones .opciones__fotobajo {
+          width: 100%;
+          height: 300px; }
+          .productos .productos__grilla .grilla__fideos .fideos__opciones .opciones__fotobajo .fotobajo__img {
+            width: 100%;
+            height: 100%; }
     .productos .productos__grilla .grilla__producto--fideos {
       grid-area: fideos;
       background-image: url("../images/grilla-fideos.png"); }
