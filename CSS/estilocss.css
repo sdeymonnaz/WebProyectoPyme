@@ -14,7 +14,7 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    background: #0b4c16;
+    background: #fb383b;
     clip-path: ellipse(180px 220px); }
     .intro .intro__centro .centro__logo {
       height: 170px;
@@ -37,7 +37,7 @@
 .header {
   display: flex;
   flex-direction: row;
-  background: linear-gradient(to bottom, #328860, #efe6dd);
+  background: black;
   padding: 30px; }
   .header a {
     text-decoration: none; }
@@ -45,7 +45,7 @@
     height: 60px;
     padding: 10px; }
   .header .header__nombre {
-    color: #0b4c16; }
+    color: whitesmoke; }
   .header .header__nombre:hover {
     color: #fb383b; }
   .header .header__nav {
@@ -58,7 +58,7 @@
       .header .header__nav .nav__lista .lista__elem {
         font-family: "Catamaran", sans-serif;
         text-decoration: none;
-        color: #0b4c16; }
+        color: whitesmoke; }
       .header .header__nav .nav__lista .lista__elem:hover {
         color: #fb383b; }
 
@@ -105,12 +105,12 @@
   display: flex;
   justify-content: start;
   align-items: center;
-  background-color: #efe6dd;
+  background-color: black;
   height: 300px; }
   .tituloPag .tituloPag__titular, .tituloPag .tituloPag__titular--galeria {
     font-family: "Catamaran", sans-serif;
     font-weight: 800;
-    color: #0b4c16;
+    color: whitesmoke;
     padding: 20px;
     word-spacing: 5px; }
   .tituloPag .tituloPag__titular--galeria {
@@ -121,17 +121,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #efe6dd;
+  background-color: black;
   height: 300px; }
   .tituloPagAlt .tituloPagAlt__tituloAlt {
     font-family: "Catamaran", sans-serif;
     font-weight: 800;
     font-size: 1.5rem;
-    color: #0b4c16;
+    color: #fb383b;
     word-spacing: 5px; }
   .tituloPagAlt .tituloPagAlt__texto {
     width: 50%;
-    color: black;
+    color: whitesmoke;
     font-size: 1.2rem;
     text-align: center; }
 
@@ -168,7 +168,7 @@
 
 .footer {
   display: flex;
-  background: #efe6dd;
+  background: black;
   justify-content: flex-end;
   align-items: center;
   height: 5%; }
@@ -183,21 +183,21 @@
       font-size: 25px;
       padding: 2px; }
       .footer .footer__listado .listado__item .fa {
-        color: black;
+        color: whitesmoke;
         padding: 12px 20px;
         text-decoration: none; }
       .footer .footer__listado .listado__item .fa:hover {
-        transform: scale(2, 2);
         color: #fb383b; }
 
 .carrito {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 200px;
-  justify-content: space-around;
+  height: 100px;
+  justify-content: flex-end;
   align-items: center;
-  background-color: #efe6dd; }
+  background-color: black;
+  padding-right: 30px; }
   .carrito .carrito__titulo {
     display: flex;
     justify-content: flex-start;
@@ -207,7 +207,7 @@
       font-family: "Catamaran", sans-serif;
       font-weight: 800;
       font-size: 3rem;
-      color: #0b4c16;
+      color: whitesmoke;
       word-spacing: 5px; }
   .carrito .carrito__contenedor {
     display: flex;
@@ -222,11 +222,42 @@
     border-color: #fb383b; }
     .carrito .btn-warning .contenedor__logo {
       width: 40px;
-      color: whitesmoke; }
+      color: black; }
   .carrito .btn-warning:hover {
     color: #000;
     background-color: #ffca2c;
     border-color: #ffc720; }
+
+.banner {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: block;
+  /* VISTA PARA MOVIL 480px ********************************/
+  /* VISTA PARA TABLET 768px ******************************/
+  /* VISTA PARA DESKTOP 1024px **************************/ }
+  .banner #carouselExampleControls {
+    opacity: 0.7; }
+  .banner .banner__titulo {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    text-align: center; }
+    .banner .banner__titulo .titulo__texto {
+      font-family: "Catamaran", sans-serif;
+      font-weight: 800;
+      color: #fb383b;
+      word-spacing: 5px;
+      text-shadow: 3px 3px black; }
+  @media only screen and (min-width: 480px) {
+    .banner .titulo__texto {
+      font-size: 2rem; } }
+  @media only screen and (min-width: 768px) {
+    .banner .titulo__texto {
+      font-size: 3rem; } }
+  @media only screen and (min-width: 1024px) {
+    .banner .titulo__texto {
+      font-size: 4rem; } }
 
 * {
   margin: 0;
@@ -239,7 +270,7 @@ body {
   font-size: 1.2rem;
   font-family: "Catamaran", sans-serif;
   font-weight: 300;
-  color: black;
+  color: whitesmoke;
   word-spacing: 3px;
   text-align: justify; }
 
@@ -248,7 +279,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #efe6dd;
+  background: black;
   width: 100%;
   height: auto;
   /* VISTA PARA MOVIL 480px ********************************/
@@ -269,13 +300,13 @@ body {
         margin: 20px; }
         .home .home__novedades .novedades__primerCont .primerCont__contenedor .contenedor__titulo {
           padding: 10px 0 0 0;
-          color: #0b4c16;
+          color: whitesmoke;
           font-weight: 800; }
         .home .home__novedades .novedades__primerCont .primerCont__contenedor .contenedor__foto {
           width: 100%;
           height: auto; }
         .home .home__novedades .novedades__primerCont .primerCont__contenedor .contenedor__texto {
-          color: black;
+          color: whitesmoke;
           text-align: justify; }
     .home .home__novedades .novedades__segundoCont {
       display: flex; }
@@ -285,13 +316,13 @@ body {
         margin: 20px; }
         .home .home__novedades .novedades__segundoCont .segundoCont__contenedor .contenedor__titulo {
           padding: 10px 0 0 0;
-          color: #0b4c16;
+          color: whitesmoke;
           font-weight: 800; }
         .home .home__novedades .novedades__segundoCont .segundoCont__contenedor .contenedor__foto {
           width: 100%;
           height: auto; }
         .home .home__novedades .novedades__segundoCont .segundoCont__contenedor .contenedor__texto {
-          color: black;
+          color: whitesmoke;
           text-align: justify; }
   .home .home__principal {
     display: flex;
@@ -341,33 +372,35 @@ body {
       height: max-content;
       margin: 10px;
       padding: 10px;
-      color: black;
-      background: #efe6dd;
+      color: whitesmoke;
+      background: black;
       border-radius: 4px;
       width: 90%; }
       .home .home__platos .platos__contenedor .contenedor__titulo {
-        color: #0b4c16;
+        color: #fb383b;
         font-family: "Catamaran", sans-serif;
         font-size: 1.5rem; }
       .home .home__platos .platos__contenedor .contenedor__foto {
         width: 100%; }
+      .home .home__platos .platos__contenedor .accordion-body {
+        color: black; }
       .home .home__platos .platos__contenedor .accordion-button {
         color: black; }
       .home .home__platos .platos__contenedor .accordion-button:not(.collapsed) {
-        background-color: #328860;
-        color: whitesmoke; }
+        background-color: #fb383b;
+        color: black; }
       .home .home__platos .platos__contenedor .accordion-button::after {
-        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23f5f5f5'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"); }
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"); }
   .home .home__news {
     display: flex;
     justify-content: center;
     padding: 30px; }
     .home .home__news .news__contenedor {
-      color: black;
+      color: whitesmoke;
       padding: 10px;
       margin-bottom: 20px; }
       .home .home__news .news__contenedor .btn-warning {
-        color: whitesmoke;
+        color: black;
         background-color: #fb383b;
         border-color: #fb383b; }
       .home .home__news .news__contenedor .btn-warning:hover {
@@ -416,7 +449,7 @@ body {
         flex-direction: row; } }
 
 .productos {
-  background-color: #efe6dd;
+  background-color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -461,6 +494,12 @@ body {
             color: black;
             background-color: #f3ee5a;
             border-color: #f3ee5a; }
+          .productos .productos__grilla .grilla__fideos .fideos__opciones .opciones__texto .btn:focus {
+            box-shadow: 0 0 0 0.25rem #f3ee5a; }
+          .productos .productos__grilla .grilla__fideos .fideos__opciones .opciones__texto .btn:hover {
+            color: whitesmoke;
+            background-color: black;
+            border-color: black; }
         .productos .productos__grilla .grilla__fideos .fideos__opciones .opciones__fotobajo {
           width: 100%;
           height: 300px;
@@ -471,7 +510,7 @@ body {
       .productos .productos__grilla .grilla__ravioles .ravioles__opciones .opciones__texto {
         width: 100%;
         height: 300px;
-        background-color: #0b4c16;
+        background-color: black;
         padding: 20px; }
         .productos .productos__grilla .grilla__ravioles .ravioles__opciones .opciones__texto .texto__titulo {
           font-size: 3.5rem;
@@ -495,10 +534,16 @@ body {
           color: black;
           background-color: #f3ee5a;
           border-color: #f3ee5a; }
+        .productos .productos__grilla .grilla__ravioles .ravioles__opciones .opciones__texto .btn:focus {
+          box-shadow: 0 0 0 0.25rem #f3ee5a; }
+        .productos .productos__grilla .grilla__ravioles .ravioles__opciones .opciones__texto .btn:hover {
+          color: whitesmoke;
+          background-color: #fb383b;
+          border-color: #fb383b; }
       .productos .productos__grilla .grilla__ravioles .ravioles__opciones .opciones__fotobajo {
         background-image: url(../images/pedidos_ravioles.png); }
       .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 .opciones2__texto {
-        background-color: #0b4c16;
+        background-color: black;
         padding: 20px; }
         .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 .opciones2__texto .texto__titulo {
           font-size: 3.5rem;
@@ -522,6 +567,12 @@ body {
           color: black;
           background-color: #f3ee5a;
           border-color: #f3ee5a; }
+        .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 .opciones2__texto .btn:focus {
+          box-shadow: 0 0 0 0.25rem #f3ee5a; }
+        .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 .opciones2__texto .btn:hover {
+          color: whitesmoke;
+          background-color: #fb383b;
+          border-color: #fb383b; }
       .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 .opciones2__foto2 {
         width: 100%;
         height: 400px;
@@ -554,11 +605,17 @@ body {
           color: black;
           background-color: #f3ee5a;
           border-color: #f3ee5a; }
+        .productos .productos__grilla .grilla__salsas .salsas__opciones3 .opciones3__texto .btn:focus {
+          box-shadow: 0 0 0 0.25rem #f3ee5a; }
+        .productos .productos__grilla .grilla__salsas .salsas__opciones3 .opciones3__texto .btn:hover {
+          color: whitesmoke;
+          background-color: black;
+          border-color: black; }
       .productos .productos__grilla .grilla__salsas .salsas__opciones3 .opciones3__fotobajo {
         background-color: #fb383b;
         background-image: url(../images/pedidos_salsa.png); }
       .productos .productos__grilla .grilla__salsas .salsas__foto {
-        background-color: #0b4c16;
+        background-color: whitesmoke;
         background-image: url(../images/pedidos_salsa1.png); }
   @media only screen and (min-width: 480px) {
     .productos .productos__grilla .grilla__fideos {
@@ -706,7 +763,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   height: auto;
-  background-color: #efe6dd;
+  background-color: black;
   padding: 10px;
   /* VISTA PARA MOVIL 480px ******************************/
   /* VISTA PARA TABLET 768px *****************************/
@@ -757,7 +814,7 @@ body {
 
 .quienes {
   padding: 10px;
-  background-color: #efe6dd;
+  background-color: black;
   width: 100%;
   /* VISTA PARA MOVIL 480px ******************************/
   /* VISTA PARA DESKTOP 1024px **************************/ }
@@ -806,7 +863,7 @@ body {
   justify-content: space-between;
   align-items: center;
   min-height: 100vh;
-  background-color: #efe6dd;
+  background-color: black;
   /* VISTA PARA MOVIL 480px ********************************/
   /* VISTA PARA DESKTOP 1024px **************************/ }
   .contacto .contacto__banner {
@@ -816,14 +873,14 @@ body {
     background-position: center; }
     .contacto .contacto__banner .banner__titulo {
       font-size: 2.5rem;
-      color: #0b4c16;
+      color: whitesmoke;
       text-shadow: 2px 2px black;
       padding: 10px; }
     .contacto .contacto__banner .banner__foto {
       width: 100%;
       height: auto; }
   .contacto .contacto__formulario {
-    background-color: #0b4c16;
+    background-color: whitesmoke;
     border-radius: 8px;
     height: max-content;
     margin: 10px;
@@ -847,15 +904,15 @@ body {
     height: max-content;
     margin: 10px;
     padding: 10px;
-    color: black;
-    background: #efe6dd;
+    color: whitesmoke;
+    background: black;
     border-radius: 4px;
     width: 90%;
-    border: 4px solid #0b4c16; }
+    border: 4px solid whitesmoke; }
     .contacto .contacto__lateral .lateral__ubicacion .ubicacion__titulo {
       font-size: 1.5rem;
       font-family: "Catamaran", sans-serif;
-      color: #0b4c16; }
+      color: whitesmoke; }
     .contacto .contacto__lateral .lateral__ubicacion .btn-primary {
       background-color: #fb383b;
       border-color: #fb383b; }

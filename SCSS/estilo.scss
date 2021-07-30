@@ -5,6 +5,7 @@
 @import "tituloPagina.scss";
 @import "footer.scss";
 @import "carrito.scss";
+@import "banner.scss";
 
 
 *{
@@ -131,10 +132,18 @@ body{
                 @extend .parrafo;
             }
 
-            .btn-primary{
+            .btn-warning{
+                float: right;
+                font-size: 20px;
+                color: $colorParrafo;
                 background-color: $colorPrimario;
                 border-color: $colorPrimario;
-                width: fit-content;
+            }
+
+            .btn-warning:hover{
+                color: black;
+                background-color: #ffca2c;
+                border-color: #ffc720;
             }
         }
 
@@ -168,7 +177,7 @@ body{
             @include parrafoSec ($colorParrafo, $colorFondoPpal);
 
             .contenedor__titulo{
-                color: $colorSecundario;
+                color: $colorPrimario;
                 font-family: $familiaTitulo;
                 font-size: $tamanioMenu;
             }
@@ -177,17 +186,21 @@ body{
                 width: 100%;
             }
 
+            .accordion-body{
+                color: $colorParrafoAlt;
+            }
+
             .accordion-button{
-                color: $colorParrafo;
+                color: $colorParrafoAlt;
             }
 
             .accordion-button:not(.collapsed){
-                background-color: $colorTerciario;
+                background-color: $colorPrimario;
                 color: $colorParrafoAlt;
             }
 
             .accordion-button::after{
-                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23f5f5f5'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
             }
         }
     }
@@ -203,9 +216,17 @@ body{
             padding: 10px;
             margin-bottom: 20px;
 
-            .btn-primary{
+            .btn-warning{
+                color: $colorParrafoAlt;
                 background-color: $colorPrimario;
                 border-color: $colorPrimario;
+            }
+
+            .btn-warning:hover{
+                color: black;
+                background-color: #ffca2c;
+                border-color: #ffc720;
+
             }
         }
     }
@@ -288,11 +309,11 @@ body{
     }
 }
 
-
-// PAGINA PRODUCTOS //
+// PAGINA PEDIDOS //
 .productos{
     background-color: $colorFondoPpal;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 
     .productos__grilla{
@@ -301,79 +322,88 @@ body{
         width: 100%;
         justify-content: center;
 
-        .grilla__intro{
-            grid-area: intro;
-            padding-left: 20px;
-            
-            .intro__parrafo{
-                @extend .parrafo;
-            }
-        }
-   
-        .grilla__producto{
-            display: flex;
-            width: 90%;
-            height: 400px;
-            margin: 10px;
-            padding: 10px;
-            background-repeat:no-repeat;
-            max-width: 800px;
-            border-radius: 20px;
-
-            .producto__titulo{
-                font-size: $tamanioGrillaTitulo;
-                font-weight: $pesoGrillaTitulo;
-                color: $colorParrafo;
-                text-shadow: $sombraTitulos;
-            }
-
-            .producto__lista{
-                background-color: $colorFondoProductos;
-                font-family: $familiaParrafo;
-                width: 98%;
-                height: auto;
-                padding: 10px;
-                border-radius: .25rem;
-
-                .btn{
-                    float: right;
-                    font-size: 12px;
-                    background-color: $colorPrimario;
-                    border-color: $colorPrimario;
-                }
-            }
-        }
-
         .grilla__fideos{
             display: flex;
             flex-direction: row;
             width: 100%;
-            height: 600px;
 
             .fideos__foto{
-                width: 50%;
-                height: 600px;
-
-                .foto__img{
-                    width: 100%;
-                    height: 100%;
-                }
+                background-image: url(../images/pedidos_fideos.png);
             }
 
             .fideos__opciones{
-                width: 50%;
                 height: 600px;
 
                 .opciones__texto{
-                    width: 100%;
-                    height: 300px;
-                    background-color: $colorPrimario;
-                    padding: 10px;           
+                    background-color: $colorFondoTerc;
+                    padding: 20px;           
 
                     .texto__titulo{
                         font-size: $tamanioGrillaTitulo;
                         font-weight: $pesoGrillaTitulo;
+                        color: $colorParrafo;
+                        text-shadow: $sombraTitulos;
+                    }
+    
+                    .texto__parrafo{
+                        @extend .parrafo;
+                        color: $colorParrafo;
+                        padding: 5px;
+                    }
+
+                    .list-group{
+                        background-color: $colorFondoProductos;
+                        font-family: $familiaParrafo;
+                        font-size: 16px;
+                        width: 100%;
+                        height: auto;
+                        padding: 5px;
+                        border-radius: .25rem;
+                    }
+
+                    .btn{
+                        float: right;
+                        font-size: 20px;
                         color: $colorParrafoAlt;
+                        background-color: $colorCinco;
+                        border-color: $colorCinco;
+                    }
+
+                    .btn:focus{
+                        box-shadow: 0 0 0 .25rem $colorCinco;
+                    }
+
+                    .btn:hover{
+                        color: $colorParrafo;
+                        background-color: $colorFondoPpal;
+                        border-color: $colorFondoPpal;
+                    }
+                }
+
+                .opciones__fotobajo{
+                    width: 100%;
+                    height: 300px;
+                    background-image: url(../images/pedidos_fideos2.png);
+                }
+            }
+        }
+
+        .grilla__ravioles{
+            display: flex;
+            width: 100%;
+
+            .ravioles__opciones{
+
+                .opciones__texto{
+                    width: 100%;
+                    height: 300px;
+                    background-color: $colorFondoPpal;
+                    padding: 20px;           
+
+                    .texto__titulo{
+                        font-size: $tamanioGrillaTitulo;
+                        font-weight: $pesoGrillaTitulo;
+                        color: $colorParrafo;
                         text-shadow: $sombraTitulos;
                     }
     
@@ -396,52 +426,145 @@ body{
                     .btn{
                         float: right;
                         font-size: 20px;
-                        color: $colorParrafo;
+                        color: $colorParrafoAlt;
                         background-color: $colorCinco;
                         border-color: $colorCinco;
+                    }
+
+                    .btn:focus{
+                        box-shadow: 0 0 0 .25rem $colorCinco;
+                    }
+
+                    .btn:hover{
+                        color: $colorParrafo;
+                        background-color: $colorPrimario;
+                        border-color: $colorPrimario;
                     }
                 }
 
                 .opciones__fotobajo{
-                    width: 100%;
-                    height: 300px;
+                    background-image: url(../images/pedidos_ravioles.png);
+                }
+            }
+
+            .ravioles__opciones2{
+
+                .opciones2__texto{
+                    background-color: $colorFondoPpal;
+                    padding: 20px;           
+
+                    .texto__titulo{
+                        font-size: $tamanioGrillaTitulo;
+                        font-weight: $pesoGrillaTitulo;
+                        color: $colorParrafo;
+                        text-shadow: $sombraTitulos;
+                    }
     
-                    .fotobajo__img{
+                    .texto__parrafo{
+                        @extend .parrafo;
+                        color: $colorCuatro;
+                        padding: 5px;
+                    }
+
+                    .list-group{
+                        background-color: $colorFondoProductos;
+                        font-family: $familiaParrafo;
+                        font-size: 16px;
                         width: 100%;
-                        height: 100%;
+                        height: auto;
+                        padding: 5px;
+                        border-radius: .25rem;
+                    }
+
+                    .btn{
+                        float: right;
+                        font-size: 20px;
+                        color: $colorParrafoAlt;
+                        background-color: $colorCinco;
+                        border-color: $colorCinco;
+                    }
+
+                    .btn:focus{
+                        box-shadow: 0 0 0 .25rem $colorCinco;
+                    }
+
+                    .btn:hover{
+                        color: $colorParrafo;
+                        background-color: $colorPrimario;
+                        border-color: $colorPrimario;
                     }
                 }
 
+                .opciones2__foto2{
+                width: 100%;
+                height: 400px;
+                background-image: url(../images/pedidos_otras.png);
+                }
+            }
+        }
 
+        .grilla__salsas{
+            display: flex;
+            width: 100%;
+
+            .salsas__opciones3{
+
+                .opciones3__texto{
+                    background-color: $colorPrimario;
+                    padding: 20px;           
+
+                    .texto__titulo{
+                        font-size: $tamanioGrillaTitulo;
+                        font-weight: $pesoGrillaTitulo;
+                        color: $colorParrafo;
+                        text-shadow: $sombraTitulos;
+                    }
+    
+                    .texto__parrafo{
+                        @extend .parrafo;
+                        color: $colorCuatro;
+                        padding: 5px;
+                    }
+
+                    .list-group{
+                        background-color: $colorFondoProductos;
+                        font-family: $familiaParrafo;
+                        font-size: 16px;
+                        width: 100%;
+                        height: auto;
+                        padding: 5px;
+                        border-radius: .25rem;
+                    }
+
+                    .btn{
+                        float: right;
+                        font-size: 20px;
+                        color: $colorFondoPpal;
+                        background-color: $colorCinco;
+                        border-color: $colorCinco;
+                    }
+
+                    .btn:focus{
+                        box-shadow: 0 0 0 .25rem $colorCinco;
+                    }
+
+                    .btn:hover{
+                        color: $colorParrafo;
+                        background-color: $colorFondoPpal;
+                        border-color: $colorFondoPpal;
+                    }
+                }
+
+                .opciones3__fotobajo{
+                    background-color: $colorPrimario;
+                    background-image: url(../images/pedidos_salsa.png);
+                }
             }
 
-
-
-        }
-
-        .grilla__producto--fideos{
-            @extend .grilla__producto;
-            grid-area: fideos;
-            background-image: url("../images/grilla-fideos.png");
-            
-        }
-
-        .grilla__producto--ravioles{
-            @extend .grilla__producto;
-            grid-area: ravioles;
-            background-image: url("../images/grilla-ravioles.png");
-        }
-
-        .grilla__producto--otras{
-            @extend .grilla__producto;
-            grid-area: otras;
-            background-image: url("../images/grilla-otras.png");
-        }
-
-        .grilla__producto--salsas{
-            @extend .grilla__producto;
-            grid-area: salsas;
-            background-image: url("../images/grilla-salsas.png");
+            .salsas__foto{
+                background-color: $colorSecundario;
+                background-image: url(../images/pedidos_salsa1.png);
+            }
         }
     }       
 
@@ -449,17 +572,80 @@ body{
     /* VISTA PARA MOVIL 480px ******************************/
     @media only screen and (min-width:480px){
         .productos__grilla{
-            grid-template-columns: 100%;
-            grid-template-rows: repeat(5, auto);
-            grid-template-areas:"intro"
-                                "fideos"
-                                "ravioles"
-                                "otras"
-                                "salsas";
-            .grilla__producto{
+
+            .grilla__fideos{
                 flex-direction: column;
-                justify-content: space-evenly;
-                align-items: center;
+                height: 1050px;
+
+                .fideos__foto{
+                    width: 100%;
+                    height: 450px;
+                }
+
+                .fideos__opciones{
+                    width: 100%;
+
+                    .opciones__texto{
+                        width: 100%;
+                        height: 300px;
+                    }
+                }
+            }
+
+            .grilla__ravioles{
+                flex-direction: column;
+                height: 1400px;
+
+                .ravioles__opciones{
+                    height: 700px;
+                    width: 100%;
+
+                    .opciones__fotobajo{
+                        width: 100%;
+                        height: 400px;
+                    }
+                }
+
+                .ravioles__opciones2{
+                    width: 100%;
+                    height: 700px;
+
+                    .opciones2__texto{
+                        width: 100%;
+                        height: 300px;
+                    }
+
+                    .opciones2__foto2{
+                        width: 100%;
+                        height: 400px;
+                    }
+                }
+            }
+
+            .grilla__salsas{
+                flex-direction: column;
+                height: 1200px;
+
+                .salsas__opciones3{
+                    width: 100%;
+                    height: 600px;
+
+                    .opciones3__texto{
+                        width: 100%;
+                        height: 300px;
+                    }
+
+                    .opciones3__fotobajo{
+                        width: 100%;
+                        height: 300px;
+                    }
+                }
+
+                .salsas__foto{
+                    width: 100%;
+                    height: 600px;
+                }
+
             }
         }
     }
@@ -468,34 +654,162 @@ body{
     /* VISTA PARA TABLET 768px *****************************/
     @media only screen and (min-width:768px){
         .productos__grilla{
-            grid-template-columns: 50% 50%;
-            grid-template-rows: auto auto auto;
-            grid-template-areas:"intro intro"
-                                "fideos ravioles"
-                                "otras salsas";
 
-            .grilla__producto{
-                flex-direction: column;
-                justify-content: space-evenly;
-                align-items: center;
+            .grilla__fideos{
+                display: flex;
+                flex-direction: row;
+                height: 600px;
+
+                .fideos__foto{
+                    width: 45%;
+                    height: 600px;
+                }
+
+                .fideos__opciones{
+                    width: 55%;
+                    height: 600px;
+
+                    .opciones__texto{
+                        width: 100%;
+                        height: 350px;
+                    }
+                }
+            }
+
+            .grilla__ravioles{
+                flex-direction: row;
+                height: 800px;
+
+                .ravioles__opciones{
+                    height: 300px;
+                    width: 50%;
+
+                    .opciones__fotobajo{
+                        width: 100%;
+                        height: 500px;
+                    }
+                }
+
+                .ravioles__opciones2{
+                    width: 50%;
+                    height: 800px;
+
+                    .opciones2__texto{
+                        width: 100%;
+                        height: 400px;
+                    }
+
+                    .opciones2__foto2{
+                        width: 100%;
+                        height: 400px;
+                    }
+                }
+            }
+
+            .grilla__salsas{
+                flex-direction: row;
+                height: 800px;
+
+                .salsas__opciones3{
+                    width: 65%;
+                    height: 800px;
+
+                    .opciones3__texto{
+                        width: 100%;
+                        height: 300px;
+                    }
+
+                    .opciones3__fotobajo{
+                        width: 100%;
+                        height: 500px;
+                    }
+                }
+                .salsas__foto{
+                    width: 50%;
+                    height: 800px;
+                }
             }
         }
     }
-
+    
 
     /* VISTA PARA DESKTOP 1024px **************************/
     @media only screen and (min-width:1024px){
         .productos__grilla{
-            grid-template-columns: 50% 50%;
-            grid-template-rows: auto auto auto;
-            grid-template-areas:"intro intro"
-                                "fideos ravioles"
-                                "otras salsas";
 
-            .grilla__producto{
-                flex-direction: column;
-                justify-content: space-evenly;
-                align-items: center;
+            .grilla__fideos{
+                display: flex;
+                flex-direction: row;
+                height: 600px;
+
+                .fideos__foto{
+                    width: 50%;
+                    height: 600px;
+                }
+
+                .fideos__opciones{
+                    width: 60%;
+                    height: 600px;
+
+                    .opciones__texto{
+                        width: 100%;
+                        height: 300px;
+                    }
+                }
+            }
+
+            .grilla__ravioles{
+                flex-direction: row;
+                height: 800px;
+
+                .ravioles__opciones{
+                    height: 300px;
+                    width: 50%;
+
+                    .opciones__fotobajo{
+                        width: 100%;
+                        height: 500px;
+                    }
+                }
+
+                .ravioles__opciones2{
+                    width: 50%;
+                    height: 800px;
+
+                    .opciones2__texto{
+                        width: 100%;
+                        height: 400px;
+                    }
+
+                    .opciones2__foto2{
+                        width: 100%;
+                        height: 400px;
+                    }
+                }
+            }
+
+            .grilla__salsas{
+                flex-direction: row;
+                height: 800px;
+
+                .salsas__opciones3{
+                    width: 65%;
+                    height: 800px;
+
+                    .opciones3__texto{
+                        width: 100%;
+                        height: 300px;
+                    }
+
+                    .opciones3__fotobajo{
+                        width: 100%;
+                        height: 500px;
+                    }
+                }
+                .salsas__foto{
+                    width: 50%;
+                    height: 800px;
+                }
             }
         }
     }

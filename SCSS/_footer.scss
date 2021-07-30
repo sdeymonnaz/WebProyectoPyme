@@ -1,7 +1,7 @@
 
 .footer{
     display: flex;
-    background: linear-gradient(to bottom, $colorFondoPpal, $colorTerciario);
+    background: $colorFondoPpal;
     justify-content: flex-end;
     align-items:center;
     height: 5%;
@@ -25,8 +25,7 @@
             }
 
             .fa:hover{
-                transform: scale(2, 2);
-                color: $colorCinco;
+                color: $colorPrimario;
             }
         }
     }

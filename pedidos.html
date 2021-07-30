@@ -7,7 +7,8 @@
     <link rel="stylesheet" type="text/css" href="CSS/estilocss.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <meta name="description" content="Catálogo de productos a la venta y novedades semanales.Pastas frescas y secas y salsas y sus tiempos de preparación e ingredientes.">
@@ -17,7 +18,7 @@
 
 <body>
 
-    <section class="galeria__foto">
+    <section class="banner">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -42,6 +43,9 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
+        <div class="banner__titulo">
+            <h2 class="titulo__texto">Nuestros productos</h2> 
+        </div>
     </section>   
 
     <header class="header">
@@ -50,7 +54,7 @@
         <nav class="header__nav">
             <ul class="nav__lista">
                 <li><a class="lista__elem" href="index.html">Inicio</a></li>
-                <li><a class="lista__elem" href="productos.html">Productos</a></li>
+                <li><a class="lista__elem" href="pedidos.html">Pedidos</a></li>
                 <li><a class="lista__elem" href="galeria.html">Galería</a></li>
                 <li><a class="lista__elem" href="quienes.html">Quienes somos</a></li>
                 <li><a class="lista__elem" href="contacto.html">Contacto</a></li>
@@ -59,9 +63,6 @@
     </header>
 
     <section class="carrito">
-        <div class="carrito__titulo">
-            <h2 class="titulo__texto">Nuestros productos</h2>
-        </div>
         <div carrito="carrito__contenedor">
             <button type="button" class="btn btn-warning">Carrito 
                 <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
@@ -73,9 +74,9 @@
 
     <main class="productos">
         <div class="productos__grilla" class="table-responsive">
+
             <div class="grilla__fideos">
                 <div class="fideos__foto">
-                    <img class="foto__img" src="images/pedidos_fideos.png" alt="">
                 </div>
 
                 <div class="fideos__opciones">
@@ -83,11 +84,11 @@
                         <h2 class="texto__titulo">Fideos</h2>
                         <p class="texto__parrafo">Nuestros fideos se preparan con harina candial seleccionada y huevos de nuestra propia granja. Contamos con una amplia variedad de fideos, consulte por más opciones.</p>
                         <p>
-                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCentro" aria-expanded="false" aria-controls="collapseExample">
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFideos" aria-expanded="false" aria-controls="collapseExample">
                               Comprar
                             </button>
                         </p>
-                        <div class="collapse" id="collapseCentro">
+                        <div class="collapse" id="collapseFideos">
                             <div class="card card-body">
                                 <div class="texto_lista">
                                     <ul class="list-group">
@@ -103,58 +104,99 @@
                     </div>
 
                     <div class="opciones__fotobajo">
-                        <img class="fotobajo__img" src="images/pedidos_fideos2.png" alt="">
                     </div>
                 </div>
-
-
             </div>
 
-            <section class="grilla__intro">
-                <article class="intro__parrafo">
-                    
-                </article>
-            </section>
-
-
-            <section class="grilla__producto--ravioles">
-                <h2 class="producto__titulo">Ravioles</h2>
-                <div class="producto__lista">
-                    <ul class="list-group">
-                        <li class="list-group-item">Espinaca y queso <button type="button" class="btn btn-secondary">Agregar pedido</button></li>
-                        <li class="list-group-item">Pollo, carne y verdura <button type="button" class="btn btn-secondary">Agregar pedido</button></li>
-                        <li class="list-group-item">Ricota, queso y jamón <button type="button" class="btn btn-secondary">Agregar pedido</button></li>
-                        <li class="list-group-item">Cuatro quesos <button type="button" class="btn btn-secondary">Agregar pedido</button></li>
-                        <li class="list-group-item">Brócoli y zucchini <button type="button" class="btn btn-secondary">Agregar pedido</button></li>
-                    </ul>
+            <div class="grilla__ravioles">
+                <div class="ravioles__opciones">
+                    <div class="opciones__texto">
+                        <h2 class="texto__titulo">Ravioles</h2>
+                        <p class="texto__parrafo">Preparamos cada uno de los rellenos con la mayor atención a las texturas y sabores. Cada variedad es única. A probar todas!</p>
+                        <p>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRavioles" aria-expanded="false" aria-controls="collapseExample">
+                              Comprar
+                            </button>
+                        </p>
+                        <div class="collapse" id="collapseRavioles">
+                            <div class="card card-body">
+                                <div class="texto_lista">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Espinaca y queso<button type="button" class="btn btn-secondary">Agregar</button></li>
+                                        <li class="list-group-item">Pollo, carne y verdura<button type="button" class="btn btn-secondary">Agregar</button></li>
+                                        <li class="list-group-item">Ricota, queso y jamón<button type="button" class="btn btn-secondary">Agregar</button></li>
+                                        <li class="list-group-item">Cuatro quesos<button type="button" class="btn btn-secondary">Agregar</button></li>
+                                        <li class="list-group-item">Brócoli y zucchini<button type="button" class="btn btn-secondary">Agregar</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="opciones__fotobajo">
+                    </div>
                 </div>
-            </section>
+            
+                <div class="ravioles__opciones2">
+                    <div class="opciones2__foto2">
+                    </div>
 
-            <section class="grilla__producto--otras">
-                <h2 class="producto__titulo">Otras Pastas</h2>
-                <div class="producto__lista">
-                    <ul class="list-group">
-                        <li class="list-group-item">Canelones <button type="button" class="btn btn-secondary">Agregar pedido</button></li>
-                        <li class="list-group-item">Sorrentinos <button type="button" class="btn btn-secondary">Agregar pedido</button></li>
-                        <li class="list-group-item">Creppes <button type="button" class="btn btn-secondary">Agregar pedido</button></li>
-                        <li class="list-group-item">Lasagna <button type="button" class="btn btn-secondary">Agregar pedido</button></li>
-                        <li class="list-group-item">Gnocchi <button type="button" class="btn btn-secondary">Agregar pedido</button></li>
-                    </ul>
+                    <div class="opciones2__texto">
+                        <h2 class="texto__titulo">Otras Pastas</h2>
+                        <p class="texto__parrafo">Los clásicos y las preparaciones exclusivas de nuestro maestro. </p>
+                        <p>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOtras" aria-expanded="false" aria-controls="collapseExample">
+                              Comprar
+                            </button>
+                        </p>
+                        <div class="collapse" id="collapseOtras">
+                            <div class="card card-body">
+                                <div class="texto_lista">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Canelones <button type="button" class="btn btn-secondary">Agregar</button></li>
+                                        <li class="list-group-item">Sorrentinos <button type="button" class="btn btn-secondary">Agregar</button></li>
+                                        <li class="list-group-item">Cappelettis <button type="button" class="btn btn-secondary">Agregar</button></li>
+                                        <li class="list-group-item">Lasagna <button type="button" class="btn btn-secondary">Agregar</button></li>
+                                        <li class="list-group-item">Gnocchi <button type="button" class="btn btn-secondary">Agregar</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </section>
+            </div>
+       
+            <div class="grilla__salsas">
+                <div class="salsas__opciones3">
+                    <div class="opciones3__texto">
+                        <h2 class="texto__titulo">Salsas</h2>
+                        <p class="texto__parrafo">De salsa blanca a pesto pasando por todas las variedades de tomate. Si no está en Apolloni no existe!</p>
+                        <p>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSalsa" aria-expanded="false" aria-controls="collapseExample">
+                              Comprar
+                            </button>
+                        </p>
+                        <div class="collapse" id="collapseSalsa">
+                            <div class="card card-body">
+                                <div class="texto_lista">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Bechamel<button type="button" class="btn btn-secondary">Agregar</button></li>
+                                        <li class="list-group-item">Bolognesa<button type="button" class="btn btn-secondary">Agregar</button></li>
+                                        <li class="list-group-item">Scarparo<button type="button" class="btn btn-secondary">Agregar</button></li>
+                                        <li class="list-group-item">Cuatro quesos<button type="button" class="btn btn-secondary">Agregar</button></li>
+                                        <li class="list-group-item">Liviana - Tomate y hortalizas<button type="button" class="btn btn-secondary">Agregar</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-            <section class="grilla__producto--salsas">
-                <h2 class="producto__titulo">Salsas</h2>
-                <div class="producto__lista">
-                    <ul class="list-group">
-                        <li class="list-group-item">Bechamel <button type="button" class="btn btn-secondary">Agregar pedido</button></li>
-                        <li class="list-group-item">Bolognesa <button type="button" class="btn btn-secondary">Agregar pedido</button></li>
-                        <li class="list-group-item">Scarparo <button type="button" class="btn btn-secondary">Agregar pedido</button></li>
-                        <li class="list-group-item">Cuatro quesos <button type="button" class="btn btn-secondary">Agregar pedido</button></li>
-                        <li class="list-group-item">Liviana - Tomate y hortalizas <button type="button" class="btn btn-secondary">Agregar pedido</button></li>
-                    </ul>
+                    <div class="opciones3__fotobajo">
+                    </div>
                 </div>
-            </section>
+                <div class="salsas__foto">
+                </div>
+            </div>
+
         </div>
     </main>
 

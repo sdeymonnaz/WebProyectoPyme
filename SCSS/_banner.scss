@@ -1,0 +1,50 @@
+.banner{
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: block;
+
+    #carouselExampleControls{
+        opacity: 0.7;
+    }
+
+
+    .banner__titulo{
+        position: absolute;
+        top: 40%;
+        left: 20%;
+        text-align: center;
+
+        .titulo__texto{
+                font-family: $familiaTitulo;
+                font-weight: $pesoTitulo;
+                color: $colorPrimario;
+                word-spacing: 5px;
+                text-shadow: 3px 3px black;
+        }
+    }
+
+
+    /* VISTA PARA MOVIL 480px ********************************/
+    @media only screen and (min-width:480px){
+        .titulo__texto{
+            font-size: 2rem;
+        }
+    }
+
+
+    /* VISTA PARA TABLET 768px ******************************/
+    @media only screen and (min-width:768px){
+        .titulo__texto{
+            font-size: 3rem;
+        }
+    }
+
+
+    /* VISTA PARA DESKTOP 1024px **************************/
+    @media only screen and (min-width:1024px){
+        .titulo__texto{
+            font-size: 4rem;
+        }
+    }
+}

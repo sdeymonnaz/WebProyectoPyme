@@ -2,7 +2,7 @@
 .header{
     display: flex;
     flex-direction: row;
-    background: linear-gradient(to bottom, $colorTerciario, $colorFondoPpal);
+    background: black;
     padding: 30px;
 
     a{
@@ -19,7 +19,7 @@
     }
 
     .header__nombre:hover{
-        color: $colorCinco;
+        color: $colorPrimario;
     }
 
     .header__nav{
@@ -38,7 +38,7 @@
             }
 
             .lista__elem:hover{
-                color: $colorCinco;
+                color: $colorPrimario;
             }
         }
     }
