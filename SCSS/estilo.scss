@@ -6,6 +6,7 @@
 @import "footer.scss";
 @import "carrito.scss";
 @import "banner.scss";
+@import "contacto.scss";
 
 
 *{
@@ -959,118 +960,5 @@ body{
         }
 
         
-    }
-}
-
-// PAGINA CONTACTO //
-.contacto{
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    min-height:100vh;
-    background-color: $colorFondoPpal;
-
-    .contacto__banner{
-        width: 100%;
-        height: 200px;
-        background-image: url("../images/banner.png");
-        background-position: center;
-        
-        .banner__titulo{
-            font-size: 2.5rem;
-            color: $colorSecundario;
-            text-shadow: 2px 2px black;
-            padding: 10px;
-        }
-
-        .banner__foto{
-            width: 100%;
-            height: auto;
-        }
-    }
-
-    .contacto__formulario{
-        background-color: $colorSecundario;
-        border-radius: 8px;
-        height:max-content;
-        margin: 10px;
-        padding: 10px;
-
-        .formulario__titulo{
-            border-radius: 8px;
-            padding-left: 10px;
-            padding-bottom: 40px;
-            padding-top: 1px;
-            font-size: 2rem;
-            font-weight: bold;
-            font-family: $familiaParrafo;
-            height: 10px;
-        }
-
-        .form-check-input:checked {
-            background-color: $colorPrimario;
-            border-color: $colorPrimario;
-        }
-
-        .btn-primary{
-            background-color: $colorPrimario;
-            border-color: $colorPrimario;
-        }
-    }
-
-    .contacto__lateral{
-        
-        .lateral__ubicacion{
-            @include parrafoSec($colorParrafo, $colorFondoPpal);
-            border: 4px solid $colorSecundario;
-
-            .ubicacion__titulo{
-                font-size: $tamanioMenu;
-                font-family: $familiaParrafo;
-                color: $colorSecundario;
-            }
-
-            .btn-primary{
-                background-color: $colorPrimario;
-                border-color: $colorPrimario;
-            }
-
-            .collapse{
-                color: black;
-            }
-
-            .ubicacion__mapa{
-                margin-top: 10px;
-                margin-bottom: 1px;
-                width: 100%;
-            }
-
-            .card-body{
-                margin-bottom: 1rem;
-            }
-        }
-    }
-
-    /* VISTA PARA MOVIL 480px ********************************/
-    @media only screen and (min-width:480px){
-        .contacto__formulario{
-            width: 95%;
-        }    
-        
-        .contacto__lateral{
-            width: 90%;
-        }
-    }
-
-    /* VISTA PARA DESKTOP 1024px **************************/
-    @media only screen and (min-width:1024px){
-        .contacto__formulario{
-            width: 85%;
-        }
-        
-        .contacto__lateral{
-            width: 80%;
-        }
     }
 }

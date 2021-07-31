@@ -15,6 +15,12 @@
     <title>Apolloni Pastificio Contacto Sucursales</title>
 </head>
 
+<section class="banner-contacto">
+    <div class="banner-contacto__contenedor">
+        <h2 class="contenedor__titulo">Contáctenos</h2>
+    </picture>
+</section>
+
 <body>
     <header class="header">
         <a href="index.html"> <img class="header__logo" src="images/Apolloni-logo.png" alt="logo Apolloni Pastificio"></a>
@@ -30,112 +36,75 @@
         </nav>
     </header>
 
-    <section class="tituloPag">
-        <div>
-            <h1 class="tituloPag__titular">Contacto</h1>
-        </div>
-    </section>
-
-
     <main class="contacto">
-        <picture class="contacto__banner">
-            <h2 class="banner__titulo">Encuentre debajo los canales para comunicarse con nuestros establecimientos</h2>
-        </picture>
-
-        <section class="contacto__formulario">
-            <form>
-                <h2 class="formulario__titulo">Formulario de contacto</h2>
-                <div class="input-group">
-                    <span class="input-group-text">Nombre y apellido</span>
-                    <input type="text" aria-label="First name" class="form-control">
-                    <input type="text" aria-label="Last name" class="form-control">
-                </div><br>
-                
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                    <label class="form-check-label" for="inlineCheckbox1">Hombre</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                    <label class="form-check-label" for="inlineCheckbox2">Mujer</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                    <label class="form-check-label" for="inlineCheckbox3">Prefiero no decirlo</label>
-                </div><br><br>
-                
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="email" aria-label="Username">
-                    <span class="input-group-text">@</span>
-                    <input type="text" class="form-control" placeholder="dominio" aria-label="Server">
-                  </div><br>
-
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>Cómo escucho sobre nosotros?</option>
-                    <option value="1">Redes sociales</option>
-                    <option value="2">Búsqueda en Google</option>
-                    <option value="3">Recomendación boca a boca</option>
-                    <option value="3">Soy cliente del local</option>
-                    <option value="3">Otro</option>
-                </select><br>
-
-                <div class="input-group">
-                    <span class="input-group-text">Ingrese su consulta</span>
-                    <textarea class="form-control" aria-label="With textarea"></textarea>
-                </div><br>
-
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                    <label class="form-check-label" for="flexCheckChecked">
-                      Acepto recibir contenido promocional
-                    </label>
-                </div><br>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                    <input class="btn btn-primary" type="reset" value="Limpiar">
-                    <button class="btn btn-primary" type="submit">Enviar</button>
-                </div>
-            </form>
-        </section>
-
-        <section class="contacto__lateral">
-            <aside class="lateral__ubicacion">
-                <h2 class="ubicacion__titulo">Sucursales</h2>
-                <p>
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCentro" aria-expanded="false" aria-controls="collapseExample">
-                      Centro
-                    </button>
-                </p>
-                <div class="collapse" id="collapseCentro">
-                    <div class="card card-body">
-                        Av. 9 de Julio 1150, C1043, CABA<br>Tel: 4444-4444
-                        <iframe class="ubicacion__mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.2344209263015!2d-58.38535521361712!3d-34.602725037910645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1sen!2sar!4v1622954938116!5m2!1sen!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
-                </div>
+        <section class="contacto__contenedor">
+            <section class="contenedor__formulario">
+                <form>
+                    <h2 class="formulario__titulo">Por favor llene este formulario para contactarnos</h2>
+                    <div class="input-group">
+                        <span class="input-group-text">Nombre y apellido</span>
+                        <input type="text" aria-label="First name" class="form-control">
+                        <input type="text" aria-label="Last name" class="form-control">
+                    </div><br>
                     
-                <p>
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCaballito" aria-expanded="false" aria-controls="collapseExample">
-                        Caballito
-                    </button>
-                </p>
-                <div class="collapse" id="collapseCaballito">
-                    <div class="card card-body">
-                        Av. Rivadavia 4950, C1424 CABA<br>Tel: 5555-5555
-                        <iframe class="ubicacion__mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.45798153061!2d-58.435389784443444!3d-34.61786508045581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca440ec19097%3A0x30b34282ae8fae18!2sRivadavia%20Park!5e0!3m2!1sen!2sar!4v1624587135267!5m2!1sen!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
-                </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Hombre</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">Mujer</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">Otro</label>
+                    </div><br><br>
+                    
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="email" aria-label="Username">
+                        <span class="input-group-text">@</span>
+                        <input type="text" class="form-control" placeholder="dominio" aria-label="Server">
+                        </div><br>
 
-                <p>
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNunez" aria-expanded="false" aria-controls="collapseExample">
-                        Nuñez
-                    </button>
-                </p>
-                <div class="collapse" id="collapseNunez">
-                    <div class="card card-body">
-                        Ramallo 2200, C1429DUJ CABA<br>Tel: 6666-6666
-                        <iframe class="ubicacion__mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5432.160644067436!2d-58.468589199771245!3d-34.54239970046263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6a2462d903f%3A0xc5114ca1e024f6f6!2sPlaza%20F%C3%A9lix%20Lima!5e0!3m2!1sen!2sar!4v1624588351116!5m2!1sen!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Cómo escucho sobre nosotros?</option>
+                        <option value="1">Redes sociales</option>
+                        <option value="2">Búsqueda en Google</option>
+                        <option value="3">Recomendación boca a boca</option>
+                        <option value="4">Soy cliente del local</option>
+                        <option value="5">Otro</option>
+                    </select><br>
+
+                    <div class="input-group">
+                        <span class="input-group-text">Ingrese su consulta</span>
+                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div><br>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Acepto recibir contenido promocional
+                        </label>
+                    </div><br>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <input class="btn btn-warning" type="reset" value="Limpiar">
+                        <button class="btn btn-warning" type="submit">Enviar</button>
                     </div>
-                </div>
-            </aside>    
+                </form>
+            </section>
+
+            <section class="contenedor__datos">
+                    <ul class="datos__detalle">
+                        <li class="detalle__texto"><article class="fa fa-home"></article>Av. Olazábal 4810, Villa Urquiza</li>
+                        <li class="detalle__texto"><article class="fa fa-phone"></article>011-4444-4444</li>
+                        <li class="detalle__texto"><a href="mailto:info@apollonipastificio.com" class="fa fa-envelope"></a>info@apollonipasticio.com</li>
+                        <li class="detalle__texto"><article class="fa fa-whatsapp"></article>WhatsApp</li>
+                    </ul>
+            </section>
+        </section> 
+
+        <section class="contacto__mapa" style="z-index: 3">
+            <iframe class="mapa__ubicacion" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6570.308449837454!2d-58.48730336500804!3d-34.57496399877917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6664d24dc33%3A0xff6857aa82bee05b!2sAv.%20Olaz%C3%A1bal%204810%2C%20C1431CGR%20CABA!5e0!3m2!1sen!2sar!4v1627618809049!5m2!1sen!2sar" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </section>
     </main>
 

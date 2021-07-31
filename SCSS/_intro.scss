@@ -20,7 +20,7 @@
 
         .centro__logo{
             height: 170px;
-            width: fit-content;
+            width: 100%;
             padding: 10px;
             transition: 2s;
         }
@@ -30,7 +30,6 @@
         }
 
         .centro__titulo{
-            width: fit-content;
             color: $colorCuatro;
             font-family: $familiaTitulo;
             font-size: 4rem;
