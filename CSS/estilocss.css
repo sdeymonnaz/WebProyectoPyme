@@ -252,30 +252,515 @@
       text-shadow: 3px 3px black; }
   @media only screen and (min-width: 480px) {
     .banner .titulo__texto {
-      font-size: 2rem; } }
+      font-size: 3rem; } }
   @media only screen and (min-width: 768px) {
     .banner .titulo__texto {
-      font-size: 3rem; } }
+      font-size: 4rem; } }
   @media only screen and (min-width: 1024px) {
     .banner .titulo__texto {
-      font-size: 4rem; } }
+      font-size: 5rem; } }
 
 .banner-contacto {
   width: 100%;
   height: 300px; }
+  .banner-contacto .banner-contacto__contenedor {
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/banner.png");
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .banner-contacto .banner-contacto__contenedor .contenedor__titulo {
+      font-size: 5rem;
+      font-family: "Catamaran", sans-serif;
+      font-weight: 800;
+      color: #fb383b;
+      text-shadow: 3px 3px black;
+      padding: 10px; }
 
-.banner-contacto__contenedor {
+.banner-quienes {
   width: 100%;
-  height: 100%;
-  background-image: url("../images/banner.png");
+  height: 300px;
+  /* VISTA PARA MOVIL 480px ********************************/
+  /* VISTA PARA TABLET 768px ******************************/
+  /* VISTA PARA DESKTOP 1024px **************************/ }
+  .banner-quienes .banner-quienes__contenedor {
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/banner.png");
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .banner-quienes .banner-quienes__contenedor .contenedor__titulo {
+      font-size: 5rem;
+      font-family: "Catamaran", sans-serif;
+      font-weight: 800;
+      color: #fb383b;
+      text-shadow: 3px 3px black;
+      padding: 10px; }
+  @media only screen and (min-width: 480px) {
+    .banner-quienes .banner-quienes .banner-quienes__contenedor .contenedor__titulo {
+      font-size: 3.5rem; } }
+  @media only screen and (min-width: 768px) {
+    .banner-quienes .banner-quienes .banner-quienes__contenedor .contenedor__titulo {
+      font-size: 5rem; } }
+  @media only screen and (min-width: 1024px) {
+    .banner-quienes .banner-quienes .banner-quienes__contenedor .contenedor__titulo {
+      font-size: 6rem; } }
+
+.productos {
+  background-color: black;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center; }
-  .banner-contacto__contenedor .contenedor__titulo {
-    font-size: 5rem;
-    color: #fb383b;
-    text-shadow: 2px 2px black;
-    padding: 10px; }
+  /* VISTA PARA MOVIL 480px ******************************/
+  /* VISTA PARA TABLET 768px *****************************/
+  /* VISTA PARA DESKTOP 1024px **************************/ }
+  .productos .productos__grilla {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center; }
+    .productos .productos__grilla .grilla__fideos {
+      display: flex;
+      flex-direction: row;
+      width: 100%; }
+      .productos .productos__grilla .grilla__fideos .fideos__foto {
+        background-image: url(../images/pedidos_fideos.png); }
+      .productos .productos__grilla .grilla__fideos .fideos__opciones {
+        height: 600px; }
+        .productos .productos__grilla .grilla__fideos .fideos__opciones .opciones__texto {
+          background-color: #fb383b;
+          padding: 20px; }
+          .productos .productos__grilla .grilla__fideos .fideos__opciones .opciones__texto .texto__titulo {
+            font-size: 3.5rem;
+            font-weight: 600;
+            color: whitesmoke;
+            text-shadow: 3px 3px black; }
+          .productos .productos__grilla .grilla__fideos .fideos__opciones .opciones__texto .texto__parrafo {
+            color: whitesmoke;
+            padding: 5px; }
+          .productos .productos__grilla .grilla__fideos .fideos__opciones .opciones__texto .list-group {
+            background-color: RGBA(239, 230, 221, 0.7);
+            font-family: "Catamaran", sans-serif;
+            font-size: 16px;
+            width: 100%;
+            height: auto;
+            padding: 5px;
+            border-radius: .25rem; }
+          .productos .productos__grilla .grilla__fideos .fideos__opciones .opciones__texto .btn {
+            float: right;
+            font-size: 20px;
+            color: whitesmoke;
+            background-color: black;
+            border-color: black; }
+          .productos .productos__grilla .grilla__fideos .fideos__opciones .opciones__texto .btn:focus {
+            box-shadow: 0 0 0 0.25rem #ffca2c; }
+          .productos .productos__grilla .grilla__fideos .fideos__opciones .opciones__texto .btn:hover {
+            color: black;
+            background-color: #ffca2c;
+            border-color: #ffca2c; }
+        .productos .productos__grilla .grilla__fideos .fideos__opciones .opciones__fotobajo {
+          width: 100%;
+          height: 300px;
+          background-image: url(../images/pedidos_fideos2.png); }
+    .productos .productos__grilla .grilla__ravioles {
+      display: flex;
+      width: 100%; }
+      .productos .productos__grilla .grilla__ravioles .ravioles__opciones .opciones__texto {
+        width: 100%;
+        height: 300px;
+        background-color: black;
+        padding: 20px; }
+        .productos .productos__grilla .grilla__ravioles .ravioles__opciones .opciones__texto .texto__titulo {
+          font-size: 3.5rem;
+          font-weight: 600;
+          color: whitesmoke;
+          text-shadow: 3px 3px black; }
+        .productos .productos__grilla .grilla__ravioles .ravioles__opciones .opciones__texto .texto__parrafo {
+          color: whitesmoke;
+          padding: 5px; }
+        .productos .productos__grilla .grilla__ravioles .ravioles__opciones .opciones__texto .list-group {
+          background-color: RGBA(239, 230, 221, 0.7);
+          font-family: "Catamaran", sans-serif;
+          font-size: 16px;
+          width: 100%;
+          height: auto;
+          padding: 5px;
+          border-radius: .25rem; }
+        .productos .productos__grilla .grilla__ravioles .ravioles__opciones .opciones__texto .btn {
+          float: right;
+          font-size: 20px;
+          color: whitesmoke;
+          background-color: #fb383b;
+          border-color: #fb383b; }
+        .productos .productos__grilla .grilla__ravioles .ravioles__opciones .opciones__texto .btn:focus {
+          box-shadow: 0 0 0 0.25rem #fb383b; }
+        .productos .productos__grilla .grilla__ravioles .ravioles__opciones .opciones__texto .btn:hover {
+          color: black;
+          background-color: #ffca2c;
+          border-color: #ffca2c; }
+      .productos .productos__grilla .grilla__ravioles .ravioles__opciones .opciones__fotobajo {
+        background-image: url(../images/pedidos_ravioles.png); }
+      .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 .opciones2__texto {
+        background-color: black;
+        padding: 20px; }
+        .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 .opciones2__texto .texto__titulo {
+          font-size: 3.5rem;
+          font-weight: 600;
+          color: whitesmoke;
+          text-shadow: 3px 3px black; }
+        .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 .opciones2__texto .texto__parrafo {
+          color: whitesmoke;
+          padding: 5px; }
+        .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 .opciones2__texto .list-group {
+          background-color: RGBA(239, 230, 221, 0.7);
+          font-family: "Catamaran", sans-serif;
+          font-size: 16px;
+          width: 100%;
+          height: auto;
+          padding: 5px;
+          border-radius: .25rem; }
+        .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 .opciones2__texto .btn {
+          float: right;
+          font-size: 20px;
+          color: whitesmoke;
+          background-color: #fb383b;
+          border-color: #fb383b; }
+        .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 .opciones2__texto .btn:focus {
+          box-shadow: 0 0 0 0.25rem #fb383b; }
+        .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 .opciones2__texto .btn:hover {
+          color: black;
+          background-color: #ffca2c;
+          border-color: #ffca2c; }
+      .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 .opciones2__foto2 {
+        width: 100%;
+        height: 400px;
+        background-image: url(../images/pedidos_otras.png); }
+    .productos .productos__grilla .grilla__salsas {
+      display: flex;
+      width: 100%; }
+      .productos .productos__grilla .grilla__salsas .salsas__opciones3 .opciones3__texto {
+        background-color: #fb383b;
+        padding: 20px; }
+        .productos .productos__grilla .grilla__salsas .salsas__opciones3 .opciones3__texto .texto__titulo {
+          font-size: 3.5rem;
+          font-weight: 600;
+          color: whitesmoke;
+          text-shadow: 3px 3px black; }
+        .productos .productos__grilla .grilla__salsas .salsas__opciones3 .opciones3__texto .texto__parrafo {
+          color: whitesmoke;
+          padding: 5px; }
+        .productos .productos__grilla .grilla__salsas .salsas__opciones3 .opciones3__texto .list-group {
+          background-color: RGBA(239, 230, 221, 0.7);
+          font-family: "Catamaran", sans-serif;
+          font-size: 16px;
+          width: 100%;
+          height: auto;
+          padding: 5px;
+          border-radius: .25rem; }
+        .productos .productos__grilla .grilla__salsas .salsas__opciones3 .opciones3__texto .btn {
+          float: right;
+          font-size: 20px;
+          color: whitesmoke;
+          background-color: black;
+          border-color: black; }
+        .productos .productos__grilla .grilla__salsas .salsas__opciones3 .opciones3__texto .btn:focus {
+          box-shadow: 0 0 0 0.25rem #fb383b; }
+        .productos .productos__grilla .grilla__salsas .salsas__opciones3 .opciones3__texto .btn:hover {
+          color: black;
+          background-color: #ffca2c;
+          border-color: #ffca2c; }
+      .productos .productos__grilla .grilla__salsas .salsas__opciones3 .opciones3__fotobajo {
+        background-color: #fb383b;
+        background-image: url(../images/pedidos_salsa.png); }
+      .productos .productos__grilla .grilla__salsas .salsas__foto {
+        background-color: whitesmoke;
+        background-image: url(../images/pedidos_salsa1.png); }
+  @media only screen and (min-width: 480px) {
+    .productos .productos__grilla .grilla__fideos {
+      flex-direction: column;
+      height: 1050px; }
+      .productos .productos__grilla .grilla__fideos .fideos__foto {
+        width: 100%;
+        height: 450px; }
+      .productos .productos__grilla .grilla__fideos .fideos__opciones {
+        width: 100%; }
+        .productos .productos__grilla .grilla__fideos .fideos__opciones .opciones__texto {
+          width: 100%;
+          height: 300px; }
+    .productos .productos__grilla .grilla__ravioles {
+      flex-direction: column;
+      height: 1400px; }
+      .productos .productos__grilla .grilla__ravioles .ravioles__opciones {
+        height: 700px;
+        width: 100%; }
+        .productos .productos__grilla .grilla__ravioles .ravioles__opciones .opciones__fotobajo {
+          width: 100%;
+          height: 400px; }
+      .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 {
+        width: 100%;
+        height: 700px; }
+        .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 .opciones2__texto {
+          width: 100%;
+          height: 300px; }
+        .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 .opciones2__foto2 {
+          width: 100%;
+          height: 400px; }
+    .productos .productos__grilla .grilla__salsas {
+      flex-direction: column;
+      height: 1200px; }
+      .productos .productos__grilla .grilla__salsas .salsas__opciones3 {
+        width: 100%;
+        height: 600px; }
+        .productos .productos__grilla .grilla__salsas .salsas__opciones3 .opciones3__texto {
+          width: 100%;
+          height: 300px; }
+        .productos .productos__grilla .grilla__salsas .salsas__opciones3 .opciones3__fotobajo {
+          width: 100%;
+          height: 300px; }
+      .productos .productos__grilla .grilla__salsas .salsas__foto {
+        width: 100%;
+        height: 600px; } }
+  @media only screen and (min-width: 768px) {
+    .productos .productos__grilla .grilla__fideos {
+      display: flex;
+      flex-direction: row;
+      height: 600px; }
+      .productos .productos__grilla .grilla__fideos .fideos__foto {
+        width: 45%;
+        height: 600px; }
+      .productos .productos__grilla .grilla__fideos .fideos__opciones {
+        width: 55%;
+        height: 600px; }
+        .productos .productos__grilla .grilla__fideos .fideos__opciones .opciones__texto {
+          width: 100%;
+          height: 350px; }
+    .productos .productos__grilla .grilla__ravioles {
+      flex-direction: row;
+      height: 800px; }
+      .productos .productos__grilla .grilla__ravioles .ravioles__opciones {
+        height: 300px;
+        width: 50%; }
+        .productos .productos__grilla .grilla__ravioles .ravioles__opciones .opciones__fotobajo {
+          width: 100%;
+          height: 500px; }
+      .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 {
+        width: 50%;
+        height: 800px; }
+        .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 .opciones2__texto {
+          width: 100%;
+          height: 400px; }
+        .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 .opciones2__foto2 {
+          width: 100%;
+          height: 400px; }
+    .productos .productos__grilla .grilla__salsas {
+      flex-direction: row;
+      height: 800px; }
+      .productos .productos__grilla .grilla__salsas .salsas__opciones3 {
+        width: 65%;
+        height: 800px; }
+        .productos .productos__grilla .grilla__salsas .salsas__opciones3 .opciones3__texto {
+          width: 100%;
+          height: 300px; }
+        .productos .productos__grilla .grilla__salsas .salsas__opciones3 .opciones3__fotobajo {
+          width: 100%;
+          height: 500px; }
+      .productos .productos__grilla .grilla__salsas .salsas__foto {
+        width: 50%;
+        height: 800px; } }
+  @media only screen and (min-width: 1024px) {
+    .productos .productos__grilla .grilla__fideos {
+      display: flex;
+      flex-direction: row;
+      height: 600px; }
+      .productos .productos__grilla .grilla__fideos .fideos__foto {
+        width: 50%;
+        height: 600px; }
+      .productos .productos__grilla .grilla__fideos .fideos__opciones {
+        width: 60%;
+        height: 600px; }
+        .productos .productos__grilla .grilla__fideos .fideos__opciones .opciones__texto {
+          width: 100%;
+          height: 300px; }
+    .productos .productos__grilla .grilla__ravioles {
+      flex-direction: row;
+      height: 800px; }
+      .productos .productos__grilla .grilla__ravioles .ravioles__opciones {
+        height: 300px;
+        width: 50%; }
+        .productos .productos__grilla .grilla__ravioles .ravioles__opciones .opciones__fotobajo {
+          width: 100%;
+          height: 500px; }
+      .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 {
+        width: 50%;
+        height: 800px; }
+        .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 .opciones2__texto {
+          width: 100%;
+          height: 400px; }
+        .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 .opciones2__foto2 {
+          width: 100%;
+          height: 400px; }
+    .productos .productos__grilla .grilla__salsas {
+      flex-direction: row;
+      height: 800px; }
+      .productos .productos__grilla .grilla__salsas .salsas__opciones3 {
+        width: 65%;
+        height: 800px; }
+        .productos .productos__grilla .grilla__salsas .salsas__opciones3 .opciones3__texto {
+          width: 100%;
+          height: 300px; }
+        .productos .productos__grilla .grilla__salsas .salsas__opciones3 .opciones3__fotobajo {
+          width: 100%;
+          height: 500px; }
+      .productos .productos__grilla .grilla__salsas .salsas__foto {
+        width: 50%;
+        height: 800px; } }
+
+.quienes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: black;
+  width: 100%; }
+  .quienes .quienes__historia {
+    display: flex;
+    width: 100%;
+    background-color: #fb383b; }
+    .quienes .quienes__historia .historia__imagen {
+      height: 100%; }
+    .quienes .quienes__historia .historia__texto {
+      height: 100%; }
+      .quienes .quienes__historia .historia__texto .parrafo--quienes {
+        padding: 20px; }
+  .quienes .quienes__media {
+    display: flex;
+    background-color: black;
+    width: 100%; }
+    .quienes .quienes__media .media__texto {
+      width: 30%;
+      height: 100%;
+      background-color: black; }
+      .quienes .quienes__media .media__texto .parrafo--quienes {
+        padding: 20px; }
+    .quienes .quienes__media .media__imagen {
+      width: 70%;
+      max-width: 600px;
+      height: 100%; }
+  .quienes .quienes__cita {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    width: 100%;
+    height: 250px; }
+    .quienes .quienes__cita .cita__contenedor {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 60%; }
+      .quienes .quienes__cita .cita__contenedor .contenedor__frase {
+        color: whitesmoke;
+        font-family: "Catamaran", sans-serif;
+        font-style: italic;
+        font-size: 1.2rem;
+        word-spacing: 2px;
+        text-align: justify;
+        padding-bottom: 0px; }
+      .quienes .quienes__cita .cita__contenedor .contenedor__firma {
+        color: whitesmoke;
+        font-family: "Catamaran", sans-serif;
+        font-style: normal;
+        font-size: 1.2rem;
+        word-spacing: 2px;
+        padding-top: 0px; }
+  .quienes .quienes__slideshow {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #fb383b;
+    height: 300px;
+    width: 100%; }
+    .quienes .quienes__slideshow .carousel {
+      width: 900px;
+      height: 300px; }
+
+/* VISTA PARA MOVIL 480px ******************************/
+@media only screen and (min-width: 480px) {
+  .quienes .quienes__historia {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start; }
+    .quienes .quienes__historia .historia__imagen {
+      width: 100%; }
+  .quienes .quienes__media {
+    flex-direction: column;
+    align-items: center;
+    height: auto; }
+    .quienes .quienes__media .media__texto {
+      width: 100%; }
+      .quienes .quienes__media .media__texto #texto__tablet {
+        font-size: 1.1rem; }
+    .quienes .quienes__media .media__imagen {
+      width: 100%; }
+      .quienes .quienes__media .media__imagen #imagen__foto {
+        width: 100%;
+        height: auto; }
+  .quienes .quienes__cita {
+    flex-direction: column; }
+    .quienes .quienes__cita .cita__contenedor {
+      width: 85%; }
+      .quienes .quienes__cita .cita__contenedor .contenedor__frase {
+        font-size: 1rem; } }
+
+/* VISTA PARA TABLET 768px ******************************/
+@media only screen and (min-width: 768px) {
+  .quienes .quienes__historia {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 300px; }
+    .quienes .quienes__historia .historia__imagen {
+      width: 40%; }
+    .quienes .quienes__historia .historia__texto {
+      width: 60%; }
+      .quienes .quienes__historia .historia__texto #texto__tablet {
+        font-size: 1.1rem; }
+  .quienes .quienes__media {
+    flex-direction: row;
+    height: auto; }
+    .quienes .quienes__media .media__texto {
+      width: 40%; }
+      .quienes .quienes__media .media__texto #texto__tablet {
+        font-size: 1.1rem; }
+    .quienes .quienes__media .media__imagen {
+      width: 60%; }
+      .quienes .quienes__media .media__imagen #imagen__foto {
+        width: 100%;
+        height: auto; } }
+
+/* VISTA PARA DESKTOP 1024px **************************/
+@media only screen and (min-width: 1024px) {
+  .quienes .quienes__historia {
+    flex-direction: row;
+    width: 100%;
+    height: 400px; }
+    .quienes .quienes__historia .historia__imagen {
+      width: 40%; }
+    .quienes .quienes__historia .historia__texto {
+      width: 60%; }
+      .quienes .quienes__historia .historia__texto #texto__tablet {
+        font-size: 1.2rem; }
+  .quienes .quienes__media {
+    flex-direction: row;
+    height: 400px; }
+    .quienes .quienes__media .media__texto #texto__tablet {
+      font-size: 1.2rem; }
+  .quienes .quienes__cita .cita__contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%; } }
 
 /* VISTA PARA MOVIL 480px ********************************/
 @media only screen and (min-width: 480px) {
@@ -394,7 +879,7 @@
 body {
   height: 100%; }
 
-.parrafo, .home .home__principal .principal__texto .texto__parrafo, .productos .productos__grilla .grilla__fideos .fideos__opciones .opciones__texto .texto__parrafo, .productos .productos__grilla .grilla__ravioles .ravioles__opciones .opciones__texto .texto__parrafo, .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 .opciones2__texto .texto__parrafo, .productos .productos__grilla .grilla__salsas .salsas__opciones3 .opciones3__texto .texto__parrafo, .quienes .parrafo--quienes {
+.parrafo, .productos .productos__grilla .grilla__fideos .fideos__opciones .opciones__texto .texto__parrafo, .productos .productos__grilla .grilla__ravioles .ravioles__opciones .opciones__texto .texto__parrafo, .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 .opciones2__texto .texto__parrafo, .productos .productos__grilla .grilla__salsas .salsas__opciones3 .opciones3__texto .texto__parrafo, .quienes .quienes__historia .historia__texto .parrafo--quienes, .quienes .quienes__media .media__texto .parrafo--quienes, .home .home__principal .principal__texto .texto__parrafo {
   font-size: 1.2rem;
   font-family: "Catamaran", sans-serif;
   font-weight: 300;
@@ -576,315 +1061,6 @@ body {
         display: flex;
         flex-direction: row; } }
 
-.productos {
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* VISTA PARA MOVIL 480px ******************************/
-  /* VISTA PARA TABLET 768px *****************************/
-  /* VISTA PARA DESKTOP 1024px **************************/ }
-  .productos .productos__grilla {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center; }
-    .productos .productos__grilla .grilla__fideos {
-      display: flex;
-      flex-direction: row;
-      width: 100%; }
-      .productos .productos__grilla .grilla__fideos .fideos__foto {
-        background-image: url(../images/pedidos_fideos.png); }
-      .productos .productos__grilla .grilla__fideos .fideos__opciones {
-        height: 600px; }
-        .productos .productos__grilla .grilla__fideos .fideos__opciones .opciones__texto {
-          background-color: #fb383b;
-          padding: 20px; }
-          .productos .productos__grilla .grilla__fideos .fideos__opciones .opciones__texto .texto__titulo {
-            font-size: 3.5rem;
-            font-weight: 600;
-            color: whitesmoke;
-            text-shadow: -1px 1px black; }
-          .productos .productos__grilla .grilla__fideos .fideos__opciones .opciones__texto .texto__parrafo {
-            color: whitesmoke;
-            padding: 5px; }
-          .productos .productos__grilla .grilla__fideos .fideos__opciones .opciones__texto .list-group {
-            background-color: RGBA(239, 230, 221, 0.7);
-            font-family: "Catamaran", sans-serif;
-            font-size: 16px;
-            width: 100%;
-            height: auto;
-            padding: 5px;
-            border-radius: .25rem; }
-          .productos .productos__grilla .grilla__fideos .fideos__opciones .opciones__texto .btn {
-            float: right;
-            font-size: 20px;
-            color: black;
-            background-color: #ffca2c;
-            border-color: #ffca2c; }
-          .productos .productos__grilla .grilla__fideos .fideos__opciones .opciones__texto .btn:focus {
-            box-shadow: 0 0 0 0.25rem #ffca2c; }
-          .productos .productos__grilla .grilla__fideos .fideos__opciones .opciones__texto .btn:hover {
-            color: whitesmoke;
-            background-color: black;
-            border-color: black; }
-        .productos .productos__grilla .grilla__fideos .fideos__opciones .opciones__fotobajo {
-          width: 100%;
-          height: 300px;
-          background-image: url(../images/pedidos_fideos2.png); }
-    .productos .productos__grilla .grilla__ravioles {
-      display: flex;
-      width: 100%; }
-      .productos .productos__grilla .grilla__ravioles .ravioles__opciones .opciones__texto {
-        width: 100%;
-        height: 300px;
-        background-color: black;
-        padding: 20px; }
-        .productos .productos__grilla .grilla__ravioles .ravioles__opciones .opciones__texto .texto__titulo {
-          font-size: 3.5rem;
-          font-weight: 600;
-          color: whitesmoke;
-          text-shadow: -1px 1px black; }
-        .productos .productos__grilla .grilla__ravioles .ravioles__opciones .opciones__texto .texto__parrafo {
-          color: whitesmoke;
-          padding: 5px; }
-        .productos .productos__grilla .grilla__ravioles .ravioles__opciones .opciones__texto .list-group {
-          background-color: RGBA(239, 230, 221, 0.7);
-          font-family: "Catamaran", sans-serif;
-          font-size: 16px;
-          width: 100%;
-          height: auto;
-          padding: 5px;
-          border-radius: .25rem; }
-        .productos .productos__grilla .grilla__ravioles .ravioles__opciones .opciones__texto .btn {
-          float: right;
-          font-size: 20px;
-          color: black;
-          background-color: #ffca2c;
-          border-color: #ffca2c; }
-        .productos .productos__grilla .grilla__ravioles .ravioles__opciones .opciones__texto .btn:focus {
-          box-shadow: 0 0 0 0.25rem #ffca2c; }
-        .productos .productos__grilla .grilla__ravioles .ravioles__opciones .opciones__texto .btn:hover {
-          color: whitesmoke;
-          background-color: #fb383b;
-          border-color: #fb383b; }
-      .productos .productos__grilla .grilla__ravioles .ravioles__opciones .opciones__fotobajo {
-        background-image: url(../images/pedidos_ravioles.png); }
-      .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 .opciones2__texto {
-        background-color: black;
-        padding: 20px; }
-        .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 .opciones2__texto .texto__titulo {
-          font-size: 3.5rem;
-          font-weight: 600;
-          color: whitesmoke;
-          text-shadow: -1px 1px black; }
-        .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 .opciones2__texto .texto__parrafo {
-          color: whitesmoke;
-          padding: 5px; }
-        .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 .opciones2__texto .list-group {
-          background-color: RGBA(239, 230, 221, 0.7);
-          font-family: "Catamaran", sans-serif;
-          font-size: 16px;
-          width: 100%;
-          height: auto;
-          padding: 5px;
-          border-radius: .25rem; }
-        .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 .opciones2__texto .btn {
-          float: right;
-          font-size: 20px;
-          color: black;
-          background-color: #ffca2c;
-          border-color: #ffca2c; }
-        .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 .opciones2__texto .btn:focus {
-          box-shadow: 0 0 0 0.25rem #ffca2c; }
-        .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 .opciones2__texto .btn:hover {
-          color: whitesmoke;
-          background-color: #fb383b;
-          border-color: #fb383b; }
-      .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 .opciones2__foto2 {
-        width: 100%;
-        height: 400px;
-        background-image: url(../images/pedidos_otras.png); }
-    .productos .productos__grilla .grilla__salsas {
-      display: flex;
-      width: 100%; }
-      .productos .productos__grilla .grilla__salsas .salsas__opciones3 .opciones3__texto {
-        background-color: #fb383b;
-        padding: 20px; }
-        .productos .productos__grilla .grilla__salsas .salsas__opciones3 .opciones3__texto .texto__titulo {
-          font-size: 3.5rem;
-          font-weight: 600;
-          color: whitesmoke;
-          text-shadow: -1px 1px black; }
-        .productos .productos__grilla .grilla__salsas .salsas__opciones3 .opciones3__texto .texto__parrafo {
-          color: whitesmoke;
-          padding: 5px; }
-        .productos .productos__grilla .grilla__salsas .salsas__opciones3 .opciones3__texto .list-group {
-          background-color: RGBA(239, 230, 221, 0.7);
-          font-family: "Catamaran", sans-serif;
-          font-size: 16px;
-          width: 100%;
-          height: auto;
-          padding: 5px;
-          border-radius: .25rem; }
-        .productos .productos__grilla .grilla__salsas .salsas__opciones3 .opciones3__texto .btn {
-          float: right;
-          font-size: 20px;
-          color: black;
-          background-color: #ffca2c;
-          border-color: #ffca2c; }
-        .productos .productos__grilla .grilla__salsas .salsas__opciones3 .opciones3__texto .btn:focus {
-          box-shadow: 0 0 0 0.25rem #ffca2c; }
-        .productos .productos__grilla .grilla__salsas .salsas__opciones3 .opciones3__texto .btn:hover {
-          color: whitesmoke;
-          background-color: black;
-          border-color: black; }
-      .productos .productos__grilla .grilla__salsas .salsas__opciones3 .opciones3__fotobajo {
-        background-color: #fb383b;
-        background-image: url(../images/pedidos_salsa.png); }
-      .productos .productos__grilla .grilla__salsas .salsas__foto {
-        background-color: whitesmoke;
-        background-image: url(../images/pedidos_salsa1.png); }
-  @media only screen and (min-width: 480px) {
-    .productos .productos__grilla .grilla__fideos {
-      flex-direction: column;
-      height: 1050px; }
-      .productos .productos__grilla .grilla__fideos .fideos__foto {
-        width: 100%;
-        height: 450px; }
-      .productos .productos__grilla .grilla__fideos .fideos__opciones {
-        width: 100%; }
-        .productos .productos__grilla .grilla__fideos .fideos__opciones .opciones__texto {
-          width: 100%;
-          height: 300px; }
-    .productos .productos__grilla .grilla__ravioles {
-      flex-direction: column;
-      height: 1400px; }
-      .productos .productos__grilla .grilla__ravioles .ravioles__opciones {
-        height: 700px;
-        width: 100%; }
-        .productos .productos__grilla .grilla__ravioles .ravioles__opciones .opciones__fotobajo {
-          width: 100%;
-          height: 400px; }
-      .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 {
-        width: 100%;
-        height: 700px; }
-        .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 .opciones2__texto {
-          width: 100%;
-          height: 300px; }
-        .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 .opciones2__foto2 {
-          width: 100%;
-          height: 400px; }
-    .productos .productos__grilla .grilla__salsas {
-      flex-direction: column;
-      height: 1200px; }
-      .productos .productos__grilla .grilla__salsas .salsas__opciones3 {
-        width: 100%;
-        height: 600px; }
-        .productos .productos__grilla .grilla__salsas .salsas__opciones3 .opciones3__texto {
-          width: 100%;
-          height: 300px; }
-        .productos .productos__grilla .grilla__salsas .salsas__opciones3 .opciones3__fotobajo {
-          width: 100%;
-          height: 300px; }
-      .productos .productos__grilla .grilla__salsas .salsas__foto {
-        width: 100%;
-        height: 600px; } }
-  @media only screen and (min-width: 768px) {
-    .productos .productos__grilla .grilla__fideos {
-      display: flex;
-      flex-direction: row;
-      height: 600px; }
-      .productos .productos__grilla .grilla__fideos .fideos__foto {
-        width: 45%;
-        height: 600px; }
-      .productos .productos__grilla .grilla__fideos .fideos__opciones {
-        width: 55%;
-        height: 600px; }
-        .productos .productos__grilla .grilla__fideos .fideos__opciones .opciones__texto {
-          width: 100%;
-          height: 350px; }
-    .productos .productos__grilla .grilla__ravioles {
-      flex-direction: row;
-      height: 800px; }
-      .productos .productos__grilla .grilla__ravioles .ravioles__opciones {
-        height: 300px;
-        width: 50%; }
-        .productos .productos__grilla .grilla__ravioles .ravioles__opciones .opciones__fotobajo {
-          width: 100%;
-          height: 500px; }
-      .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 {
-        width: 50%;
-        height: 800px; }
-        .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 .opciones2__texto {
-          width: 100%;
-          height: 400px; }
-        .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 .opciones2__foto2 {
-          width: 100%;
-          height: 400px; }
-    .productos .productos__grilla .grilla__salsas {
-      flex-direction: row;
-      height: 800px; }
-      .productos .productos__grilla .grilla__salsas .salsas__opciones3 {
-        width: 65%;
-        height: 800px; }
-        .productos .productos__grilla .grilla__salsas .salsas__opciones3 .opciones3__texto {
-          width: 100%;
-          height: 300px; }
-        .productos .productos__grilla .grilla__salsas .salsas__opciones3 .opciones3__fotobajo {
-          width: 100%;
-          height: 500px; }
-      .productos .productos__grilla .grilla__salsas .salsas__foto {
-        width: 50%;
-        height: 800px; } }
-  @media only screen and (min-width: 1024px) {
-    .productos .productos__grilla .grilla__fideos {
-      display: flex;
-      flex-direction: row;
-      height: 600px; }
-      .productos .productos__grilla .grilla__fideos .fideos__foto {
-        width: 50%;
-        height: 600px; }
-      .productos .productos__grilla .grilla__fideos .fideos__opciones {
-        width: 60%;
-        height: 600px; }
-        .productos .productos__grilla .grilla__fideos .fideos__opciones .opciones__texto {
-          width: 100%;
-          height: 300px; }
-    .productos .productos__grilla .grilla__ravioles {
-      flex-direction: row;
-      height: 800px; }
-      .productos .productos__grilla .grilla__ravioles .ravioles__opciones {
-        height: 300px;
-        width: 50%; }
-        .productos .productos__grilla .grilla__ravioles .ravioles__opciones .opciones__fotobajo {
-          width: 100%;
-          height: 500px; }
-      .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 {
-        width: 50%;
-        height: 800px; }
-        .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 .opciones2__texto {
-          width: 100%;
-          height: 400px; }
-        .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 .opciones2__foto2 {
-          width: 100%;
-          height: 400px; }
-    .productos .productos__grilla .grilla__salsas {
-      flex-direction: row;
-      height: 800px; }
-      .productos .productos__grilla .grilla__salsas .salsas__opciones3 {
-        width: 65%;
-        height: 800px; }
-        .productos .productos__grilla .grilla__salsas .salsas__opciones3 .opciones3__texto {
-          width: 100%;
-          height: 300px; }
-        .productos .productos__grilla .grilla__salsas .salsas__opciones3 .opciones3__fotobajo {
-          width: 100%;
-          height: 500px; }
-      .productos .productos__grilla .grilla__salsas .salsas__foto {
-        width: 50%;
-        height: 800px; } }
-
 .galeria {
   display: flex;
   flex-direction: column;
@@ -939,48 +1115,3 @@ body {
     .galeria .carousel {
       width: 800px;
       height: 534px; } }
-
-.quienes {
-  padding: 10px;
-  background-color: black;
-  width: 100%;
-  /* VISTA PARA MOVIL 480px ******************************/
-  /* VISTA PARA DESKTOP 1024px **************************/ }
-  .quienes .seccion__imagen {
-    height: auto;
-    padding: 10px;
-    border-radius: 30px; }
-  .quienes .parrafo--quienes {
-    padding: 10px;
-    border-radius: 8px; }
-  @media only screen and (min-width: 480px) {
-    .quienes .quienes {
-      display: flex;
-      flex-direction: column; }
-    .quienes .quienes__seccion {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: flex-start; }
-      .quienes .quienes__seccion .seccion__imagen {
-        max-width: 100%;
-        height: auto;
-        padding: 10px;
-        border-radius: 30px; } }
-  @media only screen and (min-width: 1024px) {
-    .quienes .quienes {
-      display: inline-block; }
-    .quienes .quienes__seccion {
-      display: inline-block; }
-      .quienes .quienes__seccion .seccion__imagen {
-        display: block;
-        float: left;
-        overflow: hidden;
-        max-width: 40%;
-        height: auto;
-        padding: 10px;
-        border-radius: 30px;
-        transition: all 1.5s;
-        transition-timing-function: ease-in; }
-      .quienes .quienes__seccion .seccion__imagen:hover {
-        transform: scale(1.5) translate(50%, 0); } }

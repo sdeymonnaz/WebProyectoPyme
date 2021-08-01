@@ -1,0 +1,247 @@
+// PAGINA QUIENES SOMOS //
+
+.quienes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: $colorFondoPpal;
+    width: 100%;
+
+    .quienes__historia{
+        display: flex;
+        width: 100%;
+        background-color: $colorPrimario;
+
+        .historia__imagen{
+            height: 100%;
+        }
+
+        .historia__texto{
+            height:100%;
+
+            .parrafo--quienes{
+                @extend .parrafo;
+                padding: 20px;
+            }
+        }
+    }
+
+    .quienes__media{
+        display: flex;
+        background-color: $colorFondoPpal;
+        width: 100%;
+
+        .media__texto{
+            width: 30%;
+            height: 100%;
+            background-color: $colorFondoPpal;
+
+            .parrafo--quienes{
+                @extend .parrafo;
+                padding: 20px;
+            }
+        }
+
+        .media__imagen{
+            width: 70%;
+            max-width: 600px;
+            height: 100%;
+        }
+    }
+
+    .quienes__cita{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        width: 100%;
+        height: 250px;
+
+        .cita__contenedor{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 60%;
+
+            .contenedor__frase{
+                color: $colorParrafo;
+                font-family: $familiaParrafo;
+                font-style: italic;
+                font-size: $tamanioParrafo;
+                word-spacing: 2px;
+                text-align: justify;
+                padding-bottom: 0px;
+            }
+
+            .contenedor__firma{
+                color: $colorParrafo;
+                font-family: $familiaParrafo;
+                font-style:normal;
+                font-size: $tamanioParrafo;
+                word-spacing: 2px;
+                padding-top: 0px;
+            }
+        }
+    }
+
+    .quienes__slideshow{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: $colorPrimario;
+        height: 300px;
+        width: 100%;
+
+
+        .carousel{
+            width: 900px;
+            height: 300px;
+        }
+    }
+}
+
+/* VISTA PARA MOVIL 480px ******************************/
+@media only screen and (min-width:480px){        
+    .quienes{
+
+        .quienes__historia{
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+    
+            .historia__imagen{
+                width: 100%;
+            }
+        }
+
+        .quienes__media{
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+    
+            .media__texto{
+                width: 100%;
+    
+                #texto__tablet{
+                    font-size: 1.1rem;
+                }
+            }
+
+            .media__imagen{
+                width: 100%;
+
+                #imagen__foto{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+
+        .quienes__cita{
+            flex-direction: column;
+    
+            .cita__contenedor{
+                width: 85%;
+    
+                .contenedor__frase{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+/* VISTA PARA TABLET 768px ******************************/
+@media only screen and (min-width:768px){        
+    .quienes{
+
+        .quienes__historia{
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            height: 300px;
+    
+            .historia__imagen{
+                width: 40%;
+            }
+
+            .historia__texto{
+                width: 60%;
+
+                #texto__tablet{
+                    font-size: 1.1rem;
+                }
+            }
+        }
+
+        .quienes__media{
+            flex-direction: row;
+            height: auto;
+    
+            .media__texto{
+                width: 40%;
+    
+                #texto__tablet{
+                    font-size: 1.1rem;
+                }
+            }
+
+            .media__imagen{
+                width: 60%;
+
+                #imagen__foto{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+/* VISTA PARA DESKTOP 1024px **************************/
+@media only screen and (min-width:1024px){
+    .quienes{
+
+        .quienes__historia{
+            flex-direction: row;
+            width: 100%;
+            height: 400px;
+        
+            .historia__imagen{
+                width: 40%;
+            }
+
+            .historia__texto{
+                width: 60%;
+
+                #texto__tablet{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        .quienes__media{
+            flex-direction: row;
+            height: 400px;
+
+            .media__texto{
+
+                #texto__tablet{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        .quienes__cita{
+
+            .cita__contenedor{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 60%;
+            }
+
+        }
+    }
+
+}
