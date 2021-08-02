@@ -617,6 +617,93 @@
         width: 50%;
         height: 800px; } }
 
+.recetas {
+  width: 100%;
+  background-color: black; }
+  .recetas .recetas__contenedor {
+    display: grid;
+    width: 100%;
+    height: auto; }
+    .recetas .recetas__contenedor .contenedor__plato {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 300px;
+      height: 350px;
+      margin: 20px;
+      box-shadow: 0px 0px 15px 0px #d6d6d6;
+      background-color: whitesmoke; }
+      .recetas .recetas__contenedor .contenedor__plato .plato__foto, .recetas .recetas__contenedor .contenedor__plato .plato__foto--uno, .recetas .recetas__contenedor .contenedor__plato .plato__foto--dos, .recetas .recetas__contenedor .contenedor__plato .plato__foto--tres, .recetas .recetas__contenedor .contenedor__plato .plato__foto--cuatro, .recetas .recetas__contenedor .contenedor__plato .plato__foto--cinco, .recetas .recetas__contenedor .contenedor__plato .plato__foto--seis, .recetas .recetas__contenedor .contenedor__plato .plato__foto--siete, .recetas .recetas__contenedor .contenedor__plato .plato__foto--ocho {
+        width: 100%;
+        height: 300px;
+        background-repeat: no-repeat; }
+      .recetas .recetas__contenedor .contenedor__plato .plato__foto:hover, .recetas .recetas__contenedor .contenedor__plato .plato__foto--uno:hover, .recetas .recetas__contenedor .contenedor__plato .plato__foto--dos:hover, .recetas .recetas__contenedor .contenedor__plato .plato__foto--tres:hover, .recetas .recetas__contenedor .contenedor__plato .plato__foto--cuatro:hover, .recetas .recetas__contenedor .contenedor__plato .plato__foto--cinco:hover, .recetas .recetas__contenedor .contenedor__plato .plato__foto--seis:hover, .recetas .recetas__contenedor .contenedor__plato .plato__foto--siete:hover, .recetas .recetas__contenedor .contenedor__plato .plato__foto--ocho:hover {
+        opacity: 0.7; }
+      .recetas .recetas__contenedor .contenedor__plato .plato__texto {
+        display: flex;
+        width: 100%;
+        height: 50px;
+        margin-bottom: 0;
+        background-color: #fb383b;
+        font-family: "Catamaran", sans-serif;
+        font-weight: 500;
+        font-size: 1.5rem;
+        color: whitesmoke;
+        justify-content: center;
+        align-items: center; }
+    .recetas .recetas__contenedor .plato__foto--uno {
+      grid-area: uno;
+      background-image: url("../images/recetasUno.png"); }
+    .recetas .recetas__contenedor .plato__foto--dos {
+      grid-area: dos;
+      background-image: url("../images/recetasDos.png"); }
+    .recetas .recetas__contenedor .plato__foto--tres {
+      grid-area: tres;
+      background-image: url("../images/recetasTres.png"); }
+    .recetas .recetas__contenedor .plato__foto--cuatro {
+      grid-area: cuatro;
+      background-image: url("../images/recetasCuatro.png"); }
+    .recetas .recetas__contenedor .plato__foto--cinco {
+      grid-area: cinco;
+      background-image: url("../images/recetasCinco.png"); }
+    .recetas .recetas__contenedor .plato__foto--seis {
+      grid-area: seis;
+      background-image: url("../images/recetasSeis.png"); }
+    .recetas .recetas__contenedor .plato__foto--siete {
+      grid-area: siete;
+      background-image: url("../images/recetasSiete.png"); }
+    .recetas .recetas__contenedor .plato__foto--ocho {
+      grid-area: ocho;
+      background-image: url("../images/recetasOcho.png"); }
+
+/* VISTA PARA MOVIL 480px ******************************/
+@media only screen and (min-width: 480px) {
+  .recetas__contenedor {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8 1fr);
+    grid-template-areas: "uno" "dos" "tres"  "cuatro" "cinco"  "seis" "siete"  "ocho";
+    justify-items: center;
+    align-items: center; } }
+
+/* VISTA PARA TABLET 768px ******************************/
+@media only screen and (min-width: 768px) {
+  .recetas__contenedor {
+    grid-template-columns: repeat(2 1fr);
+    grid-template-rows: repeat(4 1fr);
+    grid-template-areas: "uno dos"  "tres cuatro" "cinco seis" "siete ocho";
+    justify-items: center;
+    align-items: center; } }
+
+/* VISTA PARA DESKTOP 1024px **************************/
+@media only screen and (min-width: 1024px) {
+  .recetas__contenedor {
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "uno dos tres" "cuatro cinco seis" "siete ocho .";
+    justify-items: center;
+    align-items: center; } }
+
 .quienes {
   display: flex;
   flex-direction: column;
@@ -1060,58 +1147,3 @@ body {
       .home .home .home__principal {
         display: flex;
         flex-direction: row; } }
-
-.galeria {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  height: auto;
-  background-color: black;
-  padding: 10px;
-  /* VISTA PARA MOVIL 480px ******************************/
-  /* VISTA PARA TABLET 768px *****************************/
-  /* VISTA PARA DESKTOP 1024px **************************/ }
-  .galeria .galeria__videos {
-    display: flex;
-    align-items: center; }
-    .galeria .galeria__videos .videos__contenedor {
-      position: relative;
-      padding-top: 56.25%;
-      width: 100%;
-      overflow: hidden; }
-      .galeria .galeria__videos .videos__contenedor .contenedor__iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        padding: 10px; }
-  .galeria .galeria__foto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px; }
-  @media only screen and (min-width: 480px) {
-    .galeria .galeria__videos {
-      flex-direction: column;
-      justify-content: start;
-      width: 100%;
-      height: auto; } }
-  @media only screen and (min-width: 768px) {
-    .galeria .galeria__videos {
-      flex-direction: row;
-      justify-content: space-between;
-      width: 100%;
-      height: auto;
-      padding-left: 5px;
-      padding-right: 5px; } }
-  @media only screen and (min-width: 1024px) {
-    .galeria .galeria__videos {
-      flex-direction: row;
-      justify-content: space-evenly;
-      width: 100%;
-      height: 100%; }
-    .galeria .carousel {
-      width: 800px;
-      height: 534px; } }

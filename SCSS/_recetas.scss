@@ -1,0 +1,150 @@
+
+.recetas{
+    width: 100%;
+    // height: 100%;
+    background-color: $colorFondoPpal;
+
+    .recetas__contenedor{
+        display: grid;
+        width: 100%;
+        height: auto;
+
+        .contenedor__plato{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 350px;
+            margin: 20px;
+            box-shadow: 0px 0px 15px 0px #d6d6d6;
+            background-color: $colorParrafo;
+
+            .plato__foto{
+                width: 100%;
+                height: 300px;
+                background-repeat: no-repeat;
+            }
+
+            .plato__foto:hover{
+                opacity: 0.7;
+            }
+
+            .plato__texto{
+                display: flex;
+                width: 100%;
+                height: 50px;
+                margin-bottom: 0;
+                background-color: $colorPrimario;
+                font-family: $familiaTitulo;
+                font-weight: 500;
+                font-size: 1.5rem;
+                color: $colorParrafo;
+                justify-content: center;
+                align-items: center;
+            }
+            
+        }
+
+        .plato__foto--uno{
+            @extend .plato__foto;
+            grid-area: uno;
+            background-image: url("../images/recetasUno.png");
+        }
+
+        .plato__foto--dos{
+            @extend .plato__foto;
+            grid-area: dos;
+            background-image: url("../images/recetasDos.png");
+        }
+
+        .plato__foto--tres{
+            @extend .plato__foto;
+            grid-area: tres;
+            background-image: url("../images/recetasTres.png");
+        }
+
+        .plato__foto--cuatro{
+            @extend .plato__foto;
+            grid-area: cuatro;
+            background-image: url("../images/recetasCuatro.png");
+        }
+
+        .plato__foto--cinco{
+            @extend .plato__foto;
+            grid-area: cinco;
+            background-image: url("../images/recetasCinco.png");
+        }
+
+        .plato__foto--seis{
+            @extend .plato__foto;
+            grid-area: seis;
+            background-image: url("../images/recetasSeis.png");
+        }
+
+        .plato__foto--siete{
+            @extend .plato__foto;
+            grid-area: siete;
+            background-image: url("../images/recetasSiete.png");
+        }
+
+        .plato__foto--ocho{
+            @extend .plato__foto;
+            grid-area: ocho;
+            background-image: url("../images/recetasOcho.png");
+        }
+    }
+}
+
+
+/* VISTA PARA MOVIL 480px ******************************/
+@media only screen and (min-width:480px){        
+    .recetas__contenedor{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8 1fr);
+        grid-template-areas: 
+        "uno"
+        "dos"
+        "tres" 
+        "cuatro"
+        "cinco" 
+        "seis"
+        "siete" 
+        "ocho";
+        justify-items: center;
+        align-items: center;
+
+
+
+
+    }
+}
+
+/* VISTA PARA TABLET 768px ******************************/
+@media only screen and (min-width:768px){        
+    .recetas__contenedor{
+        grid-template-columns: repeat(2 1fr);
+        grid-template-rows: repeat(4 1fr);
+        grid-template-areas: 
+        "uno dos" 
+        "tres cuatro"
+        "cinco seis"
+        "siete ocho";
+        justify-items: center;
+        align-items: center;
+    }
+}
+
+/* VISTA PARA DESKTOP 1024px **************************/
+@media only screen and (min-width:1024px){
+    .recetas__contenedor{
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "uno dos tres"
+        "cuatro cinco seis"
+        "siete ocho .";
+        justify-items: center;
+        align-items: center;
+    }
+}
