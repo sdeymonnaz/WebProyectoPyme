@@ -36,7 +36,7 @@
 .header {
   display: flex;
   flex-direction: row;
-  background: black;
+  background: #202020;
   padding: 30px; }
   .header a {
     text-decoration: none; }
@@ -104,7 +104,7 @@
   display: flex;
   justify-content: start;
   align-items: center;
-  background-color: black;
+  background-color: #202020;
   height: 300px; }
   .tituloPag .tituloPag__titular, .tituloPag .tituloPag__titular--galeria {
     font-family: "Catamaran", sans-serif;
@@ -120,7 +120,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color: #202020;
   height: 300px; }
   .tituloPagAlt .tituloPagAlt__tituloAlt {
     font-family: "Catamaran", sans-serif;
@@ -167,7 +167,7 @@
 
 .footer {
   display: flex;
-  background: black;
+  background: #202020;
   justify-content: flex-end;
   width: 100%;
   height: 100px; }
@@ -197,7 +197,7 @@
   height: 100px;
   justify-content: flex-end;
   align-items: center;
-  background-color: black;
+  background-color: #202020;
   padding-right: 30px; }
   .carrito .carrito__titulo {
     display: flex;
@@ -309,7 +309,7 @@
       font-size: 6rem; } }
 
 .productos {
-  background-color: black;
+  background-color: #202020;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -352,8 +352,8 @@
             float: right;
             font-size: 20px;
             color: whitesmoke;
-            background-color: black;
-            border-color: black; }
+            background-color: #202020;
+            border-color: #202020; }
           .productos .productos__grilla .grilla__fideos .fideos__opciones .opciones__texto .btn:focus {
             box-shadow: 0 0 0 0.25rem #ffca2c; }
           .productos .productos__grilla .grilla__fideos .fideos__opciones .opciones__texto .btn:hover {
@@ -370,7 +370,7 @@
       .productos .productos__grilla .grilla__ravioles .ravioles__opciones .opciones__texto {
         width: 100%;
         height: 300px;
-        background-color: black;
+        background-color: #202020;
         padding: 20px; }
         .productos .productos__grilla .grilla__ravioles .ravioles__opciones .opciones__texto .texto__titulo {
           font-size: 3.5rem;
@@ -403,7 +403,7 @@
       .productos .productos__grilla .grilla__ravioles .ravioles__opciones .opciones__fotobajo {
         background-image: url(../images/pedidos_ravioles.png); }
       .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 .opciones2__texto {
-        background-color: black;
+        background-color: #202020;
         padding: 20px; }
         .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 .opciones2__texto .texto__titulo {
           font-size: 3.5rem;
@@ -463,8 +463,8 @@
           float: right;
           font-size: 20px;
           color: whitesmoke;
-          background-color: black;
-          border-color: black; }
+          background-color: #202020;
+          border-color: #202020; }
         .productos .productos__grilla .grilla__salsas .salsas__opciones3 .opciones3__texto .btn:focus {
           box-shadow: 0 0 0 0.25rem #fb383b; }
         .productos .productos__grilla .grilla__salsas .salsas__opciones3 .opciones3__texto .btn:hover {
@@ -619,7 +619,7 @@
 
 .recetas {
   width: 100%;
-  background-color: black; }
+  background-color: #202020; }
   .recetas .recetas__contenedor {
     display: grid;
     width: 100%;
@@ -708,7 +708,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  background-color: black;
+  background-color: #202020;
   width: 100%; }
   .quienes .quienes__historia {
     display: flex;
@@ -722,12 +722,12 @@
         padding: 20px; }
   .quienes .quienes__media {
     display: flex;
-    background-color: black;
+    background-color: #202020;
     width: 100%; }
     .quienes .quienes__media .media__texto {
       width: 30%;
       height: 100%;
-      background-color: black; }
+      background-color: #202020; }
       .quienes .quienes__media .media__texto .parrafo--quienes {
         padding: 20px; }
     .quienes .quienes__media .media__imagen {
@@ -901,7 +901,7 @@
   align-items: center;
   width: 100%;
   height: 100%;
-  background-color: black; }
+  background-color: #202020; }
   .contacto .contacto__contenedor {
     display: flex;
     justify-content: center;
@@ -910,7 +910,7 @@
     height: 800px;
     padding: 30px; }
     .contacto .contacto__contenedor .contenedor__formulario {
-      background-color: black;
+      background-color: #202020;
       height: max-content;
       color: whitesmoke;
       max-width: 600px; }
@@ -979,7 +979,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: black;
+  background: #202020;
   width: 100%;
   height: auto;
   /* VISTA PARA MOVIL 480px ********************************/
@@ -1073,7 +1073,7 @@ body {
       margin: 10px;
       padding: 10px;
       color: whitesmoke;
-      background: black;
+      background: #202020;
       border-radius: 4px;
       width: 90%; }
       .home .home__platos .platos__contenedor .contenedor__titulo {
