@@ -2,7 +2,7 @@
 @import "tipografia.scss";
 @import "intro.scss";
 @import "header.scss";
-// @import "tituloPagina.scss";
+@import "tituloPagina.scss";
 @import "footer.scss";
 @import "carrito.scss";
 @import "banner.scss";
@@ -180,7 +180,7 @@ body{
         
         .platos__contenedor{
             @include parrafoSec ($colorParrafo, $colorFondoPpal);
-            width: 70%;
+            width: 60%;
 
             .contenedor__titulo{
                 color: $colorPrimario;

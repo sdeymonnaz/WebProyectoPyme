@@ -5,7 +5,7 @@
   align-items: center;
   width: 100%;
   height: 100vh;
-  background-image: url("../images/fondo.png");
+  background-image: url("../images/intro-fondo.png");
   background-size: cover; }
   .intro .intro__centro {
     display: flex;
@@ -98,6 +98,72 @@
       .header .nav__lista .lista__elem {
         font-size: 1.5rem;
         padding: 20px; } }
+
+/* TITULOS DE PAGINA ***********************************************/
+.tituloPag {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: #202020;
+  height: 300px; }
+  .tituloPag .tituloPag__titular, .tituloPag .tituloPag__titular--galeria {
+    font-family: "Catamaran", sans-serif;
+    font-weight: 800;
+    color: whitesmoke;
+    padding: 20px;
+    word-spacing: 5px; }
+  .tituloPag .tituloPag__titular--galeria {
+    padding: 10px; }
+
+.tituloPagAlt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #202020;
+  height: 300px; }
+  .tituloPagAlt .tituloPagAlt__tituloAlt {
+    font-family: "Catamaran", sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: #fb383b;
+    word-spacing: 5px; }
+  .tituloPagAlt .tituloPagAlt__texto {
+    width: 50%;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    text-align: center; }
+
+/* VISTA PARA MOVIL 480px ********************************/
+@media only screen and (min-width: 480px) {
+  .tituloPag__titular, .tituloPag .tituloPag__titular--galeria {
+    font-size: 1.5rem; }
+  .tituloPagAlt {
+    margin: 30px; }
+    .tituloPagAlt .tituloPagAlt__texto {
+      width: 75%; } }
+
+/* VISTA PARA TABLET 768px ******************************/
+@media only screen and (min-width: 768px) {
+  .tituloPag__titular, .tituloPag .tituloPag__titular--galeria {
+    font-size: 1.5rem; }
+  .tituloPagAlt {
+    margin: 30px; }
+    .tituloPagAlt .tituloPagAlt__tituloAlt {
+      font-size: 2.3rem; }
+    .tituloPagAlt .tituloPagAlt__texto {
+      width: 75%; } }
+
+/* VISTA PARA DESKTOP 1024px **************************/
+@media only screen and (min-width: 1024px) {
+  .tituloPag__titular, .tituloPag .tituloPag__titular--galeria {
+    font-size: 3rem; }
+  .tituloPagAlt {
+    margin: 30px; }
+    .tituloPagAlt .tituloPagAlt__tituloAlt {
+      font-size: 3rem; }
+    .tituloPagAlt .tituloPagAlt__texto {
+      width: 75%; } }
 
 .footer {
   display: flex;
@@ -411,7 +477,7 @@
           border-color: #ffca2c; }
       .productos .productos__grilla .grilla__salsas .salsas__opciones3 .opciones3__fotobajo {
         background-color: #fb383b;
-        background-image: url(../images/pedidos_salsa.png);
+        background-image: url(../images/pedidos_salsas.png);
         background-repeat: no-repeat; }
       .productos .productos__grilla .grilla__salsas .salsas__foto {
         background-color: whitesmoke;
@@ -1031,7 +1097,7 @@ body {
       background: #202020;
       border-radius: 4px;
       width: 90%;
-      width: 70%; }
+      width: 60%; }
       .home .home__platos .platos__contenedor .contenedor__titulo {
         color: #fb383b;
         font-family: "Catamaran", sans-serif;
