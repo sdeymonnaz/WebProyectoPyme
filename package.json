@@ -1,7 +1,7 @@
 {
   "name": "proyectopyme",
   "version": "1.0.0",
-  "description": "",
+  "description": "Coderhouse html and CSS capstone project for the 2021 fullstack course",
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
@@ -14,6 +14,6 @@
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
    
   },
-  "author": "",
+  "author": "Sebastian Deymonnaz",
   "license": "ISC"
 }

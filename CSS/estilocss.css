@@ -99,72 +99,6 @@
         font-size: 1.5rem;
         padding: 20px; } }
 
-/* TITULOS DE PAGINA ***********************************************/
-.tituloPag {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  background-color: #202020;
-  height: 300px; }
-  .tituloPag .tituloPag__titular, .tituloPag .tituloPag__titular--galeria {
-    font-family: "Catamaran", sans-serif;
-    font-weight: 800;
-    color: whitesmoke;
-    padding: 20px;
-    word-spacing: 5px; }
-  .tituloPag .tituloPag__titular--galeria {
-    padding: 10px; }
-
-.tituloPagAlt {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #202020;
-  height: 300px; }
-  .tituloPagAlt .tituloPagAlt__tituloAlt {
-    font-family: "Catamaran", sans-serif;
-    font-weight: 800;
-    font-size: 1.5rem;
-    color: #fb383b;
-    word-spacing: 5px; }
-  .tituloPagAlt .tituloPagAlt__texto {
-    width: 50%;
-    color: whitesmoke;
-    font-size: 1.2rem;
-    text-align: center; }
-
-/* VISTA PARA MOVIL 480px ********************************/
-@media only screen and (min-width: 480px) {
-  .tituloPag__titular, .tituloPag .tituloPag__titular--galeria {
-    font-size: 1.5rem; }
-  .tituloPagAlt {
-    margin: 30px; }
-    .tituloPagAlt .tituloPagAlt__texto {
-      width: 75%; } }
-
-/* VISTA PARA TABLET 768px ******************************/
-@media only screen and (min-width: 768px) {
-  .tituloPag__titular, .tituloPag .tituloPag__titular--galeria {
-    font-size: 1.5rem; }
-  .tituloPagAlt {
-    margin: 30px; }
-    .tituloPagAlt .tituloPagAlt__tituloAlt {
-      font-size: 2.3rem; }
-    .tituloPagAlt .tituloPagAlt__texto {
-      width: 75%; } }
-
-/* VISTA PARA DESKTOP 1024px **************************/
-@media only screen and (min-width: 1024px) {
-  .tituloPag__titular, .tituloPag .tituloPag__titular--galeria {
-    font-size: 3rem; }
-  .tituloPagAlt {
-    margin: 30px; }
-    .tituloPagAlt .tituloPagAlt__tituloAlt {
-      font-size: 3rem; }
-    .tituloPagAlt .tituloPagAlt__texto {
-      width: 75%; } }
-
 .footer {
   display: flex;
   background: #202020;
@@ -181,7 +115,7 @@
     width: 100%;
     height: 100%; }
     .footer .footer__listado .listado__item {
-      font-size: 25px;
+      font-size: 1.5rem;
       padding: 2px; }
       .footer .footer__listado .listado__item .fa {
         color: whitesmoke;
@@ -249,7 +183,7 @@
       font-weight: 800;
       color: #fb383b;
       word-spacing: 5px;
-      text-shadow: 3px 3px black; }
+      text-shadow: 2px 2px black; }
   @media only screen and (min-width: 480px) {
     .banner .titulo__texto {
       font-size: 3rem; } }
@@ -275,7 +209,7 @@
       font-family: "Catamaran", sans-serif;
       font-weight: 800;
       color: #fb383b;
-      text-shadow: 3px 3px black;
+      text-shadow: 2px 2px black;
       padding: 10px; }
 
 .banner-quienes {
@@ -326,7 +260,8 @@
       flex-direction: row;
       width: 100%; }
       .productos .productos__grilla .grilla__fideos .fideos__foto {
-        background-image: url(../images/pedidos_fideos.png); }
+        background-image: url(../images/pedidos_fideos.png);
+        background-repeat: no-repeat; }
       .productos .productos__grilla .grilla__fideos .fideos__opciones {
         height: 600px; }
         .productos .productos__grilla .grilla__fideos .fideos__opciones .opciones__texto {
@@ -336,21 +271,21 @@
             font-size: 3.5rem;
             font-weight: 600;
             color: whitesmoke;
-            text-shadow: 3px 3px black; }
+            text-shadow: 2px 2px black; }
           .productos .productos__grilla .grilla__fideos .fideos__opciones .opciones__texto .texto__parrafo {
             color: whitesmoke;
             padding: 5px; }
           .productos .productos__grilla .grilla__fideos .fideos__opciones .opciones__texto .list-group {
             background-color: RGBA(239, 230, 221, 0.7);
             font-family: "Catamaran", sans-serif;
-            font-size: 16px;
+            font-size: 1.3rem;
             width: 100%;
             height: auto;
             padding: 5px;
             border-radius: .25rem; }
           .productos .productos__grilla .grilla__fideos .fideos__opciones .opciones__texto .btn {
             float: right;
-            font-size: 20px;
+            font-size: 1.3rem;
             color: whitesmoke;
             background-color: #202020;
             border-color: #202020; }
@@ -363,7 +298,8 @@
         .productos .productos__grilla .grilla__fideos .fideos__opciones .opciones__fotobajo {
           width: 100%;
           height: 300px;
-          background-image: url(../images/pedidos_fideos2.png); }
+          background-image: url(../images/pedidos_fideos2.png);
+          background-repeat: no-repeat; }
     .productos .productos__grilla .grilla__ravioles {
       display: flex;
       width: 100%; }
@@ -376,21 +312,21 @@
           font-size: 3.5rem;
           font-weight: 600;
           color: whitesmoke;
-          text-shadow: 3px 3px black; }
+          text-shadow: 2px 2px black; }
         .productos .productos__grilla .grilla__ravioles .ravioles__opciones .opciones__texto .texto__parrafo {
           color: whitesmoke;
           padding: 5px; }
         .productos .productos__grilla .grilla__ravioles .ravioles__opciones .opciones__texto .list-group {
           background-color: RGBA(239, 230, 221, 0.7);
           font-family: "Catamaran", sans-serif;
-          font-size: 16px;
+          font-size: 1.3rem;
           width: 100%;
           height: auto;
           padding: 5px;
           border-radius: .25rem; }
         .productos .productos__grilla .grilla__ravioles .ravioles__opciones .opciones__texto .btn {
           float: right;
-          font-size: 20px;
+          font-size: 1.3rem;
           color: whitesmoke;
           background-color: #fb383b;
           border-color: #fb383b; }
@@ -401,7 +337,8 @@
           background-color: #ffca2c;
           border-color: #ffca2c; }
       .productos .productos__grilla .grilla__ravioles .ravioles__opciones .opciones__fotobajo {
-        background-image: url(../images/pedidos_ravioles.png); }
+        background-image: url(../images/pedidos_ravioles.png);
+        background-repeat: no-repeat; }
       .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 .opciones2__texto {
         background-color: #202020;
         padding: 20px; }
@@ -409,21 +346,21 @@
           font-size: 3.5rem;
           font-weight: 600;
           color: whitesmoke;
-          text-shadow: 3px 3px black; }
+          text-shadow: 2px 2px black; }
         .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 .opciones2__texto .texto__parrafo {
           color: whitesmoke;
           padding: 5px; }
         .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 .opciones2__texto .list-group {
           background-color: RGBA(239, 230, 221, 0.7);
           font-family: "Catamaran", sans-serif;
-          font-size: 16px;
+          font-size: 1.3rem;
           width: 100%;
           height: auto;
           padding: 5px;
           border-radius: .25rem; }
         .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 .opciones2__texto .btn {
           float: right;
-          font-size: 20px;
+          font-size: 1.2rem;
           color: whitesmoke;
           background-color: #fb383b;
           border-color: #fb383b; }
@@ -436,7 +373,8 @@
       .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 .opciones2__foto2 {
         width: 100%;
         height: 400px;
-        background-image: url(../images/pedidos_otras.png); }
+        background-image: url(../images/pedidos_otras.png);
+        background-repeat: no-repeat; }
     .productos .productos__grilla .grilla__salsas {
       display: flex;
       width: 100%; }
@@ -447,21 +385,21 @@
           font-size: 3.5rem;
           font-weight: 600;
           color: whitesmoke;
-          text-shadow: 3px 3px black; }
+          text-shadow: 2px 2px black; }
         .productos .productos__grilla .grilla__salsas .salsas__opciones3 .opciones3__texto .texto__parrafo {
           color: whitesmoke;
           padding: 5px; }
         .productos .productos__grilla .grilla__salsas .salsas__opciones3 .opciones3__texto .list-group {
           background-color: RGBA(239, 230, 221, 0.7);
           font-family: "Catamaran", sans-serif;
-          font-size: 16px;
+          font-size: 1.3rem;
           width: 100%;
           height: auto;
           padding: 5px;
           border-radius: .25rem; }
         .productos .productos__grilla .grilla__salsas .salsas__opciones3 .opciones3__texto .btn {
           float: right;
-          font-size: 20px;
+          font-size: 1.3rem;
           color: whitesmoke;
           background-color: #202020;
           border-color: #202020; }
@@ -473,10 +411,12 @@
           border-color: #ffca2c; }
       .productos .productos__grilla .grilla__salsas .salsas__opciones3 .opciones3__fotobajo {
         background-color: #fb383b;
-        background-image: url(../images/pedidos_salsa.png); }
+        background-image: url(../images/pedidos_salsa.png);
+        background-repeat: no-repeat; }
       .productos .productos__grilla .grilla__salsas .salsas__foto {
         background-color: whitesmoke;
-        background-image: url(../images/pedidos_salsa1.png); }
+        background-image: url(../images/pedidos_salsa1.png);
+        background-repeat: no-repeat; }
   @media only screen and (min-width: 480px) {
     .productos .productos__grilla .grilla__fideos {
       flex-direction: column;
@@ -940,14 +880,14 @@
       .contacto .contacto__contenedor .contenedor__datos .datos__detalle {
         list-style-type: none; }
         .contacto .contacto__contenedor .contenedor__datos .datos__detalle .fa {
-          font-size: 30px;
+          font-size: 2rem;
           color: #fb383b;
           padding: 20px; }
         .contacto .contacto__contenedor .contenedor__datos .datos__detalle .fa:hover {
           color: #ffca2c; }
         .contacto .contacto__contenedor .contenedor__datos .datos__detalle .detalle__texto {
           color: whitesmoke;
-          font-size: 16px; }
+          font-size: 1.3rem; }
   .contacto .contacto__mapa {
     display: flex;
     width: 100%;
@@ -958,6 +898,21 @@
       margin-bottom: 1px;
       width: 100%;
       -webkit-filter: grayscale(100%); }
+
+.noEncontrada {
+  width: 100%;
+  height: 100vh;
+  background-color: #202020; }
+  .noEncontrada .noEncontrada__contenedor {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: whitesmoke; }
+    .noEncontrada .noEncontrada__contenedor .contenedor__codigo {
+      font-size: 8rem;
+      color: #fb383b; }
+    .noEncontrada .noEncontrada__contenedor .contenedor__texto {
+      font-size: 4rem; }
 
 * {
   margin: 0;
@@ -1042,7 +997,7 @@ body {
       padding-bottom: 30px; }
       .home .home__principal .principal__texto .btn-warning {
         float: right;
-        font-size: 20px;
+        font-size: 1.3rem;
         color: whitesmoke;
         background-color: #fb383b;
         border-color: #fb383b; }
@@ -1075,7 +1030,8 @@ body {
       color: whitesmoke;
       background: #202020;
       border-radius: 4px;
-      width: 90%; }
+      width: 90%;
+      width: 70%; }
       .home .home__platos .platos__contenedor .contenedor__titulo {
         color: #fb383b;
         font-family: "Catamaran", sans-serif;

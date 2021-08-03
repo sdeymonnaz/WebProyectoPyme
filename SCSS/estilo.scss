@@ -2,7 +2,7 @@
 @import "tipografia.scss";
 @import "intro.scss";
 @import "header.scss";
-@import "tituloPagina.scss";
+// @import "tituloPagina.scss";
 @import "footer.scss";
 @import "carrito.scss";
 @import "banner.scss";
@@ -10,6 +10,7 @@
 @import "recetas.scss";
 @import "quienes.scss";
 @import "contacto.scss";
+@import "404.scss";
 
 
 *{
@@ -138,7 +139,7 @@ body{
 
             .btn-warning{
                 float: right;
-                font-size: 20px;
+                font-size: 1.3rem;
                 color: $colorParrafo;
                 background-color: $colorPrimario;
                 border-color: $colorPrimario;
@@ -179,6 +180,7 @@ body{
         
         .platos__contenedor{
             @include parrafoSec ($colorParrafo, $colorFondoPpal);
+            width: 70%;
 
             .contenedor__titulo{
                 color: $colorPrimario;

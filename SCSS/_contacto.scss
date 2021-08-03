@@ -134,8 +134,8 @@
 
             .btn-warning:hover{
                 color: $colorParrafoAlt;
-                background-color: $colorCinco;
-                border-color: $colorCinco;
+                background-color: $colorCuatro;
+                border-color: $colorCuatro;
             }
 
         }
@@ -150,18 +150,18 @@
                 list-style-type:none;;
 
                 .fa{
-                    font-size: 30px;
+                    font-size: 2rem;
                     color: $colorPrimario;
                     padding: 20px;
                 }
 
                 .fa:hover{
-                    color: $colorCinco;
+                    color: $colorCuatro;
                 }
 
                 .detalle__texto{
                     color: $colorParrafo;
-                    font-size: 16px;
+                    font-size: 1.3rem;
                 }
             }
         }
