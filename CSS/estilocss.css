@@ -1122,7 +1122,7 @@ body {
       padding: 10px;
       margin-bottom: 20px; }
       .home .home__news .news__contenedor .btn-warning {
-        color: black;
+        color: whitesmoke;
         background-color: #fb383b;
         border-color: #fb383b; }
       .home .home__news .news__contenedor .btn-warning:hover {
