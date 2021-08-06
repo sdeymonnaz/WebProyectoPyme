@@ -326,7 +326,7 @@
       flex-direction: row;
       width: 100%; }
       .productos .productos__grilla .grilla__fideos .fideos__foto {
-        background-image: url(../images/pedidos_fideos.png);
+        background-image: url(../images/pedidos_fideos.jpg);
         background-repeat: no-repeat; }
       .productos .productos__grilla .grilla__fideos .fideos__opciones {
         height: 600px; }
@@ -364,7 +364,7 @@
         .productos .productos__grilla .grilla__fideos .fideos__opciones .opciones__fotobajo {
           width: 100%;
           height: 300px;
-          background-image: url(../images/pedidos_fideos2.png);
+          background-image: url(../images/pedidos_fideos2.jpg);
           background-repeat: no-repeat; }
     .productos .productos__grilla .grilla__ravioles {
       display: flex;
@@ -439,7 +439,7 @@
       .productos .productos__grilla .grilla__ravioles .ravioles__opciones2 .opciones2__foto2 {
         width: 100%;
         height: 400px;
-        background-image: url(../images/pedidos_otras.png);
+        background-image: url(../images/pedidos_otras.jpg);
         background-repeat: no-repeat; }
     .productos .productos__grilla .grilla__salsas {
       display: flex;
@@ -658,6 +658,10 @@
         color: whitesmoke;
         justify-content: center;
         align-items: center; }
+      .recetas .recetas__contenedor .contenedor__plato .card-body {
+        font-size: 0.8rem; }
+      .recetas .recetas__contenedor .contenedor__plato .show {
+        width: 400px; }
     .recetas .recetas__contenedor .plato__foto--uno {
       grid-area: uno;
       background-image: url("../images/recetasUno.png"); }
@@ -666,28 +670,28 @@
       background-image: url("../images/recetasDos.png"); }
     .recetas .recetas__contenedor .plato__foto--tres {
       grid-area: tres;
-      background-image: url("../images/recetasTres.png"); }
+      background-image: url("../images/recetasTres.jpg"); }
     .recetas .recetas__contenedor .plato__foto--cuatro {
       grid-area: cuatro;
-      background-image: url("../images/recetasCuatro.png"); }
+      background-image: url("../images/recetasCuatro.jpg"); }
     .recetas .recetas__contenedor .plato__foto--cinco {
       grid-area: cinco;
       background-image: url("../images/recetasCinco.png"); }
     .recetas .recetas__contenedor .plato__foto--seis {
       grid-area: seis;
-      background-image: url("../images/recetasSeis.png"); }
+      background-image: url("../images/recetasSeis.jpg"); }
     .recetas .recetas__contenedor .plato__foto--siete {
       grid-area: siete;
-      background-image: url("../images/recetasSiete.png"); }
+      background-image: url("../images/recetasSiete.jpg"); }
     .recetas .recetas__contenedor .plato__foto--ocho {
       grid-area: ocho;
-      background-image: url("../images/recetasOcho.png"); }
+      background-image: url("../images/recetasOcho.jpg"); }
 
 /* VISTA PARA MOVIL 480px ******************************/
 @media only screen and (min-width: 480px) {
   .recetas__contenedor {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(8 1fr);
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
     grid-template-areas: "uno" "dos" "tres"  "cuatro" "cinco"  "seis" "siete"  "ocho";
     justify-items: center;
     align-items: center; } }
@@ -695,8 +699,8 @@
 /* VISTA PARA TABLET 768px ******************************/
 @media only screen and (min-width: 768px) {
   .recetas__contenedor {
-    grid-template-columns: repeat(2 1fr);
-    grid-template-rows: repeat(4 1fr);
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas: "uno dos"  "tres cuatro" "cinco seis" "siete ocho";
     justify-items: center;
     align-items: center; } }
